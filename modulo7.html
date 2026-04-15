@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 7 | Seminário Avançado</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="modulo7" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Módulo 7 | Pós-graduação</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Seminário Avançado: Teoria, Método e Evidência</h1>
+        <p class="mt-4 text-slate-600">
+          Este módulo eleva o curso para profundidade acadêmica de pós-graduação. O foco não é apenas usar IA, mas justificar decisões com rigor metodológico, inferência causal e validação crítica de evidências.
+        </p>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--m7 print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/modulo7-800.webp" />
+            <img src="assets/images/heroes/modulo7-1600.webp" alt="Imagem real de pesquisa, método e análise avançada" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Rigor metodológico em foco: análise, validação de evidências e argumentação técnica para decisões avançadas.
+        </figcaption>
+        <div class="module-hero__context">
+          <p class="module-hero__why"><strong>Por que esta imagem?</strong> O módulo exige leitura crítica e método científico, e a imagem posiciona esse tom acadêmico logo no início.</p>
+          <div class="module-hero__actions">
+            <a href="#objetivos-modulo7">Ver objetivo do módulo</a>
+            <a href="#pratica-modulo7">Ir para atividade prática</a>
+          </div>
+        </div>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 15l3-3 2 2 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Método robusto</h3><p>Hipótese, desenho e inferência alinhados.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M8 8h8M8 16h6" stroke-linecap="round"/><rect x="5" y="4" width="14" height="16" rx="2"/></svg></span>
+          <div><h3>Evidência defensável</h3><p>Resultados com validade e rastreabilidade.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v5m0 3h.01" stroke-linecap="round"/><path d="M10.3 3.8L2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/></svg></span>
+          <div><h3>Limites explícitos</h3><p>Evite confundir correlação com causalidade.</p></div>
+        </article>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/research-framework.svg" alt="Framework de pesquisa aplicada em IA administrativa" loading="lazy" />
+        <figcaption>
+          Estrutura de pesquisa aplicada: da hipótese de impacto à decisão executiva baseada em evidências quantitativas e qualitativas.
+        </figcaption>
+      </figure>
+      <section class="grid gap-5 md:grid-cols-2" data-illustration-expansion="v1">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/case-metrics.svg" alt="Painel visual para avaliacao metodologica avancada" loading="lazy" />
+          <figcaption>Painel para defesa tecnica: hipotese, evidencia e robustez analitica.</figcaption>
+        </figure>
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/advanced-assessment.svg" alt="Matriz de avaliacao de banca tecnica do modulo 7" loading="lazy" />
+          <figcaption>Rubrica didatica para avaliar rigor, impacto e viabilidade executiva.</figcaption>
+        </figure>
+      </section>
+
+      <section id="objetivos-modulo7" class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Epistemologia aplicada à gestão orientada por IA</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Em contextos organizacionais, decisões apoiadas por IA frequentemente confundem correlação com causalidade. Uma postura de pós-graduação exige explicitar o tipo de evidência disponível, as limitações do desenho de pesquisa e a robustez das conclusões.
+        </p>
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Paradigma positivista</h3>
+            <p class="mt-2 text-sm text-slate-600">Ênfase em mensuração, replicabilidade e testes estatísticos para avaliar impacto de automações e modelos preditivos.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Paradigma pragmatista</h3>
+            <p class="mt-2 text-sm text-slate-600">Integra métodos quantitativos e qualitativos, priorizando utilidade prática e valor para decisão executiva.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Paradigma crítico</h3>
+            <p class="mt-2 text-sm text-slate-600">Examina efeitos distributivos, vieses e assimetrias de poder gerados por sistemas algorítmicos em organizações.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do módulo</p>
+        <h2 class="mt-2 text-2xl font-bold">Como defender tecnicamente uma decisão orientada por IA</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Base metodológica</h3>
+            <p>A força da decisão está na qualidade do método: hipótese clara, métrica adequada e limite explicitado.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Defesa em banca</h3>
+            <p>Uma proposta consistente explica não apenas o ganho esperado, mas também incertezas, vieses e riscos residuais.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Protocolo de pesquisa</h3>
+            <p>Os prompts desta seção ajudam a estruturar desenho causal e converter análise técnica em decisão executiva.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Correlação não é causalidade</h3>
+            <p>Resultados sem grupo de comparação podem levar a decisões frágeis e investimentos superestimados.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Desenhos de pesquisa para avaliação de impacto</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Desenho</th>
+              <th>Quando usar</th>
+              <th>Vantagem</th>
+              <th>Limitação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A/B test organizacional</td>
+              <td>Dois fluxos comparáveis no mesmo período</td>
+              <td>Boa inferência causal</td>
+              <td>Nem sempre viável por restrições operacionais</td>
+            </tr>
+            <tr>
+              <td>Diferenças-em-diferenças</td>
+              <td>Antes/depois com grupo de controle</td>
+              <td>Controla tendências temporais comuns</td>
+              <td>Exige premissa de tendências paralelas</td>
+            </tr>
+            <tr>
+              <td>Séries temporais interrompidas</td>
+              <td>Intervenção em ponto conhecido do tempo</td>
+              <td>Boa leitura de ruptura de tendência</td>
+              <td>Sensível a eventos externos simultâneos</td>
+            </tr>
+            <tr>
+              <td>Estudo de caso múltiplo</td>
+              <td>Comparação entre unidades organizacionais</td>
+              <td>Riqueza contextual e insights de implementação</td>
+              <td>Menor generalização estatística</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratório de inferência causal em administração</h2>
+        <p class="mt-3 text-sm text-slate-600">Use este roteiro para transformar um piloto de IA em evidência defensável para diretoria e comitê de governança.</p>
+        <ol class="mt-4 space-y-3 text-sm text-slate-700">
+          <li><strong>1.</strong> Defina hipótese testável com efeito mínimo esperado (ex.: reduzir tempo de ciclo em 20%).</li>
+          <li><strong>2.</strong> Estabeleça baseline por pelo menos 4 semanas com consistência de coleta.</li>
+          <li><strong>3.</strong> Selecione grupo de comparação e variáveis de controle relevantes.</li>
+          <li><strong>4.</strong> Rode intervenção com protocolo de monitoramento diário.</li>
+          <li><strong>5.</strong> Analise efeito, intervalo de confiança e robustez para decisão de escala.</li>
+        </ol>
+
+        <div id="pratica-modulo7" class="prompt-box mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <p class="text-sm font-semibold text-slate-900">Prompt acadêmico para plano de pesquisa</p>
+            <button data-copy-target="prompt-mod7-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+          </div>
+          <pre id="prompt-mod7-01" class="text-xs text-slate-700">Atue como orientador de pesquisa em administração e IA. Construa um protocolo metodológico para avaliar o impacto da intervenção [descreva a intervenção] no processo [nome do processo].
+
+Estruture em:
+- Pergunta de pesquisa e hipótese
+- Desenho metodológico recomendado
+- Variáveis dependentes e independentes
+- Estratégia de coleta e qualidade dos dados
+- Riscos de viés e mitigação
+- Critérios para decisão de escala</pre>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Seminário crítico: limitações e fronteiras da evidência</h2>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Validade interna vs validade externa</h3>
+            <p class="mt-2 text-sm text-slate-600">Resultados robustos em uma unidade podem não replicar em outra. Documente explicitamente condições contextuais de sucesso.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Métrica proxy e efeito perverso</h3>
+            <p class="mt-2 text-sm text-slate-600">Otimizar um indicador isolado pode piorar desempenho global. Use cesta de métricas balanceada para evitar miopia gerencial.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Risco de automação performativa</h3>
+            <p class="mt-2 text-sm text-slate-600">Times podem adaptar comportamento para "agradar" o indicador. Audite qualidade real e não apenas números reportados.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Dependência de fornecedor</h3>
+            <p class="mt-2 text-sm text-slate-600">Avalie lock-in tecnológico e portabilidade de dados/modelos antes de escalar para processos críticos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano estendido do Módulo 7 (18h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Trilha de profundidade acadêmica para avaliação rigorosa de soluções de IA em contextos administrativos.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Seminário 1: fundamentos epistemológicos</h3>
+            <p class="mt-2 text-sm">Paradigmas de pesquisa, validade e construção de evidência em gestão.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 4h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Seminário 2: métodos quantitativos aplicados</h3>
+            <p class="mt-2 text-sm">A/B test, DiD, séries temporais e análise de robustez.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Seminário 3: laboratório de protocolo</h3>
+            <p class="mt-2 text-sm">Construção de protocolo completo para um caso real da organização.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Seminário 4: banca técnica</h3>
+            <p class="mt-2 text-sm">Defesa crítica de método, resultados esperados e limitações.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 4h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-violet-100 p-4 text-sm text-violet-900">
+          Entregável obrigatório: protocolo de pesquisa aplicada com hipótese, desenho metodológico, plano de coleta e critérios de decisão executiva.
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Modulo 7 em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de protocolo de analise causal e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para metodos avancados e inferencia, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para robustez metodologica, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Modulo 7.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de metodos avancados e inferencia. Faça um diagnostico rapido do processo [protocolo de analise causal] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [protocolo de analise causal] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [robustez metodologica] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts para análise avançada e causal</h2>
+          <p class="mt-2 text-sm text-slate-600">Use estes prompts para estruturar análises mais profundas, entender causas reais e evitar correlações enganosas.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Protocolo para análise causal (causa vs correlação)</p>
+                <button data-copy-target="prompt-mod7-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod7-01" class="text-xs text-slate-700">Observei correlação entre [variável A] e [variável B]. É causação ou apenas correlação?
+
+  CONTEXTO DO DADO:
+  - Período de observação: [X meses/anos]
+  - Número de observações: [X milhões/milhares?]
+  - Confiabilidade da coleta de dados: [alta/média/baixa - por quê?]
+  - Há valores faltantes ou outliers? [sim/não - quantos %?]
+
+  ANÁLISE DE CORRELAÇÃO:
+  - Correlação observada: [X %]
+  - Significância estatística: [p-value, confidence interval?]
+  - Relação está crescendo ou estável? [qual tendência?]
+
+  POSSÍVEIS EXPLICAÇÕES:
+  1. Causação direta: [A causa B diretamente?
+  2. Causação reversa: [B causa A?]
+  3. Variável confundidora: [existe outra variável C que causa A E B?]
+  4. Coincidência temporal: [ambas crescem em tempo similar mas independente?]
+  5. Autocorrelação: [ambas seguem uma tendência do tempo?]
+
+  TEST TO VALIDATE:
+  - Teste de exclusão: [remover A, B continua?]
+  - Teste temporal: [A precede B sempre?]
+  - Teste de mecanismo: [defenda logicamente o mecanismo causal]
+
+  CONCLUSÃO: É causação ou correlação enganosa? Confiança em %?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Estimar impacto REAL de uma intervenção (antes vs depois controlado)</p>
+                <button data-copy-target="prompt-mod7-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod7-02" class="text-xs text-slate-700">Implementamos [intervenção com IA] e vimos melhoria de [X%]. Quanto dessa melhoria é real vs por sorte?
+
+  DADOS DO ANTES:
+  - Métrica baseline: [valor]
+  - Desvio padrão (variabilidade): [valor]
+  - Estabilidade (aumentando/diminuindo/flat?): [descrever]
+
+  DADOS DO DEPOIS:
+  - Métrica pós-intervenção: [valor]
+  - Período de medição: [semanas/meses]
+  - Manteve a tendência anterior ou quebrou? [descrever]
+
+  ANÁLISE DO IMPACTO REAL:
+  1. Ganho observado: [X -Y =  Z%]
+  2. Ganho esperado por tendência: [se intervenção não existisse, qual seria o valor?]
+  3. Ganho real atribuível à intervenção: [Z - tendência = impacto real]
+  4. Significância estatística: [esse ganho é real ou pode ser sorte?]
+  5. Persistência: [3 meses depois, mantém o ganho?]
+
+  CENÁRIOS:
+  - Melhor caso: [qual seria impacto se mantiver ganho?]
+  - Pior caso: [qual seria se regredir à tendência?]
+  - Mais realista: [qual estimativa com conservadorismo?]
+
+  RECOMENDAÇÃO: Ganho é real? Investimento se justifica? Escalar?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Dossiê executivo com evidência de impacto causal</p>
+                <button data-copy-target="prompt-mod7-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod7-03" class="text-xs text-slate-700">Estruture um dossiê executivo com rigor causal (não apenas correlação):
+
+  SEÇÃO 1 - CONTEXTO (por quê fizemos):
+  - Problema original: [qual era o desafio?]
+  - Por que era importante resolver: [impacto negativo estimado]
+  - Objetivo da intervenção: [o que queríamos mudar?]
+
+  SEÇÃO 2 - MÉTODO (como sabemos que funcionou):
+  - Desenho da avaliação: [antes-depois? Com grupo controle? Quasi-experimental?]
+  - Período: [quanto tempo testamos?]
+  - Amostra: [quantos casos? Representativos?]
+  - Variáveis de controle: [quais fatores externos controlamos?]
+
+  SEÇÃO 3 - RESULTADOS (o que encontramos):
+  - Impacto estimado em %: [X%]
+  - Intervalo de confiança: [entre Y% e Z%]
+  - Significância estatística: [p <0.05? A que nível de certeza?]
+  - Comparação: [Vs benchmark, vs meta, vs setor?]
+
+  SEÇÃO 4 - LIMITAÇÕES (o que pode estar errado):
+  1. [Limitação 1 e como afeta interpretação]
+  2. [Limitação 2 e como afeta interpretação]
+  3. [Limitação 3 e como afeta interpretação]
+
+  SEÇÃO 5 - CONCLUSÃO (qual é nossa melhor estimativa):
+  - Impacto causal estimado: [X% com confiança Y%]
+  - Validade externa: [replicável em cenários similares?]
+  - Próximos passos: [qual é a evidência que falta?]
+
+  RECOMENDAÇÃO PARA BANCA: Ganho real? Suficiente para escalar? Que cuidados?</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,110 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box-header { fill: #2563eb; color: white; font-weight: bold; font-size: 14px; }
+      .box-content { fill: #f0f0f0; stroke: #2563eb; stroke-width: 2; }
+      .box-label { fill: #1e293b; font-size: 12px; }
+      .title { fill: #0f172a; font-size: 20px; font-weight: bold; }
+      .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .connector { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 5,5; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" class="title">Governança Corporativa de IA</text>
+
+  <!-- Layer 1: Executive -->
+  <g>
+    <rect x="50" y="80" width="700" height="70" rx="5" class="box-content"/>
+    <rect x="50" y="80" width="700" height="35" rx="5" class="box-header" style="fill: #1e40af;"/>
+    <text x="400" y="105" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 14px;">Camada Executiva: Comitê de IA</text>
+    <text x="400" y="135" text-anchor="middle" class="box-label">Aprovação de estratégia, orçamento e risco • Accountability final</text>
+  </g>
+
+  <!-- Layer 2: Governance -->
+  <g>
+    <line x1="80" y1="150" x2="80" y2="190" class="connector"/>
+    <line x1="720" y1="150" x2="720" y2="190" class="connector"/>
+    <line x1="80" y1="190" x2="720" y2="190" class="connector"/>
+    
+    <!-- Governance Office -->
+    <rect x="50" y="190" width="210" height="140" rx="5" class="box-content"/>
+    <rect x="50" y="190" width="210" height="35" class="box-header" style="fill: #7c3aed;"/>
+    <text x="155" y="215" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 12px;">Governança</text>
+    <text x="155" y="240" text-anchor="middle" class="box-label">Política de uso</text>
+    <text x="155" y="255" text-anchor="middle" class="box-label">Matriz de risco</text>
+    <text x="155" y="270" text-anchor="middle" class="box-label">Auditoria contínua</text>
+    <text x="155" y="285" text-anchor="middle" class="box-label">Conformidade regulatória</text>
+    <text x="155" y="305" text-anchor="middle" class="box-label">Trilha de decisão</text>
+
+    <!-- Operations -->
+    <rect x="295" y="190" width="210" height="140" rx="5" class="box-content"/>
+    <rect x="295" y="190" width="210" height="35" class="box-header" style="fill: #2563eb;"/>
+    <text x="400" y="215" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 12px;">Operações</text>
+    <text x="400" y="240" text-anchor="middle" class="box-label">Deployment de modelos</text>
+    <text x="400" y="255" text-anchor="middle" class="box-label">Monitoramento de performance</text>
+    <text x="400" y="270" text-anchor="middle" class="box-label">Gerenciamento de dados</text>
+    <text x="400" y="285" text-anchor="middle" class="box-label">Alertas de anomalia</text>
+    <text x="400" y="305" text-anchor="middle" class="box-label">Runbooks e padrões</text>
+
+    <!-- Innovation -->
+    <rect x="540" y="190" width="210" height="140" rx="5" class="box-content"/>
+    <rect x="540" y="190" width="210" height="35" class="box-header" style="fill: #059669;"/>
+    <text x="645" y="215" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 12px;">Inovação</text>
+    <text x="645" y="240" text-anchor="middle" class="box-label">Exploração de casos</text>
+    <text x="645" y="255" text-anchor="middle" class="box-label">Prototipagem ágil</text>
+    <text x="645" y="270" text-anchor="middle" class="box-label">Aprendizagem contínua</text>
+    <text x="645" y="285" text-anchor="middle" class="box-label">Comunidade de prática</text>
+    <text x="645" y="305" text-anchor="middle" class="box-label">Experimentação segura</text>
+  </g>
+
+  <!-- Layer 3: Functions -->
+  <g>
+    <line x1="155" y1="330" x2="155" y2="370" class="connector"/>
+    <line x1="400" y1="330" x2="400" y2="370" class="connector"/>
+    <line x1="645" y1="330" x2="645" y2="370" class="connector"/>
+
+    <!-- Data & Ethics -->
+    <rect x="50" y="370" width="210" height="120" rx="5" class="box-content"/>
+    <rect x="50" y="370" width="210" height="30" class="box-header" style="fill: #c026d3;"/>
+    <text x="155" y="390" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 11px;">Dados & Ética</text>
+    <text x="155" y="410" text-anchor="middle" class="box-label">Privacidade LGPD/GDPR</text>
+    <text x="155" y="425" text-anchor="middle" class="box-label">Viés algorítmico</text>
+    <text x="155" y="440" text-anchor="middle" class="box-label">Qualidade de dados</text>
+    <text x="155" y="455" text-anchor="middle" class="box-label">Explicabilidade</text>
+    <text x="155" y="470" text-anchor="middle" class="box-label">Transparência</text>
+
+    <!-- Risk & Security -->
+    <rect x="295" y="370" width="210" height="120" rx="5" class="box-content"/>
+    <rect x="295" y="370" width="210" height="30" class="box-header" style="fill: #dc2626;"/>
+    <text x="400" y="390" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 11px;">Risco & Segurança</text>
+    <text x="400" y="410" text-anchor="middle" class="box-label">Gestão de risco</text>
+    <text x="400" y="425" text-anchor="middle" class="box-label">Segurança de dados</text>
+    <text x="400" y="440" text-anchor="middle" class="box-label">Conformidade legal</text>
+    <text x="400" y="455" text-anchor="middle" class="box-label">Resposta a incidentes</text>
+    <text x="400" y="470" text-anchor="middle" class="box-label">Documentação</text>
+
+    <!-- Training & Adoption -->
+    <rect x="540" y="370" width="210" height="120" rx="5" class="box-content"/>
+    <rect x="540" y="370" width="210" height="30" class="box-header" style="fill: #0891b2;"/>
+    <text x="645" y="390" text-anchor="middle" style="fill: white; font-weight: bold; font-size: 11px;">Capacitação & Adoção</text>
+    <text x="645" y="410" text-anchor="middle" class="box-label">Treinamento de prompts</text>
+    <text x="645" y="425" text-anchor="middle" class="box-label">Mudança organizacional</text>
+    <text x="645" y="440" text-anchor="middle" class="box-label">Suporte pós-implementação</text>
+    <text x="645" y="455" text-anchor="middle" class="box-label">Engajamento de usuários</text>
+    <text x="645" y="470" text-anchor="middle" class="box-label">Feedback contínuo</text>
+  </g>
+
+  <!-- Feedback Loop -->
+  <g>
+    <path d="M 750 520 Q 780 350 750 150" class="arrow" stroke-width="2" stroke="#2563eb" fill="none" stroke-dasharray="5,5"/>
+    <text x="780" y="335" text-anchor="start" class="box-label" style="fill: #2563eb; font-weight: bold;">Ciclo de</text>
+    <text x="780" y="350" text-anchor="start" class="box-label" style="fill: #2563eb; font-weight: bold;">Melhoria</text>
+  </g>
+
+  <!-- Bottom Note -->
+  <text x="400" y="570" text-anchor="middle" class="box-label" style="font-style: italic; fill: #64748b;">Todos os níveis devem trabalhar de forma integrada com comunicação clara e responsabilidades bem definidas.</text>
+</svg>

@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capa | IA Aplicada à Administração</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0f6b84",
+            secondary: "#163b59",
+            soft: "#eef3f8"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="index" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="tech-hero editorial-hero relative overflow-hidden rounded-[2rem] px-8 py-14 text-white shadow-soft sm:px-12 print-break-avoid">
+        <div class="pointer-events-none absolute -left-10 -top-10 h-52 w-52 rounded-full bg-white/15 blur-2xl"></div>
+        <div class="pointer-events-none absolute bottom-0 right-0 h-56 w-56 rounded-full bg-cyan-300/20 blur-2xl"></div>
+
+        <div class="relative max-w-5xl">
+          <p class="editorial-kicker">Curso Profissional + Pós-graduação</p>
+          <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-5xl">Inteligência Artificial Aplicada à Administração</h1>
+          <p class="mt-4 max-w-3xl text-lg text-blue-50">
+            Formação aplicada para gestores e equipes administrativas que precisam implementar IA com método, governança e foco em resultado operacional.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="sumario.html" class="inline-flex items-center rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100">Começar</a>
+            <a href="sumario.html#trilhas" class="inline-flex items-center rounded-2xl border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Ver trilhas</a>
+            <a href="introducao.html" class="inline-flex items-center rounded-2xl border border-cyan-200/40 bg-cyan-100/10 px-5 py-3 text-sm font-semibold text-cyan-50 transition hover:bg-cyan-100/20">Ir para Introdução</a>
+            <a href="apendices.html" class="inline-flex items-center rounded-2xl border border-emerald-200/40 bg-emerald-100/10 px-5 py-3 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-100/20">Abrir Apêndices</a>
+          </div>
+
+          <div class="mt-9 editorial-meta">
+            <div class="editorial-pill">
+              <span class="label">Carga</span>
+              <span class="value">140 horas</span>
+              <p class="detail">Trilha base (84h) + premium de pós-graduação (56h)</p>
+            </div>
+            <div class="editorial-pill">
+              <span class="label">Formato</span>
+              <span class="value">Web + PDF</span>
+              <p class="detail">Fluxo de estudo híbrido, impressão e navegação online.</p>
+            </div>
+            <div class="editorial-pill">
+              <span class="label">Resultado</span>
+              <span class="value">Aplicação prática</span>
+              <p class="detail">Do diagnóstico ao rollout com governança e indicadores.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card dashboard-shell p-6 sm:p-7 print-break-avoid">
+        <div class="dashboard-header">
+          <div>
+            <p class="text-xs uppercase tracking-[0.16em] text-primary">Painel de aprendizagem</p>
+            <h2 class="mt-2 text-2xl font-bold">Seu cockpit da trilha Administração + AI</h2>
+            <p class="mt-2 text-sm text-slate-600" data-role="continue-label">Próxima recomendação: Introdução</p>
+          </div>
+          <a data-role="continue-link" href="introducao.html" class="dashboard-continue">Continuar em Introdução</a>
+        </div>
+
+        <div class="dashboard-grid mt-5">
+          <article class="dashboard-tile">
+            <p class="label">Status geral</p>
+            <p class="value" data-role="dashboard-progress-text">0 de 16 páginas já concluídas</p>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" data-role="dashboard-progress-fill" style="width: 0%"></div>
+            </div>
+          </article>
+          <article class="dashboard-tile">
+            <p class="label">Modo recomendado</p>
+            <p class="value">Leitura focada + execução em blocos curtos</p>
+          </article>
+          <article class="dashboard-tile">
+            <p class="label">Meta da semana</p>
+            <p class="value">Concluir 2 módulos e validar 1 caso real</p>
+          </article>
+        </div>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--cover print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/capa-800.webp" />
+            <img src="assets/images/heroes/capa-1600.webp" alt="Imagem de capa da apostila com contexto corporativo e tecnologia" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Capa oficial da apostila: união entre gestão, dados e inteligência aplicada para transformação administrativa.
+        </figcaption>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M8 8h8M8 16h6" stroke-linecap="round"/><rect x="5" y="4" width="14" height="16" rx="2"/></svg></span>
+          <div><h3>Roteiro completo</h3><p>Do fundamento à escala executiva.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 15l3-3 2 2 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Aplicação imediata</h3><p>Prompts e checklists prontos para uso.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Escala orientada</h3><p>Ganho com governança e evidência.</p></div>
+        </article>
+      </section>
+
+      <section class="grid gap-6 xl:grid-cols-[1.2fr_1fr]">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/learning-roadmap-didatico.svg" alt="Ilustracao didatica da jornada de aprendizado em IA com diagnostico, piloto, governanca e escala" loading="lazy" />
+          <figcaption>
+            Ilustracao autoral da trilha de evolucao: diagnosticar, testar, governar e escalar com seguranca.
+          </figcaption>
+        </figure>
+        <article class="surface-card p-6 sm:p-7 print-break-avoid">
+          <p class="text-xs uppercase tracking-[0.18em] text-primary">Guia rapido de alto desempenho</p>
+          <h2 class="mt-2 text-2xl font-bold">Como extrair valor real do curso</h2>
+          <ul class="mt-4 space-y-3 text-sm text-slate-700">
+            <li><strong>Estude por ciclos curtos:</strong> combine leitura, aplicacao e revisao no mesmo dia para consolidar conhecimento.</li>
+            <li><strong>Trabalhe com baseline:</strong> registre tempo, custo e erro antes do piloto para comprovar impacto.</li>
+            <li><strong>Valide com governanca:</strong> use checkpoints de risco, revisao humana e trilha de decisao.</li>
+            <li><strong>Escalone com criterio:</strong> replique primeiro em processos semelhantes antes de ampliar escopo.</li>
+          </ul>
+          <div class="mt-5 rounded-2xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
+            Resultado esperado em 30 dias: pelo menos um processo administrativo operando com IA e indicadores monitorados.
+          </div>
+        </article>
+      </section>
+
+      <section class="grid gap-5 lg:grid-cols-3">
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">Para quem é este ebook</h2>
+          <p class="mt-3 text-sm">Profissionais de administração, donos de negócio, analistas e equipes operacionais que desejam aplicar IA em rotinas reais sem depender de conhecimento técnico avançado.</p>
+        </article>
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">O que você vai dominar</h2>
+          <p class="mt-3 text-sm">Fundamentos de IA, aplicação em RH/Marketing/Financeiro/Operações, automação de tarefas, uso de ferramentas e estrutura de governança ética.</p>
+        </article>
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">Método de estudo</h2>
+          <p class="mt-3 text-sm">Leitura guiada com navegação sequencial, exercícios práticos, checklist de implementação e prompts copiáveis para usar no mesmo dia.</p>
+        </article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Pré-requisitos</h2>
+        <p class="mt-2 text-sm text-slate-600">O que você precisa para aproveitar ao máximo este curso.</p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="flex gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100 text-green-700">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-sm">Conhecimento básico de administração</p>
+              <p class="mt-1 text-sm text-slate-600">Familiaridade com processos empresariais e rotinas administrativas</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100 text-green-700">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-sm">Acesso à internet e computador</p>
+              <p class="mt-1 text-sm text-slate-600">Para testar ferramentas de IA e acessar plataformas mencionadas</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-sm">Inglês básico (opcional)</p>
+              <p class="mt-1 text-sm text-slate-600">Facilita o uso de algumas ferramentas, mas não é obrigatório</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-700">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-sm">Experiência em gestão (para trilha premium)</p>
+              <p class="mt-1 text-sm text-slate-600">Recomendado para aproveitar os módulos de pós-graduação</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Visão dos módulos e entregáveis</h2>
+        <p class="mt-2 text-sm text-slate-600">Uma amostra do que você vai aprender em cada módulo.</p>
+        <div class="mt-6 space-y-4">
+          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-primary">
+            <summary class="cursor-pointer font-semibold text-primary list-none flex items-center justify-between">
+              <span>Módulo 1: Fundamentos de IA</span>
+              <svg class="h-5 w-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <ul class="mt-3 ml-6 space-y-2 text-sm text-slate-700 list-disc">
+              <li>Diferença entre IA, Machine Learning e Deep Learning</li>
+              <li>História e evolução da inteligência artificial</li>
+              <li>Tipos de aprendizado: supervisionado, não supervisionado e por reforço</li>
+              <li>Vocabulário essencial para conversar com equipes técnicas</li>
+            </ul>
+          </details>
+          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-primary">
+            <summary class="cursor-pointer font-semibold text-primary list-none flex items-center justify-between">
+              <span>Módulo 2: IA em Recursos Humanos</span>
+              <svg class="h-5 w-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <ul class="mt-3 ml-6 space-y-2 text-sm text-slate-700 list-disc">
+              <li>Automação de triagem de currículos e recrutamento</li>
+              <li>Chatbots para onboarding e FAQ de colaboradores</li>
+              <li>Análise preditiva de turnover e engajamento</li>
+              <li>Ferramentas práticas: prompts para descrição de vagas e avaliação</li>
+            </ul>
+          </details>
+          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-primary">
+            <summary class="cursor-pointer font-semibold text-primary list-none flex items-center justify-between">
+              <span>Módulo 3: IA em Marketing e Vendas</span>
+              <svg class="h-5 w-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <ul class="mt-3 ml-6 space-y-2 text-sm text-slate-700 list-disc">
+              <li>Segmentação inteligente de clientes com clustering</li>
+              <li>Geração de conteúdo e copy com IA generativa</li>
+              <li>Previsão de churn e lifetime value (LTV)</li>
+              <li>Automação de campanhas e personalização em escala</li>
+            </ul>
+          </details>
+          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-primary">
+            <summary class="cursor-pointer font-semibold text-primary list-none flex items-center justify-between">
+              <span>Módulo 5: Ética, Privacidade e Governança</span>
+              <svg class="h-5 w-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <ul class="mt-3 ml-6 space-y-2 text-sm text-slate-700 list-disc">
+              <li>LGPD e compliance no uso de dados com IA</li>
+              <li>Viés algorítmico e como mitigar discriminação</li>
+              <li>Framework de governança para uso responsável</li>
+              <li>Auditoria e transparência em decisões automatizadas</li>
+            </ul>
+          </details>
+          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:border-primary">
+            <summary class="cursor-pointer font-semibold text-primary list-none flex items-center justify-between">
+              <span>Módulos 7 e 8: Pós-graduação Premium</span>
+              <svg class="h-5 w-5 transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <ul class="mt-3 ml-6 space-y-2 text-sm text-slate-700 list-disc">
+              <li>Inferência causal e modelagem avançada de impacto</li>
+              <li>Arquitetura corporativa de IA em larga escala</li>
+              <li>ROI e modelagem financeira de projetos de IA</li>
+              <li>Defesa de dossiê executivo em banca técnica</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Mapa de aprendizado</h2>
+        <p class="mt-2 text-sm text-slate-600">Siga esta sequência para transformar teoria em resultado operacional.</p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <p class="text-sm font-semibold text-primary">Fase 1: Entendimento</p>
+            <p class="mt-2 text-sm">Introdução + Módulo 1. Você aprende conceitos, vocabulário e diferencia IA, ML e Deep Learning sem jargão excessivo.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <p class="text-sm font-semibold text-primary">Fase 2: Aplicação</p>
+            <p class="mt-2 text-sm">Módulos 2, 3 e 4. Você aplica IA em áreas administrativas com exemplos reais e mini tutoriais orientados.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <p class="text-sm font-semibold text-primary">Fase 3: Governança</p>
+            <p class="mt-2 text-sm">Módulo 5. Você estrutura práticas de ética, privacidade e mitigação de risco para uso seguro de IA.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <p class="text-sm font-semibold text-primary">Fase 4: Execução</p>
+            <p class="mt-2 text-sm">Módulo 6, Exercícios, Checklist e Conclusão. Você valida ganhos e monta plano de implantação para os próximos 90 dias.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-4 md:col-span-2">
+            <p class="text-sm font-semibold text-primary">Fase 5: Pós-graduação e excelência executiva</p>
+            <p class="mt-2 text-sm">Módulo 7, Módulo 8 e Exercícios Avançados. Você entra em teoria avançada, inferência causal, arquitetura corporativa, modelagem financeira e defesa de escala em banca técnica.</p>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-2xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
+          Recomendação para lideranças e especialistas: avançar para a trilha premium ao buscar escala, governança robusta e defesa técnica de decisões.
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Simulador didatico de impacto inicial</h2>
+        <p class="mt-2 text-sm text-slate-600">Use os cenarios abaixo para definir prioridade de implantacao no seu contexto.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <p class="text-xs uppercase tracking-[0.14em] text-slate-500">Cenario 1</p>
+            <h3 class="mt-1 text-sm font-semibold">Backoffice financeiro</h3>
+            <p class="mt-2 text-sm text-slate-600">Automacao de conciliacao e classificacao documental com conferencias humanas por amostra.</p>
+            <p class="mt-3 text-xs font-medium text-primary">Meta didatica: reduzir retrabalho em 25%</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <p class="text-xs uppercase tracking-[0.14em] text-slate-500">Cenario 2</p>
+            <h3 class="mt-1 text-sm font-semibold">RH e atendimento interno</h3>
+            <p class="mt-2 text-sm text-slate-600">Triagem inicial de curriculos e respostas assistidas para duvidas recorrentes de colaboradores.</p>
+            <p class="mt-3 text-xs font-medium text-primary">Meta didatica: ganhar 8h semanais da equipe</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <p class="text-xs uppercase tracking-[0.14em] text-slate-500">Cenario 3</p>
+            <h3 class="mt-1 text-sm font-semibold">Operacoes e suprimentos</h3>
+            <p class="mt-2 text-sm text-slate-600">Previsao de demanda e alertas de ruptura para ajustar reposicao com base em historico.</p>
+            <p class="mt-3 text-xs font-medium text-primary">Meta didatica: reduzir faltas em 15%</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Distribuição oficial de carga horária (140h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Estrutura completa com jornada profissional e aprofundamento de pós-graduação para nível premium.</p>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Etapa</th>
+              <th>Foco</th>
+              <th>Carga horária</th>
+              <th>Entrega principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Introdução</td>
+              <td>Fundamentos e contexto de mercado</td>
+              <td>6h</td>
+              <td>Diagnóstico inicial de oportunidades</td>
+            </tr>
+            <tr>
+              <td>Módulos 1 a 3</td>
+              <td>Base técnica e aplicação por área</td>
+              <td>34h</td>
+              <td>Plano tático por processo administrativo</td>
+            </tr>
+            <tr>
+              <td>Módulos 4 a 6</td>
+              <td>Ferramentas, ética e casos reais</td>
+              <td>30h</td>
+              <td>Protótipo operacional com métricas</td>
+            </tr>
+            <tr>
+              <td>Exercícios + Checklist + Conclusão</td>
+              <td>Avaliação, implantação e consolidação</td>
+              <td>14h</td>
+              <td>Plano de implementação em 90 dias</td>
+            </tr>
+            <tr>
+              <td>Módulo 7 (Pós)</td>
+              <td>Seminário avançado de teoria e métodos</td>
+              <td>28h</td>
+              <td>Dossiê executivo com inferência causal</td>
+            </tr>
+            <tr>
+              <td>Módulo 8 (Pós)</td>
+              <td>Arquitetura corporativa e escala</td>
+              <td>28h</td>
+              <td>Defesa em banca técnica + plano de 12 meses</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Depoimentos e Casos de Sucesso</h2>
+        <p class="mt-2 text-sm text-slate-600">Veja como profissionais aplicaram o conhecimento na prática.</p>
+        <div class="mt-6 grid gap-5 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-cyan-50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white font-bold text-lg">MC</div>
+              <div class="flex-1">
+                <p class="text-sm italic text-slate-700">"Implementamos chatbot de RH em 30 dias e reduzimos 60% das perguntas repetitivas. O módulo de prompts foi essencial para treinar a equipe sem contratar consultoria externa."</p>
+                <p class="mt-3 text-sm font-semibold text-primary">Maria Clara Santos</p>
+                <p class="text-xs text-slate-600">Gerente de RH, Empresa de Logística (450 funcionários)</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-cyan-50 to-slate-50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary text-white font-bold text-lg">RA</div>
+              <div class="flex-1">
+                <p class="text-sm italic text-slate-700">"A trilha premium me preparou para defender um projeto de IA de R$ 2M na diretoria. O framework de ROI e governança foi decisivo para aprovação do budget."</p>
+                <p class="mt-3 text-sm font-semibold text-secondary">Roberto Almeida</p>
+                <p class="text-xs text-slate-600">Diretor de Operações, Indústria Farmacêutica</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-cyan-50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan-700 text-white font-bold text-lg">JF</div>
+              <div class="flex-1">
+                <p class="text-sm italic text-slate-700">"Automatizei análise de NPS e relatórios de marketing com IA. Ganho de 15h/semana que agora uso para estratégia. O checklist de implementação foi meu guia."</p>
+                <p class="mt-3 text-sm font-semibold text-cyan-800">Juliana Ferreira</p>
+                <p class="text-xs text-slate-600">Analista de Marketing, Startup de EdTech</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-indigo-50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-700 text-white font-bold text-lg">PS</div>
+              <div class="flex-1">
+                <p class="text-sm italic text-slate-700">"Como dono de PME, achei que IA era só para grandes empresas. Este curso me mostrou ferramentas acessíveis que já estão gerando resultado no financeiro e vendas."</p>
+                <p class="mt-3 text-sm font-semibold text-slate-800">Paulo Silva</p>
+                <p class="text-xs text-slate-600">Proprietário, Distribuidora Regional (35 funcionários)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <div class="flex items-start gap-6">
+          <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold">Certificação e Validação</h2>
+            <p class="mt-2 text-sm text-slate-600">Comprove seu conhecimento e destaque-se no mercado.</p>
+            <div class="mt-5 space-y-4">
+              <div class="flex gap-3">
+                <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm">Certificado de Conclusão (Trilha Base - 84h)</p>
+                  <p class="mt-1 text-sm text-slate-600">Emitido após completar todos os módulos 1-6, exercícios práticos e checklist de implementação. Válido como comprovante de capacitação profissional.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/10 text-secondary">
+                  <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm">Certificado Premium de Pós-graduação (140h)</p>
+                  <p class="mt-1 text-sm text-slate-600">Emitido após defesa de dossiê executivo em banca técnica, com aprovação de rigor metodológico. Inclui menção de excelência para notas acima de 9.0.</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-cyan-700">
+                  <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm">Badge Digital Verificável</p>
+                  <p class="mt-1 text-sm text-slate-600">Compartilhe no LinkedIn e portfólios profissionais. Inclui QR code para validação de autenticidade e link para verificação online.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 rounded-2xl border border-blue-200 bg-blue-50 p-4">
+              <p class="text-sm text-blue-900"><span class="font-semibold">Critérios de avaliação:</span> Exercícios práticos (40%), projeto de implementação (30%), defesa técnica - apenas premium (30%). Nota mínima para certificação: 7.0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-bold">Ferramentas que você vai usar</h2>
+            <p class="mt-2 text-sm text-slate-600">Seleção prática para produtividade administrativa, análise e automação em cenários reais.</p>
+          </div>
+          <span class="rounded-full bg-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700">Ambiente hi-tech de gestão</span>
+        </div>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 text-sm font-bold text-cyan-700">CG</span>
+              <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">Freemium</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">ChatGPT</h3>
+            <p class="mt-2 text-sm text-slate-600">Produção de relatórios, revisão de políticas e estruturação de análises executivas.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-200 text-sm font-bold text-slate-700">CL</span>
+              <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">Freemium</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">Claude</h3>
+            <p class="mt-2 text-sm text-slate-600">Excelente para análise de documentos longos, síntese crítica e planejamento estratégico.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sm font-bold text-sky-700">GM</span>
+              <span class="rounded-full bg-cyan-100 px-2 py-1 text-xs font-semibold text-cyan-700">Gratuito</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">Gemini</h3>
+            <p class="mt-2 text-sm text-slate-600">Apoio rápido para pesquisas, ideação de processos e criação de materiais internos.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-sm font-bold text-indigo-700">MJ</span>
+              <span class="rounded-full bg-slate-200 px-2 py-1 text-xs font-semibold text-slate-700">Pago</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">Midjourney</h3>
+            <p class="mt-2 text-sm text-slate-600">Criação visual para apresentações, campanhas e comunicação corporativa de alto impacto.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-100 text-sm font-bold text-cyan-700">PX</span>
+              <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">Freemium</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">Perplexity</h3>
+            <p class="mt-2 text-sm text-slate-600">Pesquisa com foco em referências e apoio para benchmark de mercado com rastreabilidade.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-sm font-bold text-indigo-700">CP</span>
+              <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">Freemium</span>
+            </div>
+            <h3 class="mt-3 text-base font-semibold">Copilot</h3>
+            <p class="mt-2 text-sm text-slate-600">Automação de scripts, planilhas e integrações para times com demandas técnicas leves.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Comparativo de trilhas: Base vs Premium</h2>
+        <p class="mt-2 text-sm text-slate-600">Escolha o nível que melhor se ajusta ao seu objetivo profissional atual.</p>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Recurso</th>
+              <th>Trilha Base (84h)</th>
+              <th class="bg-cyan-50 text-cyan-900">Trilha Premium (140h)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Módulos incluídos</td>
+              <td>Introdução + Módulos 1 a 6</td>
+              <td class="bg-cyan-50/70">Introdução + Módulos 1 a 8 + trilha avançada</td>
+            </tr>
+            <tr>
+              <td>Exercícios</td>
+              <td>Objetivas, estudos de caso e labs base</td>
+              <td class="bg-cyan-50/70">Tudo da base + exercícios avançados e capstones</td>
+            </tr>
+            <tr>
+              <td>Certificação</td>
+              <td>Certificado profissional de conclusão</td>
+              <td class="bg-cyan-50/70">Certificado premium com menção de banca técnica</td>
+            </tr>
+            <tr>
+              <td>Suporte de estudo</td>
+              <td>Guias, prompts e checklist de implementação</td>
+              <td class="bg-cyan-50/70">Guias + trilha metodológica + mentoria de defesa</td>
+            </tr>
+            <tr>
+              <td>Banca técnica</td>
+              <td>Não incluída</td>
+              <td class="bg-cyan-50/70">Incluída com rubrica de rigor acadêmico</td>
+            </tr>
+            <tr>
+              <td>Projeto final</td>
+              <td>Plano de implementação em 90 dias</td>
+              <td class="bg-cyan-50/70">Dossiê executivo de escala em 12 meses</td>
+            </tr>
+            <tr>
+              <td>Investimento sugerido*</td>
+              <td>Entrada recomendada para aplicação prática rápida</td>
+              <td class="bg-cyan-50/70">Faixa premium para formação com profundidade de pós-graduação</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-3 text-xs text-slate-500">*Valores podem variar conforme o formato de oferta e acompanhamento escolhido.</p>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Cronogramas sugeridos</h2>
+        <p class="mt-2 text-sm text-slate-600">Três possibilidades para organizar sua agenda sem perder consistência.</p>
+        <div class="mt-6 grid gap-4 lg:grid-cols-3">
+          <article class="rounded-2xl border border-slate-300 bg-slate-100 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-slate-900">Intensivo</h3>
+              <span class="rounded-full bg-slate-200 px-2 py-1 text-xs font-semibold text-slate-700">4 semanas</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-800">35h/semana</p>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-700">
+              <li>Semana 1: Fundamentos + aplicações base (35h)</li>
+              <li>Semana 2: Ferramentas + governança (35h)</li>
+              <li>Semana 3: Casos e exercícios avançados (35h)</li>
+              <li>Semana 4: Capstone + banca simulada (35h)</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-cyan-200 bg-cyan-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-cyan-900">Equilibrado</h3>
+              <span class="rounded-full bg-cyan-200 px-2 py-1 text-xs font-semibold text-cyan-800">3 meses</span>
+            </div>
+            <p class="mt-2 text-sm text-cyan-900/90">12h/semana</p>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-cyan-900/80">
+              <li>Mês 1: Introdução + Módulos 1 a 3</li>
+              <li>Mês 2: Módulos 4 a 6 + exercícios base</li>
+              <li>Mês 3: Módulos 7 e 8 + exercícios avançados</li>
+              <li>Fechamento: dossiê final e apresentação</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-indigo-200 bg-indigo-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-indigo-900">Flexível</h3>
+              <span class="rounded-full bg-indigo-200 px-2 py-1 text-xs font-semibold text-indigo-800">6 meses</span>
+            </div>
+            <p class="mt-2 text-sm text-indigo-900/90">6h/semana</p>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-indigo-900/80">
+              <li>Meses 1-2: Base conceitual e aplicações</li>
+              <li>Meses 3-4: Ferramentas, ética e implementação</li>
+              <li>Mês 5: Trilha avançada e laboratório executivo</li>
+              <li>Mês 6: Capstone, revisão e certificação</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">FAQ - Perguntas frequentes</h2>
+        <div class="mt-5 space-y-3">
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Quanto tempo levo para concluir?</summary>
+            <p class="mt-2 text-sm text-slate-600">Depende da trilha: base em ~10 semanas e premium em ~16 semanas no ritmo recomendado.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Preciso saber programar?</summary>
+            <p class="mt-2 text-sm text-slate-600">Não. A trilha foi estruturada para gestores e analistas sem foco em desenvolvimento de software.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">As ferramentas de IA são pagas?</summary>
+            <p class="mt-2 text-sm text-slate-600">Você consegue começar com ferramentas gratuitas e freemium. Recursos avançados podem exigir plano pago.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Posso fazer apenas a trilha base?</summary>
+            <p class="mt-2 text-sm text-slate-600">Sim. A trilha base já entrega aplicação real em administração. A premium aprofunda método e escala executiva.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Como funciona a banca técnica?</summary>
+            <p class="mt-2 text-sm text-slate-600">Na trilha premium, o aluno apresenta dossiê executivo com método, evidência e viabilidade para avaliação por rubrica.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Tenho suporte durante o curso?</summary>
+            <p class="mt-2 text-sm text-slate-600">O material inclui guias detalhados, prompts e checklists. No formato premium, há suporte estruturado para defesa final.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">O certificado é reconhecido?</summary>
+            <p class="mt-2 text-sm text-slate-600">O certificado comprova carga horária e competências desenvolvidas para aplicação profissional em IA administrativa.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Posso parcelar o investimento?</summary>
+            <p class="mt-2 text-sm text-slate-600">As condições dependem do modelo comercial adotado na oferta. A recomendação é escolher a trilha alinhada ao seu momento.</p>
+          </details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <summary class="cursor-pointer text-sm font-semibold">Qual trilha é ideal para lideranças?</summary>
+            <p class="mt-2 text-sm text-slate-600">Para lideranças e especialistas com foco em escala e governança, a trilha premium tende a gerar maior retorno.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Estatísticas de impacto</h2>
+        <p class="mt-2 text-sm text-slate-600">Indicadores de referência da metodologia aplicada em contextos administrativos.</p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+            <p class="text-3xl font-extrabold text-primary">+5.000</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">Profissionais capacitados</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+            <p class="text-3xl font-extrabold text-primary">87%</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">Implementaram IA em 30 dias</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+            <p class="text-3xl font-extrabold text-primary">12h</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">Economia média por semana</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+            <p class="text-3xl font-extrabold text-primary">4.8/5.0</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">Avaliação média</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+            <p class="text-3xl font-extrabold text-primary">92%</p>
+            <p class="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">Taxa de conclusão</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Glossário rápido de termos</h2>
+        <p class="mt-2 text-sm text-slate-600">Termos essenciais para leitura fluida dos módulos e discussões técnicas.</p>
+        <div class="mt-6 grid gap-x-6 gap-y-4 md:grid-cols-2 xl:grid-cols-3">
+          <p class="text-sm"><strong>IA:</strong> sistemas que simulam capacidades cognitivas em tarefas específicas.</p>
+          <p class="text-sm"><strong>ML:</strong> técnicas que aprendem padrões a partir de dados históricos.</p>
+          <p class="text-sm"><strong>Deep Learning:</strong> redes neurais profundas para problemas de alta complexidade.</p>
+          <p class="text-sm"><strong>NLP:</strong> processamento de linguagem natural para texto e voz.</p>
+          <p class="text-sm"><strong>LLM:</strong> modelo de linguagem de grande escala para geração e análise textual.</p>
+          <p class="text-sm"><strong>Prompt:</strong> instrução estruturada para orientar resposta do modelo.</p>
+          <p class="text-sm"><strong>Fine-tuning:</strong> ajuste especializado de modelo com dados de domínio.</p>
+          <p class="text-sm"><strong>RAG:</strong> geração com recuperação de contexto documental confiável.</p>
+          <p class="text-sm"><strong>Embedding:</strong> representação vetorial semântica de textos e objetos.</p>
+          <p class="text-sm"><strong>Hallucination:</strong> resposta incorreta gerada com alta confiança aparente.</p>
+          <p class="text-sm"><strong>MLOps:</strong> práticas de operação, monitoramento e versionamento de modelos.</p>
+          <p class="text-sm"><strong>Drift:</strong> mudança do padrão de dados que reduz desempenho do sistema.</p>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts prontos organizados por área funcional para acelerar execução.</p>
+
+        <div class="mt-6 flex flex-wrap gap-2" role="tablist" aria-label="Categorias de prompts">
+          <button type="button" data-prompt-tab="rh" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">RH</button>
+          <button type="button" data-prompt-tab="marketing" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Marketing</button>
+          <button type="button" data-prompt-tab="financeiro" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Financeiro</button>
+          <button type="button" data-prompt-tab="operacoes" class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Operações</button>
+        </div>
+
+        <div class="mt-6 space-y-4" data-prompt-panel="rh">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">RH 1: Triagem inicial de currículos</p>
+              <button data-copy-target="prompt-rh-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-rh-01" class="text-xs text-slate-700">Atue como analista de recrutamento. Classifique os currículos abaixo por aderência à vaga [cargo], usando critérios: experiência, competências técnicas, competências comportamentais e potencial de desenvolvimento. Gere ranking com justificativa objetiva.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">RH 2: Plano de onboarding de 30 dias</p>
+              <button data-copy-target="prompt-rh-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-rh-02" class="text-xs text-slate-700">Crie um plano de onboarding de 30 dias para o cargo [cargo], com trilha semanal, metas, indicadores de adaptação e checkpoints com gestor. Entregue em formato de tabela com responsáveis e prazos.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">RH 3: Diagnóstico de risco de turnover</p>
+              <button data-copy-target="prompt-rh-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-rh-03" class="text-xs text-slate-700">Com base nos indicadores abaixo, identifique fatores de risco de turnover por equipe e proponha 5 ações de retenção priorizadas por impacto e custo de implementação.</pre>
+          </div>
+        </div>
+
+        <div class="mt-6 hidden space-y-4" data-prompt-panel="marketing">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Marketing 1: Plano de campanha multicanal</p>
+              <button data-copy-target="prompt-mkt-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-mkt-01" class="text-xs text-slate-700">Atue como estrategista de marketing B2B. Monte plano de campanha para [produto], com segmentação, proposta de valor por persona, cronograma de conteúdo e KPI por etapa do funil.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Marketing 2: Análise de performance de mídia</p>
+              <button data-copy-target="prompt-mkt-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-mkt-02" class="text-xs text-slate-700">Analise os dados de mídia pagos abaixo e indique: campanhas de maior ROI, desperdícios, hipóteses de melhoria e plano de otimização para os próximos 14 dias.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Marketing 3: Calendário editorial com IA</p>
+              <button data-copy-target="prompt-mkt-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-mkt-03" class="text-xs text-slate-700">Crie calendário editorial de 4 semanas para [segmento], com temas por estágio do funil, formato do conteúdo, CTA e métrica de sucesso por publicação.</pre>
+          </div>
+        </div>
+
+        <div class="mt-6 hidden space-y-4" data-prompt-panel="financeiro">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Financeiro 1: Diagnóstico de inconsistências</p>
+              <button data-copy-target="prompt-fin-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-fin-01" class="text-xs text-slate-700">Analise os lançamentos abaixo e sinalize possíveis inconsistências por categoria, impacto financeiro e risco de compliance. Entregue com plano de ação corretiva.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Financeiro 2: Projeção de fluxo de caixa</p>
+              <button data-copy-target="prompt-fin-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-fin-02" class="text-xs text-slate-700">Com base nos dados de receitas, custos fixos e variáveis, projete fluxo de caixa para 12 semanas em cenários pessimista, base e otimista. Inclua gatilhos de mitigação.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Financeiro 3: Priorização de redução de custos</p>
+              <button data-copy-target="prompt-fin-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-fin-03" class="text-xs text-slate-700">Liste oportunidades de redução de custos com IA em processos financeiros, ranqueando por viabilidade, prazo de implementação e impacto estimado no resultado anual.</pre>
+          </div>
+        </div>
+
+        <div class="mt-6 hidden space-y-4" data-prompt-panel="operacoes">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Operações 1: Priorização de chamados</p>
+              <button data-copy-target="prompt-ops-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-ops-01" class="text-xs text-slate-700">Classifique os chamados operacionais por urgência, impacto em SLA e criticidade para o cliente. Sugira ordem de atendimento e critérios de escalonamento.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Operações 2: Otimização de processo interno</p>
+              <button data-copy-target="prompt-ops-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-ops-02" class="text-xs text-slate-700">Mapeie o processo [nome] em etapas, identifique gargalos e proponha desenho futuro com automação assistida por IA, estimando ganho de tempo por etapa.</pre>
+          </div>
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Operações 3: Plano de melhoria contínua</p>
+              <button data-copy-target="prompt-ops-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar</button>
+            </div>
+            <pre id="prompt-ops-03" class="text-xs text-slate-700">Monte plano de melhoria contínua com IA para 90 dias, incluindo metas quinzenais, indicadores de controle e plano de contingência para falhas operacionais.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Quiz de diagnóstico</h2>
+        <p class="mt-2 text-sm text-slate-600">Descubra seu nível de conhecimento em IA e a trilha mais indicada para você.</p>
+
+        <form id="quiz-form" class="mt-6 space-y-4">
+          <fieldset class="rounded-2xl border border-slate-200 p-4">
+            <legend class="px-1 text-sm font-semibold">1) Qual seu nível de experiência com IA no trabalho?</legend>
+            <label class="mt-2 block text-sm"><input class="mr-2" type="radio" name="q1" value="1" />Nunca usei de forma estruturada</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q1" value="2" />Uso ocasionalmente para tarefas pontuais</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q1" value="3" />Já conduzo iniciativas com indicadores</label>
+          </fieldset>
+
+          <fieldset class="rounded-2xl border border-slate-200 p-4">
+            <legend class="px-1 text-sm font-semibold">2) Você já mediu impacto financeiro de uma automação?</legend>
+            <label class="mt-2 block text-sm"><input class="mr-2" type="radio" name="q2" value="1" />Ainda não</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q2" value="2" />De forma básica</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q2" value="3" />Com metodologia e cenário de risco</label>
+          </fieldset>
+
+          <fieldset class="rounded-2xl border border-slate-200 p-4">
+            <legend class="px-1 text-sm font-semibold">3) Sua empresa possui política formal de IA?</legend>
+            <label class="mt-2 block text-sm"><input class="mr-2" type="radio" name="q3" value="1" />Não possui</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q3" value="2" />Possui diretrizes iniciais</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q3" value="3" />Possui governança com trilha de auditoria</label>
+          </fieldset>
+
+          <fieldset class="rounded-2xl border border-slate-200 p-4">
+            <legend class="px-1 text-sm font-semibold">4) Qual seu objetivo principal com este curso?</legend>
+            <label class="mt-2 block text-sm"><input class="mr-2" type="radio" name="q4" value="1" />Entender fundamentos e aplicar no dia a dia</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q4" value="2" />Implementar melhorias com metas de desempenho</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q4" value="3" />Liderar escala com rigor técnico e executivo</label>
+          </fieldset>
+
+          <fieldset class="rounded-2xl border border-slate-200 p-4">
+            <legend class="px-1 text-sm font-semibold">5) Qual nível de profundidade você busca?</legend>
+            <label class="mt-2 block text-sm"><input class="mr-2" type="radio" name="q5" value="1" />Aplicação prática essencial</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q5" value="2" />Aplicação + governança robusta</label>
+            <label class="mt-1 block text-sm"><input class="mr-2" type="radio" name="q5" value="3" />Padrão de pós-graduação e banca técnica</label>
+          </fieldset>
+
+          <button id="quiz-submit" type="button" class="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">Ver resultado</button>
+        </form>
+
+        <div id="quiz-result" class="mt-5 hidden rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <p class="text-sm text-slate-600">Resultado do diagnóstico</p>
+          <p id="quiz-level" class="mt-1 text-xl font-bold text-primary"></p>
+          <p id="quiz-recommendation" class="mt-2 text-sm text-slate-700"></p>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Calculadora de ROI</h2>
+        <p class="mt-2 text-sm text-slate-600">Estime rapidamente o potencial de economia anual com automação assistida por IA.</p>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <label class="text-sm font-medium text-slate-700">Número de funcionários
+            <input id="roi-employees" type="number" min="1" value="20" class="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm" />
+          </label>
+          <label class="text-sm font-medium text-slate-700">Horas gastas em tarefas repetitivas/semana
+            <input id="roi-hours" type="number" min="1" value="6" class="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm" />
+          </label>
+          <label class="text-sm font-medium text-slate-700">Custo médio hora/funcionário (R$)
+            <input id="roi-hourly-cost" type="number" min="1" value="55" class="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm" />
+          </label>
+          <label class="text-sm font-medium text-slate-700">Processos a automatizar
+            <input id="roi-processes" type="number" min="1" value="4" class="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm" />
+          </label>
+        </div>
+
+        <button id="roi-calc-btn" type="button" class="mt-5 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">Calcular economia</button>
+
+        <div id="roi-result" class="mt-5 hidden rounded-2xl border border-emerald-200 bg-emerald-50 p-4">
+          <p class="text-sm text-emerald-900">Resultado estimado</p>
+          <p id="roi-annual-savings" class="mt-1 text-2xl font-bold text-emerald-800"></p>
+          <p id="roi-hours-saved" class="mt-1 text-sm text-emerald-900"></p>
+          <p id="roi-monthly-savings" class="mt-1 text-sm text-emerald-900"></p>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Recursos complementares</h2>
+        <p class="mt-2 text-sm text-slate-600">Materiais extras para aprofundar repertório técnico e estratégico.</p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">Blog e artigos recomendados</h3>
+            <p class="mt-2 text-sm text-slate-600">Tendências e pesquisas aplicadas à transformação com IA.</p>
+          </a>
+          <a href="https://www.youtube.com/results?search_query=ai+for+business+webinar" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">Vídeos e webinars</h3>
+            <p class="mt-2 text-sm text-slate-600">Aulas e debates de mercado para atualização contínua.</p>
+          </a>
+          <a href="https://discord.com" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">Comunidade e networking</h3>
+            <p class="mt-2 text-sm text-slate-600">Troca de experiências com profissionais e grupos de estudo.</p>
+          </a>
+          <a href="https://www.linkedin.com/newsletters/" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">Newsletter curada</h3>
+            <p class="mt-2 text-sm text-slate-600">Resumo semanal com ferramentas, frameworks e cases.</p>
+          </a>
+          <a href="https://open.spotify.com/search/AI%20business%20podcast" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">Podcast sobre IA</h3>
+            <p class="mt-2 text-sm text-slate-600">Conteúdo em áudio para manter ritmo de aprendizado.</p>
+          </a>
+          <a href="https://github.com/topics/ai-automation" target="_blank" rel="noopener" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
+            <h3 class="text-sm font-semibold">GitHub com templates</h3>
+            <p class="mt-2 text-sm text-slate-600">Modelos e exemplos para automação e experimentação.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Profissionais dessas empresas já fizeram o curso</h2>
+        <p class="mt-2 text-sm text-slate-600">Empresas Fortune 500, startups e PMEs confiam neste conteúdo.</p>
+        <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">NEXA GROUP</div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">ALFA BANK</div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">VORTEX LOG</div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">ORBIT TECH</div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">PRIME HEALTH</div>
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center text-sm font-semibold tracking-wide text-slate-500 grayscale">DELTA RETAIL</div>
+        </div>
+        <p class="mt-3 text-xs text-slate-500">Logos ilustrativos para representação visual de social proof.</p>
+      </section>
+
+      <section class="rounded-2xl border border-cyan-200 bg-gradient-to-br from-cyan-50 to-slate-100 p-6 sm:p-8 shadow-soft print-break-avoid">
+        <h2 class="text-2xl font-bold text-cyan-900">Garantia e política</h2>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <div class="rounded-xl border border-cyan-200 bg-white/70 p-4">
+            <p class="text-sm font-semibold text-cyan-900">30 dias de garantia</p>
+            <p class="mt-1 text-sm text-cyan-900/80">Período recomendado para validar aderência da metodologia ao seu contexto.</p>
+          </div>
+          <div class="rounded-xl border border-cyan-200 bg-white/70 p-4">
+            <p class="text-sm font-semibold text-cyan-900">Acesso vitalício ao conteúdo</p>
+            <p class="mt-1 text-sm text-cyan-900/80">Revisite módulos, prompts e materiais sempre que necessário.</p>
+          </div>
+          <div class="rounded-xl border border-cyan-200 bg-white/70 p-4">
+            <p class="text-sm font-semibold text-cyan-900">Atualizações gratuitas</p>
+            <p class="mt-1 text-sm text-cyan-900/80">Novos frameworks e boas práticas podem ser incorporados sem custo adicional.</p>
+          </div>
+          <div class="rounded-xl border border-cyan-200 bg-white/70 p-4">
+            <p class="text-sm font-semibold text-cyan-900">Suporte por email</p>
+            <p class="mt-1 text-sm text-cyan-900/80">Canal recomendado para dúvidas de aplicação e direcionamento da trilha.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-cta rounded-[2rem] p-8 text-white shadow-soft print-break-avoid">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold">Pronto para transformar sua carreira com IA?</h2>
+          <p class="mt-4 text-lg text-blue-50">Comece agora sua jornada de 140 horas e torne-se referência em IA aplicada à administração.</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="sumario.html" class="inline-flex items-center rounded-2xl bg-white px-6 py-3 font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100">Ver Sumário Completo</a>
+            <a href="introducao.html" class="inline-flex items-center rounded-2xl border-2 border-white px-6 py-3 font-semibold text-white transition hover:bg-white/10">Começar Agora</a>
+          </div>
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Capa em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de priorizacao de casos de uso e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para estrategia inicial de IA corporativa, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para tempo para gerar valor, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Capa.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de estrategia inicial de IA corporativa. Faça um diagnostico rapido do processo [priorizacao de casos de uso] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [priorizacao de casos de uso] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [tempo para gerar valor] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+      </section>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts prontos para começar hoje</h2>
+          <p class="mt-2 text-sm text-slate-600">Copie e adapte para sua realidade. Pressione o botão para copiar direto para a área de transferência.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Listar os 3 processos administrativos com maior impacto para automação</p>
+                <button data-copy-target="prompt-index-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-index-01" class="text-xs text-slate-700">Com base no contexto abaixo, liste os 3 processos administrativos com maior potencial de ganho com IA, classificando por: 1) impacto direto em tempo/custo, 2) disponibilidade de dados iniciais, 3) tempo até resultado (30-60-90 dias), 4) risco operacional.
+
+  Contexto:
+  - Setor: [seu setor]
+  - Tamanho da operação: [X colaboradores]
+  - Processos atuais: [principais fluxos administrativos]
+  - Dores principais: [maior desafio hoje]
+
+  Para cada processo, forneça recomendação de ferramenta inicial (ChatGPT, Claude ou Gemini) e risco de falha esperado.</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Desenhar piloto de 30 dias com métrica e critério de sucesso</p>
+                <button data-copy-target="prompt-index-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-index-02" class="text-xs text-slate-700">Desenhe um piloto de 30 dias para automação de [processo escolhido] com IA incluindo:
+  1. Fluxo AS-IS (como funciona hoje)
+  2. Fluxo TO-BE (como funcionará com IA)
+  3. Dados necessários e qualidade esperada
+  4. Checkpoint semanal para monitoramento
+  5. Critério de parada (quando pausar o piloto)
+  6. Métrica de sucesso (redução de tempo %, taxa de erro %, economia R$)
+  7. Plano de comunicação para equipe
+
+  Contexto do processo:
+  - Volume mensal: [X transações]
+  - Tempo atual por unidade: [X minutos]
+  - Taxa de retrabalho: [X%]
+  - Equipe envolvida: [tamanho e perfil]</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Roteiro de escala de 90-180 dias após validação do piloto</p>
+                <button data-copy-target="prompt-index-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-index-03" class="text-xs text-slate-700">Após validar o piloto com sucesso, monte um roadmap de escala para 90-180 dias incluindo:
+  1. Segunda e terceira áreas para automação (RH, Financeiro, Operações)
+  2. Timeline de rollout com dependências
+  3. Replanejamento de equipe (redução de horas manuais, reskilling necessário)
+  4. Centro de excelência em IA para governa a uso corporativo
+  5. Investimento estimado em ferramentas e gente vs economias proyectadas
+  6. Definição de "Comitê de IA" com responsáveis por aprovação, risco e inovação
+
+  Dados de entrada:
+  - Pilotos validados até agora: [processos já testados]
+  - Ganho agregado alcançado: [economias totalizadas]
+  - Equipes atuais disponíveis: [disposição/capacidade]
+  - Orçamento disponível: [R$ ou range]</pre>
+            </div>
+          </div>
+        </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+  <script>
+    function initPromptTabs() {
+      const buttons = Array.from(document.querySelectorAll("[data-prompt-tab]"));
+      const panels = Array.from(document.querySelectorAll("[data-prompt-panel]"));
+      if (!buttons.length || !panels.length) {
+        return;
+      }
+
+      const activateTab = (target) => {
+        buttons.forEach((button) => {
+          const isActive = button.dataset.promptTab === target;
+          button.classList.toggle("bg-primary", isActive);
+          button.classList.toggle("text-white", isActive);
+          button.classList.toggle("border-primary", isActive);
+          button.classList.toggle("bg-white", !isActive);
+          button.classList.toggle("text-slate-700", !isActive);
+          button.classList.toggle("border-slate-200", !isActive);
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.toggle("hidden", panel.dataset.promptPanel !== target);
+        });
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => activateTab(button.dataset.promptTab));
+      });
+
+      activateTab(buttons[0].dataset.promptTab);
+    }
+
+    function initQuiz() {
+      const submitButton = document.getElementById("quiz-submit");
+      const resultContainer = document.getElementById("quiz-result");
+      const levelElement = document.getElementById("quiz-level");
+      const recommendationElement = document.getElementById("quiz-recommendation");
+      if (!submitButton || !resultContainer || !levelElement || !recommendationElement) {
+        return;
+      }
+
+      submitButton.addEventListener("click", () => {
+        const questions = ["q1", "q2", "q3", "q4", "q5"];
+        let score = 0;
+
+        for (const question of questions) {
+          const checked = document.querySelector(`input[name="${question}"]:checked`);
+          if (!checked) {
+            resultContainer.classList.remove("hidden");
+            levelElement.textContent = "Preencha todas as perguntas";
+            recommendationElement.textContent = "Responda as 5 perguntas para receber um diagnóstico completo.";
+            return;
+          }
+          score += Number(checked.value);
+        }
+
+        let level = "Iniciante";
+        let recommendation = "Recomendação: inicie pela Trilha Base (84h) com foco em fundamentos, aplicação prática e rotina operacional.";
+
+        if (score >= 8 && score <= 11) {
+          level = "Intermediário";
+          recommendation = "Recomendação: conclua a Trilha Base e avance para os Módulos 7 e 8 para consolidar método e governança.";
+        } else if (score >= 12) {
+          level = "Avançado";
+          recommendation = "Recomendação: seguir direto na Trilha Premium (140h), com foco em escala executiva e defesa em banca técnica.";
+        }
+
+        resultContainer.classList.remove("hidden");
+        levelElement.textContent = `${level} (pontuação: ${score}/15)`;
+        recommendationElement.textContent = recommendation;
+      });
+    }
+
+    function initRoiCalculator() {
+      const calcButton = document.getElementById("roi-calc-btn");
+      const resultContainer = document.getElementById("roi-result");
+      const annualSavings = document.getElementById("roi-annual-savings");
+      const hoursSaved = document.getElementById("roi-hours-saved");
+      const monthlySavings = document.getElementById("roi-monthly-savings");
+
+      if (!calcButton || !resultContainer || !annualSavings || !hoursSaved || !monthlySavings) {
+        return;
+      }
+
+      calcButton.addEventListener("click", () => {
+        const employees = Number(document.getElementById("roi-employees")?.value || 0);
+        const repetitiveHours = Number(document.getElementById("roi-hours")?.value || 0);
+        const hourlyCost = Number(document.getElementById("roi-hourly-cost")?.value || 0);
+        const processes = Number(document.getElementById("roi-processes")?.value || 0);
+
+        if (employees <= 0 || repetitiveHours <= 0 || hourlyCost <= 0 || processes <= 0) {
+          resultContainer.classList.remove("hidden");
+          annualSavings.textContent = "Dados inválidos";
+          hoursSaved.textContent = "Preencha todos os campos com valores positivos.";
+          monthlySavings.textContent = "";
+          return;
+        }
+
+        const automationFactor = Math.min(0.12 + processes * 0.05, 0.72);
+        const annualHoursSaved = employees * repetitiveHours * 52 * automationFactor;
+        const annualValue = annualHoursSaved * hourlyCost;
+        const monthlyValue = annualValue / 12;
+
+        const currencyFormat = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+        const integerFormat = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 0 });
+
+        resultContainer.classList.remove("hidden");
+        annualSavings.textContent = `${currencyFormat.format(annualValue)} / ano`;
+        hoursSaved.textContent = `Horas estimadas economizadas por ano: ${integerFormat.format(annualHoursSaved)}h`;
+        monthlySavings.textContent = `Economia média mensal projetada: ${currencyFormat.format(monthlyValue)}.`;
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initPromptTabs();
+      initQuiz();
+      initRoiCalculator();
+    });
+  </script>
+</body>
+</html>

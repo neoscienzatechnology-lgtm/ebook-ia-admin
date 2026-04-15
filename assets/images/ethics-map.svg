@@ -1,0 +1,37 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title{font:700 34px Inter,Segoe UI,sans-serif;fill:#0f172a}
+      .core{font:700 24px Inter,Segoe UI,sans-serif;fill:#fff}
+      .h{font:700 18px Inter,Segoe UI,sans-serif;fill:#1e293b}
+      .p{font:500 13px Inter,Segoe UI,sans-serif;fill:#475569}
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="600" y="60" text-anchor="middle" class="title">Mapa de governanca etica em IA</text>
+
+  <circle cx="600" cy="360" r="110" fill="#2563eb"/>
+  <text x="600" y="350" text-anchor="middle" class="core">IA</text>
+  <text x="600" y="385" text-anchor="middle" class="core">Responsavel</text>
+
+  <rect x="120" y="130" width="260" height="120" rx="18" fill="#dbeafe"/>
+  <text x="250" y="180" text-anchor="middle" class="h">Transparencia</text>
+  <text x="250" y="205" text-anchor="middle" class="p">Explicar decisoes e limites</text>
+
+  <rect x="820" y="130" width="260" height="120" rx="18" fill="#ede9fe"/>
+  <text x="950" y="180" text-anchor="middle" class="h">Privacidade</text>
+  <text x="950" y="205" text-anchor="middle" class="p">Minimizacao e protecao de dados</text>
+
+  <rect x="120" y="470" width="260" height="120" rx="18" fill="#ede9fe"/>
+  <text x="250" y="520" text-anchor="middle" class="h">Equidade</text>
+  <text x="250" y="545" text-anchor="middle" class="p">Monitorar vieses e disparidades</text>
+
+  <rect x="820" y="470" width="260" height="120" rx="18" fill="#dbeafe"/>
+  <text x="950" y="520" text-anchor="middle" class="h">Accountability</text>
+  <text x="950" y="545" text-anchor="middle" class="p">Papéis, aprovacoes e auditoria</text>
+
+  <line x1="380" y1="190" x2="510" y2="290" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 6"/>
+  <line x1="820" y1="190" x2="690" y2="290" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 6"/>
+  <line x1="380" y1="530" x2="510" y2="430" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 6"/>
+  <line x1="820" y1="530" x2="690" y2="430" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 6"/>
+</svg>

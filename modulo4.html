@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 4 | Ferramentas Práticas</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="modulo4" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Módulo 4</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Ferramentas Práticas e Rotina de Uso</h1>
+        <p class="mt-4 text-slate-600">Aqui você aprende a usar IA no dia a dia com prompts prontos para copiar, integrações comuns e mini tutoriais orientados para administração.</p>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--m4 print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/modulo4-800.webp" />
+            <img src="assets/images/heroes/modulo4-1600.webp" alt="Imagem real de tecnologia aplicada com ferramentas digitais" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Ferramentas em prática: tecnologia aplicada ao fluxo operacional com foco em produtividade e padronização.
+        </figcaption>
+        <div class="module-hero__context">
+          <p class="module-hero__why"><strong>Por que esta imagem?</strong> O módulo trata de stack de ferramentas e integração, e a foto destaca justamente o ambiente técnico-operacional.</p>
+          <div class="module-hero__actions">
+            <a href="#objetivos-modulo4">Ver objetivo do módulo</a>
+            <a href="#pratica-modulo4">Ir para atividade prática</a>
+          </div>
+        </div>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg></span>
+          <div><h3>Stack enxuto</h3><p>Menos ferramentas, mais resultado.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h6l2 7 4-14 2 7h2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Fluxo conectado</h3><p>Integre texto, dados e automação no-code.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21 4 16.5v-9L12 3z"/><path d="M12 7.5v9" stroke-linecap="round"/></svg></span>
+          <div><h3>Padronização</h3><p>SOP e prompts com formato replicável.</p></div>
+        </article>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/tools-stack.svg" alt="Stack de ferramentas de IA para administração" loading="lazy" />
+        <figcaption>
+          Estrutura em camadas para escolher ferramentas sem sobreposição: interface, orquestração, modelos e governança de dados.
+        </figcaption>
+      </figure>
+      <section class="grid gap-5 md:grid-cols-2" data-illustration-expansion="v1">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/exercises-roadmap.svg" alt="Trilha visual de pratica de ferramentas no modulo 4" loading="lazy" />
+          <figcaption>Sequencia pratica para testar prompts, refinar saidas e padronizar uso.</figcaption>
+        </figure>
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/enterprise-ai-architecture.svg" alt="Arquitetura didatica de integracao de ferramentas de IA" loading="lazy" />
+          <figcaption>Arquitetura de integracao leve para uso administrativo sem friccao.</figcaption>
+        </figure>
+      </section>
+
+      <section id="objetivos-modulo4" class="grid gap-5 md:grid-cols-3">
+        <article class="surface-card p-6 print-break-avoid">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+            </svg>
+          </div>
+          <h2 class="mt-4 text-lg font-semibold">Ferramentas de texto e análise</h2>
+          <p class="mt-2 text-sm">Modelos de linguagem ajudam na criação de relatórios, síntese de reuniões, planejamento e apoio a decisões administrativas.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 6.75h16.5m-16.5 6.75h7.5" />
+            </svg>
+          </div>
+          <h2 class="mt-4 text-lg font-semibold">Automação de fluxo</h2>
+          <p class="mt-2 text-sm">Plataformas no-code conectam IA a planilhas, CRM, e-mail e formulários para automatizar rotinas administrativas.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M7.5 14.25l3-3 2.25 2.25 3.75-5.25" />
+            </svg>
+          </div>
+          <h2 class="mt-4 text-lg font-semibold">Business Intelligence com IA</h2>
+          <p class="mt-2 text-sm">Assistentes analíticos explicam variações de KPI e sugerem ações, tornando dashboards mais acionáveis para gestores.</p>
+        </article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do módulo</p>
+        <h2 class="mt-2 text-2xl font-bold">Como escolher ferramenta sem criar complexidade desnecessária</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Princípio de stack mínimo</h3>
+            <p>Ferramenta boa é aquela que resolve o problema com menor acoplamento possível ao fluxo existente.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Combinação eficiente</h3>
+            <p>LLM para texto + planilha/BI para métrica + automação no-code para execução geralmente cobre 80% da rotina administrativa.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Padronização operacional</h3>
+            <p>Os prompts desta seção geram SOP, resumo executivo e plano de ação com formato replicável entre equipes.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Risco de tool sprawl</h3>
+            <p>Muitas ferramentas sem arquitetura aumentam custo, perda de contexto e retrabalho de integração.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Prompts reais para usar hoje</h2>
+        <p class="mt-2 text-sm text-slate-600">Adapte os campos entre colchetes e aplique imediatamente na rotina administrativa.</p>
+
+        <div class="mt-6 grid gap-4">
+          <div id="pratica-modulo4" class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: resumo executivo de reunião</p>
+              <button data-copy-target="prompt-mod4-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-01" class="text-xs text-slate-700">Transforme as anotações abaixo em um resumo executivo para diretoria. Inclua: decisões tomadas, pendências, responsáveis, prazos e próximos passos.
+
+Anotações da reunião:
+[cole as notas aqui]</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: análise de produtividade da equipe</p>
+              <button data-copy-target="prompt-mod4-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-02" class="text-xs text-slate-700">Analise os dados abaixo e gere um relatório de produtividade por equipe. Aponte gargalos, causas prováveis e 5 ações de melhoria com priorização por impacto.
+
+Dados:
+[cole indicadores de produtividade]</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: criação de SOP (procedimento padrão)</p>
+              <button data-copy-target="prompt-mod4-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-03" class="text-xs text-slate-700">Crie um SOP para o processo [nome do processo]. Estruture em: objetivo, escopo, responsáveis, etapas, checklist de qualidade, riscos e plano de contingência.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Mini tutorial: da reunião ao plano de ação automatizado</h2>
+        <ol class="mt-4 space-y-3 text-sm text-slate-700">
+          <li><strong>1.</strong> Grave ou transcreva a reunião em texto.</li>
+          <li><strong>2.</strong> Use o prompt de resumo executivo para extrair decisões e pendências.</li>
+          <li><strong>3.</strong> Envie a saída para planilha ou ferramenta de gestão (Trello, Asana, Monday).</li>
+          <li><strong>4.</strong> Configure alertas automáticos para prazos críticos.</li>
+          <li><strong>5.</strong> Revise semanalmente o percentual de entregas concluídas.</li>
+        </ol>
+      </section>
+
+      <section id="office-copilot" class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Microsoft 365 + Copilot</p>
+        <h2 class="mt-2 text-2xl font-bold">Uso de IA no Word, Excel, PowerPoint e Outlook</h2>
+        <p class="mt-2 text-sm text-slate-600">Playbook direto para rotina administrativa usando apps do Office com foco em produtividade, qualidade e rastreabilidade.</p>
+
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Office como centro operacional</h3>
+            <p>Com Copilot, os apps do Microsoft 365 deixam de ser apenas editores e viram assistentes de execução para texto, análise, apresentação e comunicação.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Revisão humana obrigatória</h3>
+            <p>Use IA para acelerar, mas sempre valide números, nomes, datas e decisões antes de compartilhar para clientes, diretoria ou auditoria.</p>
+          </article>
+        </div>
+
+        <div class="mt-6 overflow-x-auto">
+          <table class="table-clean min-w-full text-sm">
+            <thead>
+              <tr>
+                <th>Aplicativo</th>
+                <th>Uso com IA</th>
+                <th>Ganho esperado</th>
+                <th>Controle recomendado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Word</td>
+                <td>Minutas, políticas internas, revisão de texto e resumo executivo</td>
+                <td>Menos tempo de redação e padronização de linguagem</td>
+                <td>Checklist final de compliance e tom institucional</td>
+              </tr>
+              <tr>
+                <td>Excel</td>
+                <td>Classificação de dados, explicação de variações e fórmulas assistidas</td>
+                <td>Análise mais rápida de indicadores e exceções</td>
+                <td>Validação de fórmulas e conferência de amostras</td>
+              </tr>
+              <tr>
+                <td>PowerPoint</td>
+                <td>Estrutura narrativa, geração de slides e síntese de resultados</td>
+                <td>Redução do tempo para preparar apresentações executivas</td>
+                <td>Revisão de consistência visual e dados-chave</td>
+              </tr>
+              <tr>
+                <td>Outlook</td>
+                <td>Triagem de e-mails, resumo de threads e resposta sugerida</td>
+                <td>Priorização de demanda e menor tempo de resposta</td>
+                <td>Critérios de prioridade e aprovação para mensagens críticas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-6 grid gap-4">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt Word: política interna em versão executiva</p>
+              <button data-copy-target="prompt-mod4-office-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-01" class="text-xs text-slate-700">Atue como gerente administrativo e transforme o texto abaixo em uma politica interna clara para toda a empresa.
+
+Entregue em 5 blocos:
+1) Objetivo
+2) Escopo
+3) Responsaveis
+4) Regras praticas (faça em checklist)
+5) Riscos de nao conformidade
+
+Texto base:
+[cole aqui a minuta atual]</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt Excel: leitura de KPI e plano de ação</p>
+              <button data-copy-target="prompt-mod4-office-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-02" class="text-xs text-slate-700">Analise esta tabela de indicadores e gere um resumo gerencial com linguagem de diretoria.
+
+Formato de saida:
+- 3 achados principais
+- 2 riscos operacionais
+- 5 acoes priorizadas (impacto alto, medio, baixo)
+- KPI para acompanhar semanalmente
+
+Dados:
+[cole os dados da planilha]</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt PowerPoint: narrativa de reunião executiva</p>
+              <button data-copy-target="prompt-mod4-office-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-03" class="text-xs text-slate-700">Monte a estrutura de uma apresentacao executiva com 8 slides sobre [tema].
+
+Para cada slide, informe:
+- titulo objetivo
+- mensagem principal (1 frase)
+- evidencia que deve aparecer
+- decisao esperada da lideranca
+
+No final, inclua slide de plano 30-60-90 dias.</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt Outlook + Copilot: triagem e resposta de e-mails</p>
+              <button data-copy-target="prompt-mod4-office-04" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-04" class="text-xs text-slate-700">Classifique os e-mails abaixo em 4 categorias: critico hoje, importante semana, delegavel, informativo.
+
+Para cada e-mail entregue:
+- prioridade
+- acao recomendada
+- prazo sugerido
+- rascunho de resposta com tom profissional
+
+E-mails:
+[cole os e-mails ou resumo da caixa de entrada]</pre>
+          </div>
+        </div>
+
+        <section class="mt-7 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <h3 class="text-lg font-semibold text-slate-900">Plano de implementação em 15 dias (Office + Copilot)</h3>
+          <div class="mt-4 grid gap-3 md:grid-cols-3">
+            <article class="rounded-xl border border-slate-200 bg-white p-4">
+              <p class="text-xs uppercase tracking-[0.12em] text-primary">Dias 1-5</p>
+              <p class="mt-2 text-sm font-semibold">Base de uso e governança</p>
+              <ul class="mt-2 space-y-1 text-sm text-slate-600">
+                <li>Definir quais processos entram no piloto.</li>
+                <li>Criar checklist de revisão humana por app.</li>
+                <li>Treinar equipe em prompts padrão.</li>
+              </ul>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4">
+              <p class="text-xs uppercase tracking-[0.12em] text-primary">Dias 6-10</p>
+              <p class="mt-2 text-sm font-semibold">Execução assistida</p>
+              <ul class="mt-2 space-y-1 text-sm text-slate-600">
+                <li>Rodar Word + Outlook em processos críticos.</li>
+                <li>Aplicar Excel para leitura de KPI semanal.</li>
+                <li>Produzir 1 apresentação padrão no PowerPoint.</li>
+              </ul>
+            </article>
+            <article class="rounded-xl border border-slate-200 bg-white p-4">
+              <p class="text-xs uppercase tracking-[0.12em] text-primary">Dias 11-15</p>
+              <p class="mt-2 text-sm font-semibold">Escala controlada</p>
+              <ul class="mt-2 space-y-1 text-sm text-slate-600">
+                <li>Comparar antes/depois com baseline.</li>
+                <li>Refinar prompts com erros recorrentes.</li>
+                <li>Formalizar playbook final da equipe.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white p-5">
+          <h3 class="text-lg font-semibold text-slate-900">Matriz de KPI por aplicativo</h3>
+          <table class="table-clean mt-4 min-w-full text-sm">
+            <thead>
+              <tr>
+                <th>App</th>
+                <th>KPI principal</th>
+                <th>Meta inicial (30 dias)</th>
+                <th>Frequência</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Word</td>
+                <td>Tempo médio para gerar minuta validada</td>
+                <td>Reduzir em 30%</td>
+                <td>Semanal</td>
+              </tr>
+              <tr>
+                <td>Excel</td>
+                <td>Tempo de análise de indicadores</td>
+                <td>Reduzir em 25%</td>
+                <td>Semanal</td>
+              </tr>
+              <tr>
+                <td>PowerPoint</td>
+                <td>Tempo de preparação de reunião executiva</td>
+                <td>Reduzir em 35%</td>
+                <td>Quinzenal</td>
+              </tr>
+              <tr>
+                <td>Outlook</td>
+                <td>SLA de resposta para e-mails prioritários</td>
+                <td>Melhorar em 20%</td>
+                <td>Diária</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="mt-6 rounded-2xl border border-red-200 bg-red-50 p-5">
+          <h3 class="text-lg font-semibold text-red-900">Erros comuns (e como evitar)</h3>
+          <ul class="mt-3 space-y-2 text-sm text-red-900">
+            <li><strong>Prompt genérico demais:</strong> sempre informe contexto, formato e decisão esperada.</li>
+            <li><strong>Confiar sem revisar:</strong> valide dados, nomes, valores e anexos antes de enviar.</li>
+            <li><strong>Sem padrão de equipe:</strong> mantenha biblioteca com versão, dono e caso de uso.</li>
+            <li><strong>Sem métrica de resultado:</strong> acompanhe ganho real com KPI simples e recorrente.</li>
+          </ul>
+        </section>
+
+        <section class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt avançado: Word + risco regulatório</p>
+              <button data-copy-target="prompt-mod4-office-05" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-05" class="text-xs text-slate-700">Revise o texto abaixo como auditor interno.
+
+Entregue:
+1) trechos com risco regulatorio
+2) sugestao de reescrita segura
+3) checklist final de conformidade
+
+Documento:
+[cole o texto]</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt avançado: Outlook + despacho diário</p>
+              <button data-copy-target="prompt-mod4-office-06" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-mod4-office-06" class="text-xs text-slate-700">Com base nos e-mails do dia, monte um despacho para gestor contendo:
+- top 5 prioridades
+- bloqueios criticos
+- decisoes que precisam de aprovacao
+- plano de acao para as proximas 24h
+
+Contexto:
+[cole resumo da caixa de entrada]</pre>
+          </div>
+        </section>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Integrações recomendadas</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Cenário</th>
+              <th>Integração sugerida</th>
+              <th>Resultado esperado</th>
+              <th>Nível de esforço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>E-mail para tarefas</td>
+              <td>IA + Gmail/Outlook + Trello/Asana</td>
+              <td>Conversão automática de demanda em tarefas</td>
+              <td>Baixo</td>
+            </tr>
+            <tr>
+              <td>Formulários internos</td>
+              <td>Forms + IA + Planilhas</td>
+              <td>Classificação de solicitações e priorização</td>
+              <td>Baixo</td>
+            </tr>
+            <tr>
+              <td>Relatórios gerenciais</td>
+              <td>Planilhas/BI + IA generativa</td>
+              <td>Resumo executivo semanal automático</td>
+              <td>Médio</td>
+            </tr>
+            <tr>
+              <td>Fluxo financeiro</td>
+              <td>ERP + IA + alerta de anomalia</td>
+              <td>Detecção antecipada de inconsistências</td>
+              <td>Médio a alto</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Teoria aprofundada: operação de prompts em escala</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Criar prompts isolados resolve tarefas pontuais, mas não sustenta uma operação administrativa. Para escalar, você precisa padronizar contexto, formato de saída, critério de revisão e versionamento de prompt.
+        </p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Padrão 1: briefing mínimo obrigatório</h3>
+            <p class="mt-2 text-sm text-slate-600">Todo prompt deve começar com objetivo, público, nível de detalhe e formato final desejado. Isso reduz ambiguidades e retrabalho.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Padrão 2: saída estruturada</h3>
+            <p class="mt-2 text-sm text-slate-600">Solicite tabelas, blocos ou checklist com campos fixos. Quanto mais estruturada a resposta, mais fácil automatizar e auditar.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Padrão 3: revisão por risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Saídas informativas podem ser liberadas rapidamente; saídas com impacto financeiro, jurídico ou pessoas exigem validação humana formal.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Padrão 4: melhoria contínua</h3>
+            <p class="mt-2 text-sm text-slate-600">Registre erros frequentes, ajuste instruções e mantenha biblioteca versionada. Prompt bom é ativo vivo, não texto estático.</p>
+          </article>
+        </div>
+        <div class="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
+          Meta operacional recomendada: biblioteca com pelo menos 20 prompts validados, cada um com dono, versão, contexto de uso e métrica de qualidade.
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano estendido do Módulo 4 (14h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Módulo hands-on para transformar conhecimento em fluxo operacional com ferramentas reais.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Oficina 1: Engenharia de prompts</h3>
+            <p class="mt-2 text-sm">Criação, iteração e padronização de prompts para tarefas administrativas.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 4h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Oficina 2: Integrações e automações</h3>
+            <p class="mt-2 text-sm">Conexão de IA com planilhas, formulários, e-mail e gestão de tarefas.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 4h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Oficina 3: Dashboards e relato executivo</h3>
+            <p class="mt-2 text-sm">Síntese de indicadores, alertas e recomendações para liderança.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Laboratório final de implementação</h3>
+            <p class="mt-2 text-sm">Montagem de fluxo ponta a ponta com validação e melhoria contínua.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-green-100 p-4 text-sm text-green-900">
+          Entregável obrigatório: playbook operacional com 10 prompts validados e 1 automação funcional documentada.
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Modulo 4 em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de desenho de stack operacional e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para ferramentas praticas e orquestracao, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para tempo de execucao assistida, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Modulo 4.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de ferramentas praticas e orquestracao. Faça um diagnostico rapido do processo [desenho de stack operacional] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [desenho de stack operacional] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [tempo de execucao assistida] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts para escolher e integrar ferramentas</h2>
+          <p class="mt-2 text-sm text-slate-600">Use estes prompts para estruturar seu stack de IA, decidir qual ferramenta usar e como integrar sem duplicação.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Qual ferramenta escolher (ChatGPT, Claude, Gemini, etc)? Matriz de comparação</p>
+                <button data-copy-target="prompt-mod4-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod4-01" class="text-xs text-slate-700">Estou escolhendo 1 ferramenta IA principal para [meu caso de uso]. Compare:
+
+  Para cada ferramenta (ChatGPT, Claude, Gemini, Copilot, Perplexity):
+  1. Melhor para: [qual tarefa específica?]
+  2. Capacidade de contexto: [quanto texto cabe?]
+  3. Custo mensal estimado: [R$ com volumes X]
+  4. Limite de uso/mês: [há restrição?]
+  5. Integrações disponíveis: [com quais sistemas?]
+  6. Segurança de dados: [dados ficam privado ou podem treinar modelo?]
+  7. Risco de falha: [quando não funciona bem?]
+
+  Para meu caso específico:
+  - Tipo de tarefa: [classificação, síntese, geração, pesquisa?]
+  - Volume mensal: [X requisições]
+  - Criticidade: [impacta quanto %?]
+  - Orçamento: [qual é meu range?]
+
+  Recomendação: qual ferramenta? Qual é plano B?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Estruturar orquestração de ferramentas sem duplicação ou conflito</p>
+                <button data-copy-target="prompt-mod4-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod4-02" class="text-xs text-slate-700">Vou usar MÚLTIPLAS ferramentas IA na minha operação. Como estruturar sem desperdício ou conflito?
+
+  Arquitetura em 4 camadas:
+
+  CAMADA 1 - Interface (onde usuário interage)
+  - [Ferramenta A para tarefa X]
+  - [Ferramenta B para tarefa Y]  
+  - [Ferramenta C para tarefa Z]
+
+  CAMADA 2 - Orquestração (sequência e lógica)
+  - Quando usar qual ferramenta?
+  - Em qual ordem executar?
+  - Como passar dados entre elas?
+
+  CAMADA 3 - Dados (armazenamento e qualidade)
+  - Qual é a fonte de dados fiável?
+  - Como manter atualizado?
+  - Quem tem acesso?
+
+  CAMADA 4 - Governança (controle e auditoria)
+  - Quem aprova as decisões de IA?
+  - Como documentar o que aconteceu?
+  - Como detectar erros?
+
+  Recomendação: qual ordem implementar? Starting com qual camada?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Plano de treinamento de equipe em ferramentas IA</p>
+                <button data-copy-target="prompt-mod4-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod4-03" class="text-xs text-slate-700">Preciso treinar minha equipe para usar IA no dia a dia. Monte um plano:
+
+  SEMANA 1 (Noções de início):
+  - Dia 1-2: O que é prompt e como estruturar
+  - Dia 3-4: Demonstração ao vivo de [minha ferramenta]
+  - Dia 5: Laboratório: todos enviam 3 prompts reais
+
+  SEMANA 2-3 (Prática e aprofundamento):
+  - Avançado: como incluir contexto em prompts
+  - Segurança: o que NUNCA enviar para IA
+  - Casos: 5 examples reais do seu setor
+
+  SEMANA 4 (Aplicação no dia a dia):
+  - Cada pessoa aplica em seu processo
+  - Documenta resultado e tempo economizado
+  - Compartilha aprendizado
+
+  SUPORTE CONTÍNUO:
+  - Centro de excelência com consultores IA
+  - Biblioteca de prompts prontos por área
+  - Chat de dúvidas (Slack, Teams)
+  - Boletim mensal com boas práticas
+
+  KPI: qual % da equipe usa regularmente IA em 90 dias?</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
+
+
+

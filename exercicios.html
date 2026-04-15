@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios | IA Aplicada à Administração</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="exercicios" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Exercícios</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Avaliação de Conhecimento e Aplicação</h1>
+        <p class="mt-4 text-slate-600">Responda as questões objetivas e resolva os estudos de caso para validar seu domínio do conteúdo. O gabarito está separado ao final da página.</p>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Trilha premium disponível</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Para aprofundamento de pós-graduação, continue na página de Exercícios Avançados com questões de alta complexidade, discursivas stricto sensu e desafios capstone.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="exercicios-avancados.html" class="inline-flex items-center rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">Ir para Exercícios Avançados</a>
+          <a href="modulo7.html" class="inline-flex items-center rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary/40 hover:text-primary">Estudar Módulo 7</a>
+          <a href="modulo8.html" class="inline-flex items-center rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary/40 hover:text-primary">Estudar Módulo 8</a>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático de avaliação</p>
+        <h2 class="mt-2 text-2xl font-bold">Como usar os exercícios para consolidar domínio prático</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Lógica de certificação</h3>
+            <p>As questões objetivas validam base conceitual; os casos e laboratórios validam capacidade de execução real.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Melhor sequência</h3>
+            <p>Faça primeiro objetivas, depois casos e por fim laboratórios, para transformar teoria em decisão operacional.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Resposta estruturada</h3>
+            <p>Ao resolver casos, responda sempre com problema, hipótese, fluxo, KPI e risco para ganhar qualidade de análise.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Erro de autoavaliação</h3>
+            <p>Acertar teste sem conseguir desenhar plano de piloto indica aprendizagem parcial e precisa de revisão aplicada.</p>
+          </article>
+        </div>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/exercises-roadmap.svg" alt="Trilha de prática e avaliação do curso" loading="lazy" />
+        <figcaption>
+          Trilha recomendada de avaliação: revisão teórica, aplicação guiada, estudo de caso e projeto final com plano de execução.
+        </figcaption>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M8 8h8M8 16h6" stroke-linecap="round"/><rect x="5" y="4" width="14" height="16" rx="2"/></svg></span>
+          <div><h3>Prova objetiva</h3><p>Consolide base conceitual com precisão.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 15l3-3 2 2 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Estudo de caso</h3><p>Transforme resposta em plano operacional.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Evolução contínua</h3><p>Revise erros e refine sua execução.</p></div>
+        </article>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold">10 questões objetivas</h2>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">1. Qual é a principal diferença entre IA e Machine Learning?</p>
+          <p class="mt-2 text-sm text-slate-600">A) IA só funciona com dados financeiros. B) ML é um subconjunto de IA que aprende com dados. C) IA e ML são sinônimos absolutos. D) ML não usa dados históricos.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">2. Em qual cenário a IA gera maior valor inicial na administração?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Processos repetitivos com regras claras. B) Decisões jurídicas complexas sem revisão. C) Atividades sem dados disponíveis. D) Fluxos altamente imprevisíveis sem padrão.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">3. Qual é um exemplo típico de IA no RH?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Previsão do clima. B) Triagem inicial de currículos. C) Geração de boleto bancário. D) Controle de acesso físico.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">4. Qual risco ético está associado ao uso de IA em recrutamento?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Viés algorítmico. B) Queda da velocidade de análise. C) Aumento de papelada física. D) Redução da capacidade de escala.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">5. O que significa manter revisão humana em decisões críticas?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Ignorar completamente recomendações de IA. B) Delegar tudo para o algoritmo. C) Validar resultados sensíveis antes da execução final. D) Usar IA apenas uma vez por mês.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">6. Qual KPI é adequado para medir impacto de IA em um processo administrativo?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Quantidade de reuniões realizadas. B) Tempo médio de execução do processo. C) Número de páginas do relatório. D) Total de e-mails enviados.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">7. Em Business Intelligence, IA é útil porque:</p>
+          <p class="mt-2 text-sm text-slate-600">A) Elimina necessidade de indicadores. B) Substitui completamente a gestão. C) Ajuda a interpretar tendências e gerar recomendações. D) Funciona sem qualquer fonte de dados.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">8. Em uma implementação responsável, qual prática é recomendada?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Compartilhar qualquer dado sensível com qualquer ferramenta. B) Criar política de uso e classificação de dados. C) Executar automações sem testes. D) Evitar monitoramento de resultados.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">9. Qual é o melhor ponto de partida para adoção de IA?</p>
+          <p class="mt-2 text-sm text-slate-600">A) Transformação total de todos os processos no primeiro mês. B) Piloto controlado de alto impacto e baixo risco. C) Compra de múltiplas ferramentas sem planejamento. D) Foco apenas em estética de dashboards.</p>
+        </article>
+
+        <article class="surface-card p-5 print-break-avoid">
+          <p class="text-sm font-semibold">10. Em estudos de caso bem-sucedidos, o principal fator comum é:</p>
+          <p class="mt-2 text-sm text-slate-600">A) Ausência de métricas. B) Falta de revisão humana. C) Metas claras, dados confiáveis e acompanhamento contínuo. D) Uso de IA sem treinamento da equipe.</p>
+        </article>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold">5 estudos de caso práticos</h2>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h3 class="text-lg font-semibold">Caso 1: RH com alto volume de currículos</h3>
+          <p class="mt-2 text-sm text-slate-600">Sua empresa recebe 1.500 currículos por vaga e a triagem leva 12 dias.</p>
+          <p class="mt-3 text-sm font-medium">Desafio: proponha um fluxo de IA com revisão humana e 3 KPIs para medir resultado.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h3 class="text-lg font-semibold">Caso 2: Financeiro com retrabalho</h3>
+          <p class="mt-2 text-sm text-slate-600">Conciliações contábeis têm 18% de inconsistência e geram atrasos no fechamento mensal.</p>
+          <p class="mt-3 text-sm font-medium">Desafio: desenhe um piloto de 30 dias para reduzir erros e tempo de fechamento.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h3 class="text-lg font-semibold">Caso 3: Marketing com baixa conversão</h3>
+          <p class="mt-2 text-sm text-slate-600">Campanhas têm CTR baixo e pouca personalização por público.</p>
+          <p class="mt-3 text-sm font-medium">Desafio: crie estratégia com IA para segmentação e testes de mensagem.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h3 class="text-lg font-semibold">Caso 4: Operações com ruptura de estoque</h3>
+          <p class="mt-2 text-sm text-slate-600">A empresa enfrenta faltas recorrentes de itens críticos e excesso de itens de baixa saída.</p>
+          <p class="mt-3 text-sm font-medium">Desafio: proponha modelo de previsão e plano de reposição inteligente.</p>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h3 class="text-lg font-semibold">Caso 5: Governança e risco</h3>
+          <p class="mt-2 text-sm text-slate-600">A equipe usa IA sem padrão, incluindo dados sensíveis em prompts externos.</p>
+          <p class="mt-3 text-sm font-medium">Desafio: elabore uma política mínima de uso responsável com plano de treinamento.</p>
+        </article>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold">Banco adicional: 15 questões aplicadas (Q11 a Q25)</h2>
+
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">11. Qual decisão melhora a confiabilidade de um piloto de IA?</p><p class="mt-2 text-sm text-slate-600">A) Mudar KPI toda semana. B) Usar baseline e critério fixo de medição. C) Ignorar variações de volume. D) Comparar períodos diferentes sem ajuste.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">12. Em automação de e-mails, o ponto crítico de qualidade é:</p><p class="mt-2 text-sm text-slate-600">A) Quantidade de prompts. B) Taxa de abertura do e-mail do gestor. C) Taxonomia de classificação e regra de exceção. D) Cor do dashboard.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">13. O que caracteriza uma métrica de resultado e não de vaidade?</p><p class="mt-2 text-sm text-slate-600">A) Número de reuniões do projeto. B) Quantidade de telas no sistema. C) Redução de tempo e erro no processo alvo. D) Quantidade de slides apresentados.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">14. Qual prática reduz risco de viés em RH?</p><p class="mt-2 text-sm text-slate-600">A) Ocultar completamente os critérios da IA. B) Testar com perfis diversos e revisar variáveis sensíveis. C) Treinar sem dados históricos. D) Eliminar revisão humana.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">15. Em relatórios gerenciais, IA deve ser usada para:</p><p class="mt-2 text-sm text-slate-600">A) Substituir toda validação de números. B) Produzir narrativa e destacar desvios para análise humana. C) Ignorar contexto da operação. D) Eliminar indicadores financeiros.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">16. Qual é o primeiro passo para escala segura?</p><p class="mt-2 text-sm text-slate-600">A) Escalar para toda a empresa no dia 1. B) Definir dono do processo e política de uso. C) Comprar mais ferramentas. D) Remover checkpoints.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">17. Qual cenário indica baixo potencial para piloto inicial?</p><p class="mt-2 text-sm text-slate-600">A) Alto volume e regra clara. B) Processo repetitivo com histórico. C) Processo sem dados mínimos e com alta ambiguidade. D) Tarefa com SLA definido.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">18. O objetivo da trilha de auditoria é:</p><p class="mt-2 text-sm text-slate-600">A) Aumentar complexidade sem benefício. B) Registrar contexto, decisão e evidências para rastreabilidade. C) Evitar qualquer documentação. D) Restringir uso apenas ao TI.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">19. Qual métrica melhor indica ganho em atendimento interno?</p><p class="mt-2 text-sm text-slate-600">A) Número de abas abertas. B) Tempo médio de resposta por categoria de chamado. C) Quantidade de usuários na ferramenta. D) Tamanho do manual.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">20. A revisão humana obrigatória deve focar:</p><p class="mt-2 text-sm text-slate-600">A) Apenas tarefas de baixo risco. B) Casos críticos com impacto financeiro, jurídico ou pessoas. C) Toda e qualquer saída de baixo impacto. D) Somente no início do projeto.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">21. Em previsão de demanda, o erro mais comum é:</p><p class="mt-2 text-sm text-slate-600">A) Ignorar sazonalidade e eventos externos. B) Coletar dados históricos. C) Definir horizonte de previsão. D) Comparar com baseline.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">22. Em governança, accountability significa:</p><p class="mt-2 text-sm text-slate-600">A) Ninguém ser responsável por falhas do modelo. B) Definição explícita de papéis, aprovações e resposta a incidentes. C) Substituir política por boas intenções. D) Usar IA sem comitê.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">23. Qual fator acelera adoção cultural da IA?</p><p class="mt-2 text-sm text-slate-600">A) Linguagem técnica sem tradução para negócio. B) Treinamento prático com casos reais da equipe. C) Proibição de testes em ambiente controlado. D) Comunicação apenas para diretoria.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">24. O que torna um prompt robusto para administração?</p><p class="mt-2 text-sm text-slate-600">A) Pedido genérico sem contexto. B) Objetivo claro, dados de entrada e formato de saída definido. C) Texto curto sem critério. D) Ausência de restrições.</p></article>
+        <article class="surface-card p-5 print-break-avoid"><p class="text-sm font-semibold">25. Qual evidência melhor suporta decisão de escalar um piloto?</p><p class="mt-2 text-sm text-slate-600">A) Impressão subjetiva da equipe. B) KPI comparável antes vs depois com estabilidade operacional. C) Número de mensagens no chat. D) Tempo de reunião de status.</p></article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratórios guiados de aplicação</h2>
+        <p class="mt-2 text-sm text-slate-600">Execute os laboratórios em sequência para consolidar prática operacional, visão executiva e governança.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 1: Mapeamento de processo crítico</h3><p class="mt-2 text-sm text-slate-600">Escolha um processo real e identifique entradas, decisão e saída. Entregue fluxograma simplificado.</p></article>
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 2: Construção de baseline</h3><p class="mt-2 text-sm text-slate-600">Colete 2 semanas de dados de tempo, erro e custo. Entregue tabela comparável para avaliação futura.</p></article>
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 3: Prompt operacional v1</h3><p class="mt-2 text-sm text-slate-600">Crie prompt com contexto, formato de saída e critério de qualidade. Entregue versão comentada.</p></article>
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 4: Piloto controlado</h3><p class="mt-2 text-sm text-slate-600">Rode piloto de 5 dias úteis em amostra real. Entregue diário de exceções e ajustes.</p></article>
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 5: Revisão de risco e ética</h3><p class="mt-2 text-sm text-slate-600">Aplique checklist de privacidade, viés e revisão humana. Entregue parecer de riscos remanescentes.</p></article>
+          <article class="theory-card"><h3 class="text-sm font-semibold">Lab 6: Pitch executivo de escala</h3><p class="mt-2 text-sm text-slate-600">Monte apresentação de 5 slides com ganhos, riscos, custos e plano de 90 dias.</p></article>
+        </div>
+
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+          <p class="font-semibold">Rubrica de correção dos laboratórios (0 a 4 pontos por critério)</p>
+          <p class="mt-2">Critérios: clareza técnica, aplicabilidade no contexto da empresa, tratamento de risco, qualidade dos indicadores e viabilidade de execução.</p>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Avaliação estendida da formação (8h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Para certificação interna, execute os blocos abaixo além das questões objetivas.</p>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Bloco avaliativo</th>
+              <th>Descrição</th>
+              <th>Carga</th>
+              <th>Evidência de conclusão</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prova objetiva</td>
+              <td>25 questões de revisão de fundamentos, aplicação e governança</td>
+              <td>2h</td>
+              <td>Acerto mínimo de 70%</td>
+            </tr>
+            <tr>
+              <td>Resolução de casos</td>
+              <td>5 casos práticos com proposta de solução</td>
+              <td>3h</td>
+              <td>Plano de ação por caso</td>
+            </tr>
+            <tr>
+              <td>Laboratório de prompt</td>
+              <td>Criação e teste de 8 prompts funcionais para rotina administrativa</td>
+              <td>2h</td>
+              <td>Biblioteca de prompts validada</td>
+            </tr>
+            <tr>
+              <td>Mini projeto final</td>
+              <td>Desenho de piloto de IA em processo real da empresa</td>
+              <td>1h</td>
+              <td>Documento executivo de implantação</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>Avaliação aplicada</strong></td>
+              <td><strong>8h</strong></td>
+              <td><strong>Pronto para aprovação</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="gabarito" class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Gabarito separado</h2>
+        <p class="mt-2 text-sm text-slate-600">Use este gabarito após concluir todas as respostas.</p>
+
+        <div class="mt-5 rounded-2xl bg-slate-50 p-4 text-sm text-slate-700">
+          <p><strong>Questões objetivas 1 a 10:</strong> 1-B, 2-A, 3-B, 4-A, 5-C, 6-B, 7-C, 8-B, 9-B, 10-C.</p>
+          <p class="mt-2"><strong>Questões objetivas 11 a 25:</strong> 11-B, 12-C, 13-C, 14-B, 15-B, 16-B, 17-C, 18-B, 19-B, 20-B, 21-A, 22-B, 23-B, 24-B, 25-B.</p>
+        </div>
+
+        <div class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm text-slate-700">
+          <p><strong>Estudos de caso:</strong> avalie pela clareza dos objetivos, desenho do fluxo, definição de KPI, tratamento de risco e viabilidade de implementação em até 30 dias.</p>
+        </div>
+      </section>
+    
+      <section class="surface-card p-6 sm:p-8 print-break-avoid" data-role="curated-complement-base">
+        <h2 class="text-2xl font-bold">Caderno complementar curado (12 desafios)</h2>
+        <p class="mt-2 text-sm text-slate-600">Bloco adicional com foco em tomada de decisao, qualidade de implantacao e mensuracao de resultado real.</p>
+
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B1: Priorizacao de piloto</p><p class="mt-2 text-sm text-slate-600">Escolha entre 3 processos candidatos e justifique com matriz Impacto x Esforco x Risco.</p></article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B2: Baseline confiavel</p><p class="mt-2 text-sm text-slate-600">Defina como coletar baseline de tempo e erro sem distorcer comparacao antes/depois.</p></article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B3: Revisao humana inteligente</p><p class="mt-2 text-sm text-slate-600">Monte regra de escalonamento para quando revisar 100%, por amostra ou por excecao.</p></article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B4: Dashboard minimo</p><p class="mt-2 text-sm text-slate-600">Proponha painel semanal com 4 indicadores: produtividade, qualidade, risco e adocao.</p></article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B5: Tratamento de excecoes</p><p class="mt-2 text-sm text-slate-600">Descreva fluxo para casos fora de padrao com registro de causa e acao corretiva.</p></article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4"><p class="text-sm font-semibold">Desafio B6: Escala para segunda area</p><p class="mt-2 text-sm text-slate-600">Defina criterio de readiness para replicar o piloto em outra unidade de negocio.</p></article>
+        </div>
+
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
+          <p class="font-semibold">Rubrica rapida de avaliacao (0 a 4 pontos)</p>
+          <p class="mt-2">Criterios: clareza metodologica, viabilidade operacional, robustez de KPI, cobertura de risco e plano de escala.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title{font:700 34px Inter,Segoe UI,sans-serif;fill:#0f172a}
+      .h{font:700 20px Inter,Segoe UI,sans-serif;fill:#1e293b}
+      .p{font:500 13px Inter,Segoe UI,sans-serif;fill:#475569}
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="600" y="60" text-anchor="middle" class="title">Matriz de aplicacao por areas administrativas</text>
+
+  <rect x="120" y="120" width="420" height="230" rx="18" fill="#dbeafe"/>
+  <text x="330" y="170" text-anchor="middle" class="h">RH</text>
+  <text x="330" y="200" text-anchor="middle" class="p">Triagem de curriculos • Match de perfil</text>
+  <text x="330" y="225" text-anchor="middle" class="p">Onboarding personalizado • Analise de turnover</text>
+
+  <rect x="660" y="120" width="420" height="230" rx="18" fill="#ede9fe"/>
+  <text x="870" y="170" text-anchor="middle" class="h">Marketing</text>
+  <text x="870" y="200" text-anchor="middle" class="p">Segmentacao de publico • Conteudo assistido</text>
+  <text x="870" y="225" text-anchor="middle" class="p">Previsao de conversao • Analise de campanha</text>
+
+  <rect x="120" y="390" width="420" height="230" rx="18" fill="#ede9fe"/>
+  <text x="330" y="440" text-anchor="middle" class="h">Financeiro</text>
+  <text x="330" y="470" text-anchor="middle" class="p">Conferencia automatica • Deteccao de anomalia</text>
+  <text x="330" y="495" text-anchor="middle" class="p">Previsao de caixa • Reducao de perdas</text>
+
+  <rect x="660" y="390" width="420" height="230" rx="18" fill="#dbeafe"/>
+  <text x="870" y="440" text-anchor="middle" class="h">Operacoes</text>
+  <text x="870" y="470" text-anchor="middle" class="p">Planejamento de demanda • Roteirizacao</text>
+  <text x="870" y="495" text-anchor="middle" class="p">Controle de estoque • Otimizacao de recursos</text>
+</svg>

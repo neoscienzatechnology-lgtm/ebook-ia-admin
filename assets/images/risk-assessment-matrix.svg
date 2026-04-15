@@ -1,0 +1,140 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .risk-critical { fill: #fecaca; stroke: #fca5a5; }
+      .risk-high { fill: #fed7aa; stroke: #fdba74; }
+      .risk-medium { fill: #fef3c7; stroke: #fcd34d; }
+      .risk-low { fill: #bfdbfe; stroke: #93c5fd; }
+      .cell-header { fill: #1e293b; color: white; font-weight: bold; font-size: 12px; }
+      .cell-text { fill: #0f172a; font-size: 11px; }
+      .title { fill: #0f172a; font-size: 20px; font-weight: bold; }
+      .subtitle { fill: #64748b; font-size: 12px; }
+      .axis-label { fill: #475569; font-weight: bold; font-size: 12px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Matriz de Avaliação de Risco em IA</text>
+  <text x="450" y="50" text-anchor="middle" class="subtitle">Combinação de probabilidade vs. impacto para classificar risco de cada caso de uso</text>
+
+  <!-- Axes Labels -->
+  <text x="25" y="150" class="axis-label" text-anchor="end">IMPACTO</text>
+  <text x="25" y="175" class="axis-label" style="font-weight: normal; font-size: 11px;" text-anchor="end">CRÍTICO</text>
+  <text x="25" y="265" class="axis-label" style="font-weight: normal; font-size: 11px;" text-anchor="end">ALTO</text>
+  <text x="25" y="355" class="axis-label" style="font-weight: normal; font-size: 11px;" text-anchor="end">MÉDIO</text>
+  <text x="25" y="445" class="axis-label" style="font-weight: normal; font-size: 11px;" text-anchor="end">BAIXO</text>
+
+  <text x="200" y="490" class="axis-label" text-anchor="middle">BAIXA</text>
+  <text x="330" y="490" class="axis-label" text-anchor="middle">MÉDIA</text>
+  <text x="520" y="490" class="axis-label" text-anchor="middle">ALTA</text>
+  <text x="780" y="490" class="axis-label" text-anchor="middle">MUITO ALTA</text>
+  <text x="450" y="520" class="axis-label" text-anchor="middle">PROBABILIDADE DE ERRO →</text>
+
+  <!-- Grid Lines -->
+  <line x1="50" y1="140" x2="850" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="230" x2="850" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="320" x2="850" y2="320" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="410" x2="850" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+
+  <line x1="50" y1="140" x2="50" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="200" y1="140" x2="200" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="330" y1="140" x2="330" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="520" y1="140" x2="520" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="780" y1="140" x2="780" y2="410" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Cell 1,1: Low/Low Risk -->
+  <rect x="50" y="320" width="150" height="90" class="risk-low"/>
+  <text x="125" y="345" text-anchor="middle" style="fill: #0c4a6e; font-weight: bold; font-size: 13px;">MUITO BAIXO</text>
+  <text x="125" y="360" text-anchor="middle" class="cell-text" style="font-size: 10px;">Automação de</text>
+  <text x="125" y="372" text-anchor="middle" class="cell-text" style="font-size: 10px;">tarefas sim-</text>
+  <text x="125" y="384" text-anchor="middle" class="cell-text" style="font-size: 10px;">ples, sem risco</text>
+  <text x="125" y="400" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Padrão</text>
+
+  <!-- Cell 2,1: Med/Low Risk -->
+  <rect x="200" y="320" width="130" height="90" class="risk-low"/>
+  <text x="265" y="345" text-anchor="middle" style="fill: #0c4a6e; font-weight: bold; font-size: 13px;">BAIXO</text>
+  <text x="265" y="360" text-anchor="middle" class="cell-text" style="font-size: 10px;">Tarefas com</text>
+  <text x="265" y="372" text-anchor="middle" class="cell-text" style="font-size: 10px;">impacto baixo.</text>
+  <text x="265" y="384" text-anchor="middle" class="cell-text" style="font-size: 10px;">Validação simples</text>
+  <text x="265" y="400" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Ágil</text>
+
+  <!-- Cell 3,1: High/Low Risk -->
+  <rect x="330" y="320" width="190" height="90" class="risk-medium"/>
+  <text x="425" y="345" text-anchor="middle" style="fill: #713f12; font-weight: bold; font-size: 13px;">MÉDIO</text>
+  <text x="425" y="360" text-anchor="middle" class="cell-text" style="font-size: 10px;">Impacto alto mas</text>
+  <text x="425" y="372" text-anchor="middle" class="cell-text" style="font-size: 10px;">baixa probabilidade</text>
+  <text x="425" y="384" text-anchor="middle" class="cell-text" style="font-size: 10px;">de erro. Monitorar.</text>
+  <text x="425" y="400" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Governance</text>
+
+  <!-- Cell 4,1: Extreme/Low Risk -->
+  <rect x="520" y="320" width="260" height="90" class="risk-high"/>
+  <text x="650" y="345" text-anchor="middle" style="fill: #7c2d12; font-weight: bold; font-size: 13px;">ALTO</text>
+  <text x="650" y="360" text-anchor="middle" class="cell-text" style="font-size: 10px;">Impacto crítico.</text>
+  <text x="650" y="372" text-anchor="middle" class="cell-text" style="font-size: 10px;">Requer auditoria,</text>
+  <text x="650" y="384" text-anchor="middle" class="cell-text" style="font-size: 10px;">validação rigorosa.</text>
+  <text x="650" y="400" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Comitê + Legal</text>
+
+  <!-- Cell 1,2: Low/Med Risk -->
+  <rect x="50" y="230" width="150" height="90" class="risk-low"/>
+  <text x="125" y="255" text-anchor="middle" style="fill: #0c4a6e; font-weight: bold; font-size: 13px;">BAIXO</text>
+  <text x="125" y="270" text-anchor="middle" class="cell-text" style="font-size: 10px;">Probabilidade</text>
+  <text x="125" y="282" text-anchor="middle" class="cell-text" style="font-size: 10px;">média, impacto</text>
+  <text x="125" y="294" text-anchor="middle" class="cell-text" style="font-size: 10px;">baixo.</text>
+  <text x="125" y="310" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Ágil+</text>
+
+  <!-- Cell 2,2: Med/Med Risk -->
+  <rect x="200" y="230" width="130" height="90" class="risk-medium"/>
+  <text x="265" y="255" text-anchor="middle" style="fill: #713f12; font-weight: bold; font-size: 13px;">MÉDIO</text>
+  <text x="265" y="270" text-anchor="middle" class="cell-text" style="font-size: 10px;">Equilibrado.</text>
+  <text x="265" y="282" text-anchor="middle" class="cell-text" style="font-size: 10px;">Revisar design,</text>
+  <text x="265" y="294" text-anchor="middle" class="cell-text" style="font-size: 10px;">validação.</text>
+  <text x="265" y="310" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Gov</text>
+
+  <!-- Cell 3,2: High/Med Risk -->
+  <rect x="330" y="230" width="190" height="90" class="risk-high"/>
+  <text x="425" y="255" text-anchor="middle" style="fill: #7c2d12; font-weight: bold; font-size: 13px;">ALTO</text>
+  <text x="425" y="270" text-anchor="middle" class="cell-text" style="font-size: 10px;">Risco significativo.</text>
+  <text x="425" y="282" text-anchor="middle" class="cell-text" style="font-size: 10px;">Testes extensivos,</text>
+  <text x="425" y="294" text-anchor="middle" class="cell-text" style="font-size: 10px;">fase piloto obrigatória.</text>
+  <text x="425" y="310" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Comitê</text>
+
+  <!-- Cell 4,2: Extreme/Med Risk -->
+  <rect x="520" y="230" width="260" height="90" class="risk-critical"/>
+  <text x="650" y="255" text-anchor="middle" style="fill: #7f1d1d; font-weight: bold; font-size: 13px;">CRÍTICO</text>
+  <text x="650" y="270" text-anchor="middle" class="cell-text" style="font-size: 10px;">Escalação necessária.</text>
+  <text x="650" y="282" text-anchor="middle" class="cell-text" style="font-size: 10px;">Pode ser suspenso</text>
+  <text x="650" y="294" text-anchor="middle" class="cell-text" style="font-size: 10px;">até mitigação total.</text>
+  <text x="650" y="310" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: CEO + Legal</text>
+
+  <!-- Cell 1,3: Low/High Risk -->
+  <rect x="50" y="140" width="150" height="90" class="risk-medium"/>
+  <text x="125" y="165" text-anchor="middle" style="fill: #713f12; font-weight: bold; font-size: 13px;">MÉDIO</text>
+  <text x="125" y="180" text-anchor="middle" class="cell-text" style="font-size: 10px;">Alta probabili-</text>
+  <text x="125" y="192" text-anchor="middle" class="cell-text" style="font-size: 10px;">dade, impacto</text>
+  <text x="125" y="204" text-anchor="middle" class="cell-text" style="font-size: 10px;">baixo.</text>
+  <text x="125" y="220" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Governance</text>
+
+  <!-- Cell 2,3: Med/High Risk -->
+  <rect x="200" y="140" width="130" height="90" class="risk-high"/>
+  <text x="265" y="165" text-anchor="middle" style="fill: #7c2d12; font-weight: bold; font-size: 13px;">ALTO</text>
+  <text x="265" y="180" text-anchor="middle" class="cell-text" style="font-size: 10px;">Rejeitado ou</text>
+  <text x="265" y="192" text-anchor="middle" class="cell-text" style="font-size: 10px;">projeto redifi-</text>
+  <text x="265" y="204" text-anchor="middle" class="cell-text" style="font-size: 10px;">nido.</text>
+  <text x="265" y="220" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: Comitê</text>
+
+  <!-- Cell 3,3: High/High Risk -->
+  <rect x="330" y="140" width="190" height="90" class="risk-critical"/>
+  <text x="425" y="165" text-anchor="middle" style="fill: #7f1d1d; font-weight: bold; font-size: 13px;">CRÍTICO</text>
+  <text x="425" y="180" text-anchor="middle" class="cell-text" style="font-size: 10px;">NÃO recomendado</text>
+  <text x="425" y="192" text-anchor="middle" class="cell-text" style="font-size: 10px;">sem mitigação</text>
+  <text x="425" y="204" text-anchor="middle" class="cell-text" style="font-size: 10px;">substancial.</text>
+  <text x="425" y="220" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: CEO + Board</text>
+
+  <!-- Cell 4,3: Extreme/High Risk -->
+  <rect x="520" y="140" width="260" height="90" class="risk-critical"/>
+  <text x="650" y="165" text-anchor="middle" style="fill: #7f1d1d; font-weight: bold; font-size: 13px;">NÃO PROSSEGUIR</text>
+  <text x="650" y="180" text-anchor="middle" class="cell-text" style="font-size: 10px;">Risco inaceitável.</text>
+  <text x="650" y="192" text-anchor="middle" class="cell-text" style="font-size: 10px;">Aguarde tecnologia</text>
+  <text x="650" y="204" text-anchor="middle" class="cell-text" style="font-size: 10px;">mais madura.</text>
+  <text x="650" y="220" text-anchor="middle" class="cell-text" style="font-size: 10px; font-weight: bold;">Aprovação: REJEITADO</text>
+</svg>

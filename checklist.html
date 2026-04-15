@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checklist | IA Aplicada à Administração</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="checklist" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Checklist Final</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Como implementar IA na sua empresa hoje</h1>
+        <p class="mt-4 text-slate-600">Use esta lista prática para sair da teoria e entrar em execução. Marque os itens conforme avançar.</p>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/checklist-implementation-cycle.svg" alt="Ciclo didatico de implementacao de IA com etapas de escopo, execucao, medicao e escala" loading="lazy" />
+        <figcaption>
+          Ciclo de implementacao autoral para guiar um piloto seguro: escopo, execucao, medicao e escala.
+        </figcaption>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M8 8h8M8 16h6" stroke-linecap="round"/><rect x="5" y="4" width="14" height="16" rx="2"/></svg></span>
+          <div><h3>Checklist acionável</h3><p>Planejamento em etapas curtas e claras.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Validação semanal</h3><p>Monitore avanço e corrija desvios cedo.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Escala disciplinada</h3><p>Amplie só após comprovar estabilidade.</p></div>
+        </article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do checklist</p>
+        <h2 class="mt-2 text-2xl font-bold">Como executar com disciplina em 90 dias</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Ritmo de implantação</h3>
+            <p>Execução consistente exige ritual semanal de medição, ajuste e decisão, não ação pontual sem acompanhamento.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Controle por ciclos</h3>
+            <p>Times que combinam baseline, checkpoint semanal e revisão de risco costumam estabilizar ganho em menos de 3 meses.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Governança semanal</h3>
+            <p>Use os prompts desta página para criar dashboard de execução e relatório de decisão de escala ao final do ciclo.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Risco de falsa tração</h3>
+            <p>Sem medir qualidade e adoção junto de produtividade, a iniciativa pode parecer boa no curto prazo e falhar na escala.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Checklist de implementação imediata</h2>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Mapear 3 processos administrativos repetitivos com maior impacto.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Definir KPI de sucesso para cada processo (tempo, custo, qualidade).</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Escolher 1 processo piloto de baixo risco e alta frequência.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Selecionar ferramenta de IA adequada ao nível técnico da equipe.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Criar padrão de prompts para o processo escolhido.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Documentar fluxo atual (antes) para comparação posterior.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Definir revisão humana obrigatória em decisões críticas.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Publicar política mínima de dados e privacidade para IA.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Treinar equipe em uso correto de prompts e validação de saída.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Acompanhar indicadores semanalmente por pelo menos 30 dias.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Registrar aprendizados e ajustar o fluxo piloto.</span>
+          </label>
+          <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm">
+            <input type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" />
+            <span>Escalar o modelo para uma segunda área administrativa.</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Matriz de priorizacao do piloto (ICE)</h2>
+        <p class="mt-2 text-sm text-slate-600">Avalie cada processo com nota de 1 a 5 em Impacto, Confianca e Esforco. Prioridade alta = maior Impacto e Confianca com menor Esforco.</p>
+        <div class="mt-5 overflow-x-auto rounded-2xl border border-slate-200">
+          <table class="table-clean min-w-full text-sm">
+            <thead>
+              <tr>
+                <th>Processo candidato</th>
+                <th>Impacto (1-5)</th>
+                <th>Confianca (1-5)</th>
+                <th>Esforco (1-5)</th>
+                <th>Prioridade sugerida</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Triagem de chamados internos</td>
+                <td>4</td>
+                <td>4</td>
+                <td>2</td>
+                <td>Alta</td>
+              </tr>
+              <tr>
+                <td>Conferencia de documentos financeiros</td>
+                <td>5</td>
+                <td>3</td>
+                <td>3</td>
+                <td>Alta</td>
+              </tr>
+              <tr>
+                <td>Geração de relatórios gerenciais</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Forecast completo de demanda</td>
+                <td>5</td>
+                <td>2</td>
+                <td>5</td>
+                <td>Media/Longo prazo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/roi-metrics-dashboard.svg" alt="Dashboard de métricas e ROI de implementação de IA" loading="lazy" />
+        <figcaption>Painel de métricas: produtividade (+28%), economia (R$ 45k/mês), redução de tempo (-65%), qualidade (96%), ROI (350% em 12 meses).</figcaption>
+      </figure>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano de ação em 30, 60 e 90 dias</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Período</th>
+              <th>Objetivo</th>
+              <th>Entregáveis</th>
+              <th>KPI principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0 a 30 dias</td>
+              <td>Piloto validado</td>
+              <td>Fluxo com IA + revisão humana + baseline de métricas</td>
+              <td>Tempo de execução do processo</td>
+            </tr>
+            <tr>
+              <td>31 a 60 dias</td>
+              <td>Padronização</td>
+              <td>Biblioteca de prompts, política de uso e treinamento</td>
+              <td>Taxa de retrabalho</td>
+            </tr>
+            <tr>
+              <td>61 a 90 dias</td>
+              <td>Escala controlada</td>
+              <td>Expansão para nova área e painel de monitoramento</td>
+              <td>Ganho financeiro anualizado</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Sprint guiada de implementação (4h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Bloco intensivo para colocar a IA em produção com controle de risco.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Sprint 1: Configuração inicial</h3>
+            <p class="mt-2 text-sm">Definição de escopo, dados permitidos e ferramenta de apoio.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 1h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Sprint 2: Execução do piloto</h3>
+            <p class="mt-2 text-sm">Operação assistida em ambiente real com monitoramento de exceções.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 1h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Sprint 3: Medição e ajustes</h3>
+            <p class="mt-2 text-sm">Comparação de baseline e ajustes no fluxo, prompts e critérios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 1h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Sprint 4: Escala controlada</h3>
+            <p class="mt-2 text-sm">Definição de próximo processo e estratégia de expansão.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 1h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-green-100 p-4 text-sm text-green-900">
+          Entregável obrigatório: relatório de sprint com indicadores, lições aprendidas e próximos passos aprovados.
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Prompt para reunião de kickoff</h2>
+        <div class="prompt-box mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <p class="text-sm font-semibold text-slate-900">Prompt para iniciar projeto de IA na empresa</p>
+            <button data-copy-target="prompt-checklist-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+          </div>
+          <pre id="prompt-checklist-01" class="text-xs text-slate-700">Atue como PMO de transformação digital. Monte um plano de kickoff para implementação de IA em processos administrativos da empresa [nome].
+
+Inclua:
+- Objetivos do projeto
+- Escopo inicial
+- Papéis e responsabilidades
+- Cronograma de 90 dias
+- KPIs de monitoramento
+- Riscos e mitigação</pre>
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Checklist em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de roteiro de implantacao 90 dias e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para implementacao imediata em ambiente real, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para aderencia ao plano de execucao, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Checklist.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de implementacao imediata em ambiente real. Faça um diagnostico rapido do processo [roteiro de implantacao 90 dias] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [roteiro de implantacao 90 dias] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [aderencia ao plano de execucao] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts para execução e monitoramento de 90 dias</h2>
+          <p class="mt-2 text-sm text-slate-600">Use estes prompts para garantir que a implementação saía conforme plano e ajuste rápido se necessário.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Checklist de pré-requisitos (semana 0 antes de começar)</p>
+                <button data-copy-target="prompt-chk-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-chk-01" class="text-xs text-slate-700">Antes de começar o projeto de 90 dias, garantir que todos estes pré-requisitos estão prontos:
+
+  ORGANIZAÇÃO:
+  ☐ Dono do projeto nomeado (quem é responsável?) 
+  ☐ Equipe dedicada (quantas pessoas? Quanto tempo cada uma?)
+  ☐ Orçamento aprovado e reservado (R$?)
+  ☐ Suporte de liderança (qual executivo?  Que frequência de governança?)
+
+  DADOS:
+  ☐ Dados históricos disponíveis (quantos exemplos? Qualidade ok?)
+  ☐ Acesso aos dados garantido (permissão de quem? Segurança ok?)
+  ☐ Dicionário de dados documentado (o que significa cada campo?)
+  ☐ Dados limpos e validados (alguém já fez qualidade?)
+
+  PROCESSO:
+  ☐ Processo atual mapeado (fluxo entendido?)
+  ☐ Métrica baseline medida (antes: X)
+  ☐ Alvo da intervenção definido (depois: Y)
+  ☐ Lógica de decisão documentada (qual regra o IA vai usar?)
+
+  GOVERNANÇA:
+  ☐ Comitê ou sponsor definido (quem aprova?)
+  ☐ Plano de comunicação pronto (como avisar equipe?)
+  ☐ Plano de risco/contingência (se falhar, plano B?)
+  ☐ KPI de parada definido (quando pausar/cancelar?)
+
+  SE ALGUM ☐ ESTÁ VAZIO → PAUSAR E RESOLVER ANTES DE COMEÇAR</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Dashboard semanal de monitoramento vs plano</p>
+                <button data-copy-target="prompt-chk-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-chk-02" class="text-xs text-slate-700">Cada semana, acompanhe estes indicadores para garantir que o plano está sendo executado:
+
+  TAREFAS & TIMELINE:
+  - Tarefas planejadas para semana: [X]
+  - Tarefas completadas: [Y] → On track? ☐ Sim ☐ Não ☐ Em risco
+  - Bloqueador (se não está no prazo): [descrever]
+  - Ação corretiva: [o que fazer?]
+
+  QUALIDADE:
+  - Taxa de erro do modelo: [X%] → Target é [Y%]
+  - Casos que falharam e por quê: [descrever]
+  - Aprendizado incorporado?: [sim/não]
+
+  ENGAJAMENTO:
+  - Equipe utilizando ferramenta?: [% da equipe]
+  - Feedback recebido: [positivo/negativo/neutro - resumir]
+  - Treinamento necessário?: [área/tópico]
+
+  FINANCEIRO:
+  - Custo acumulado: R$ [X] vs orçado R$ [Y]
+  - Desvio: [%]
+  - Projeção de overspent?: [sim/não]
+
+  DECISÃO:
+  ☐ Continue normalmente
+  ☐ Continue com monitoria aumentada
+  ☐ Pausa para ajustes
+  ☐ Cancela e volta para plano B</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Relatório de conclusão (semana 13): validação e decisão de escala</p>
+                <button data-copy-target="prompt-chk-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-chk-03" class="text-xs text-slate-700">Ao final de 90 dias, prepare relatório executivo com decisão de escala:
+
+  OBJETIVO ORIGINAL: [reafirmar qual era o desafio]
+
+  RESULTADO ALCANÇADO:
+  - Métrica baseline (antes): [X]
+  - Métrica pós-intervenção (depois): [Y]
+  - Ganho absoluto: [Y - X]
+  - Ganho relativo: [(Y-X)/X]%
+  - Significância: [Atingiu target? Sim/Não]
+
+  ANÁLISE DE SATISFAÇÃO:
+  - Equipe satisfeita (1-10): [nota]
+  - Facilidade de uso (1-10): [nota]
+  - Adotaria novamente?: [sim/não/talvez]
+
+  ANÁLISE FINANCEIRA:
+  - Custo total investido: R$ [X]
+  - Economia em 90 dias: R$ [Y]
+  - ROI em 90 dias: [%]Z
+  - Payback estimado: [X meses]
+
+  APRENDIZADOS:
+  1. [Sucesso: o que deu certo?]
+  2. [Sucesso: o que deu certo?]
+  3. [Desafio: o que poderia ser melhor?]
+
+  DECISÃO DE ESCALA:
+  ☐ SIM - Escalar para [qual área/processo?] em [qual timeline?]
+  ☐ TALVEZ - Precisa de ajustes primeiro: [quais?]
+  ☐ NÃO - Cancelar e aprender [qual lição?]
+
+  PRÓXIMOS PASSOS SE ESCALAR: [detalhar plano]</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>

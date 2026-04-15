@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 3 | IA nas Áreas Administrativas</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="modulo3" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Módulo 3</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Aplicações de IA nas Áreas Administrativas</h1>
+        <p class="mt-4 text-slate-600">RH, Marketing, Financeiro e Operações já utilizam IA para acelerar tarefas e elevar precisão. O segredo é adaptar cada aplicação à realidade de cada área.</p>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--m3 print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/modulo3-800.webp" />
+            <img src="assets/images/heroes/modulo3-1600.webp" alt="Imagem real de equipe multidisciplinar colaborando em áreas administrativas" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Aplicações por área: RH, Marketing, Financeiro e Operações trabalhando com dados e IA de forma integrada.
+        </figcaption>
+        <div class="module-hero__context">
+          <p class="module-hero__why"><strong>Por que esta imagem?</strong> Ela reforça a visão interáreas do módulo, onde resultados surgem quando departamentos conectam decisões e dados.</p>
+          <div class="module-hero__actions">
+            <a href="#objetivos-modulo3">Ver objetivo do módulo</a>
+            <a href="#pratica-modulo3">Ir para atividade prática</a>
+          </div>
+        </div>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="12" cy="17" r="3"/><path d="M9.5 9.2l1.6 4.6m3-4.6-1.6 4.6"/></svg></span>
+          <div><h3>Integração de áreas</h3><p>Conecte RH, Marketing, Finanças e Operações.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 16V9m5 7V5m5 11v-3" stroke-linecap="round"/></svg></span>
+          <div><h3>Priorização objetiva</h3><p>Escolha casos por impacto e viabilidade.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Implantação por ondas</h3><p>Escala progressiva com aprendizado contínuo.</p></div>
+        </article>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/areas-matrix.svg" alt="Matriz de aplicações de IA por área administrativa" loading="lazy" />
+        <figcaption>
+          Visão comparativa das aplicações por área: ganhos aparecem quando o caso de uso conversa com a rotina e com os indicadores locais.
+        </figcaption>
+      </figure>
+      <section class="grid gap-5 md:grid-cols-2" data-illustration-expansion="v1">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/admin-flow.svg" alt="Fluxo didatico de aplicacao interareas no modulo 3" loading="lazy" />
+          <figcaption>Encadeamento entre RH, Marketing, Financeiro e Operacoes com IA.</figcaption>
+        </figure>
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/tools-stack.svg" alt="Visao visual de ferramentas por etapa operacional" loading="lazy" />
+          <figcaption>Stack sugerido por etapa: diagnostico, execucao, auditoria e escala.</figcaption>
+        </figure>
+      </section>
+
+      <section id="objetivos-modulo3" class="grid gap-5 md:grid-cols-2">
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-xl font-semibold">RH</h2>
+          <p class="mt-3 text-sm">Triagem inteligente de currículos, análise de fit para vagas e apoio na construção de trilhas de desenvolvimento.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Redução do tempo de recrutamento.</li>
+            <li>Padronização da avaliação de candidatos.</li>
+            <li>Insights sobre turnover e engajamento.</li>
+          </ul>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-xl font-semibold">Marketing</h2>
+          <p class="mt-3 text-sm">Geração de campanhas, segmentação de público e análise de performance em tempo real com ajustes mais rápidos.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Personalização de mensagens.</li>
+            <li>Produção mais rápida de conteúdo.</li>
+            <li>Otimização contínua de mídia.</li>
+          </ul>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-xl font-semibold">Financeiro</h2>
+          <p class="mt-3 text-sm">Previsão de fluxo de caixa, detecção de inconsistências e conciliações com menos intervenção manual.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Menos erro de lançamento.</li>
+            <li>Visibilidade de risco financeiro.</li>
+            <li>Aceleração de fechamento mensal.</li>
+          </ul>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-xl font-semibold">Operações</h2>
+          <p class="mt-3 text-sm">Planejamento de demanda, gestão de estoque e roteirização inteligente para manter eficiência operacional.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Menos ruptura de estoque.</li>
+            <li>Melhor alocação de recursos.</li>
+            <li>Redução de atrasos e desperdícios.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do módulo</p>
+        <h2 class="mt-2 text-2xl font-bold">Como priorizar aplicações por área sem conflito político</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Decisão interáreas</h3>
+            <p>O melhor caso de uso é aquele que combina impacto econômico, prontidão de dados e baixa fricção de implantação.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Primeira onda</h3>
+            <p>RH e Marketing costumam ter ganhos rápidos; Financeiro e Operações entram em seguida com desenho mais robusto de dados.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Plano por departamento</h3>
+            <p>Monte roteiro de 30 dias por área com KPI próprio para evitar comparação injusta entre contextos diferentes.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Erro de governança comum</h3>
+            <p>Escalar para áreas sem dono local e sem baseline cria ruído e enfraquece a confiança na iniciativa.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Matriz de prioridade por área</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>Caso de uso recomendado</th>
+              <th>Impacto esperado</th>
+              <th>Dificuldade de implementação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RH</td>
+              <td>Triagem de currículos e ranqueamento inicial</td>
+              <td>Alto</td>
+              <td>Baixa</td>
+            </tr>
+            <tr>
+              <td>Marketing</td>
+              <td>Geração de variações de campanha por persona</td>
+              <td>Alto</td>
+              <td>Baixa a média</td>
+            </tr>
+            <tr>
+              <td>Financeiro</td>
+              <td>Classificação automática de despesas e alertas</td>
+              <td>Médio a alto</td>
+              <td>Média</td>
+            </tr>
+            <tr>
+              <td>Operações</td>
+              <td>Previsão de demanda com histórico sazonal</td>
+              <td>Alto</td>
+              <td>Média a alta</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Teoria aprofundada: priorização interáreas sem conflito</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Em empresas reais, áreas disputam prioridade de investimento. A melhor forma de evitar conflito é adotar uma régua comum de decisão com três eixos: impacto econômico, prontidão de dados e facilidade de implantação.
+        </p>
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Impacto econômico</h3>
+            <p class="mt-2 text-sm text-slate-600">Quanto o caso reduz custo, aumenta receita ou melhora nível de serviço em horizonte de 90 dias.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Prontidão de dados</h3>
+            <p class="mt-2 text-sm text-slate-600">Qualidade, disponibilidade e confiabilidade das bases necessárias para treinar ou operar o modelo.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Facilidade de implantação</h3>
+            <p class="mt-2 text-sm text-slate-600">Dependência de sistemas, mudança de rotina, risco regulatório e capacidade do time para executar o piloto.</p>
+          </article>
+        </div>
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+          Fórmula de priorização sugerida: <strong>score final = (impacto x 0,5) + (dados x 0,3) + (facilidade x 0,2)</strong>. Use nota de 1 a 5 para cada eixo.
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Mini tutorial: construir um plano por área em 30 minutos</h2>
+        <ol class="mt-4 space-y-3 text-sm text-slate-700">
+          <li><strong>1.</strong> Escolha uma área prioritária e um processo com maior dor operacional.</li>
+          <li><strong>2.</strong> Defina indicador de sucesso (tempo, custo, qualidade ou receita).</li>
+          <li><strong>3.</strong> Selecione ferramenta de IA adequada ao nível de maturidade da equipe.</li>
+          <li><strong>4.</strong> Crie um piloto de 14 dias com checkpoints semanais.</li>
+        </ol>
+
+        <div id="pratica-modulo3" class="prompt-box mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <p class="text-sm font-semibold text-slate-900">Prompt para plano tático por área</p>
+            <button data-copy-target="prompt-mod3-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+          </div>
+          <pre id="prompt-mod3-01" class="text-xs text-slate-700">Você é um consultor executivo de IA. Monte um plano tático para implementar IA na área de [RH/Marketing/Financeiro/Operações] em 30 dias.
+
+Inclua:
+- 3 casos de uso priorizados
+- Ferramenta recomendada por caso
+- KPI de acompanhamento
+- Principais riscos
+- Cronograma semanal</pre>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Exemplo real: impacto transversal</h2>
+        <p class="mt-3 text-sm text-slate-600">Uma rede de clínicas integrou IA em quatro áreas simultaneamente. Em 90 dias obteve ganhos combinados:</p>
+        <ul class="mt-4 space-y-2 text-sm text-slate-700">
+          <li>RH: tempo médio de contratação caiu 28%.</li>
+          <li>Marketing: aumento de 22% em conversão de campanhas segmentadas.</li>
+          <li>Financeiro: redução de 31% em inconsistências de lançamentos.</li>
+          <li>Operações: redução de 18% em faltas de insumos críticos.</li>
+        </ul>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano estendido do Módulo 3 (12h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Nesta etapa, você aprofunda aplicações setoriais e estrutura um plano completo por área administrativa.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">RH e desenvolvimento de pessoas</h3>
+            <p class="mt-2 text-sm">Triagem, onboarding inteligente e analytics de desempenho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Marketing e crescimento</h3>
+            <p class="mt-2 text-sm">Segmentação, conteúdo e otimização de funil com IA.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Financeiro e compliance</h3>
+            <p class="mt-2 text-sm">Conciliação, previsão e detecção de inconsistências.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Operações e logística</h3>
+            <p class="mt-2 text-sm">Previsão de demanda, priorização e redução de desperdício.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 3h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-blue-100 p-4 text-sm text-blue-900">
+          Entregável obrigatório: plano tático por área com no mínimo 2 casos de uso priorizados e cronograma de 30 dias.
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Modulo 3 em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de priorizacao interareas de casos e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para aplicacao por areas administrativas, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para ganho por area funcional, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Modulo 3.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de aplicacao por areas administrativas. Faça um diagnostico rapido do processo [priorizacao interareas de casos] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [priorizacao interareas de casos] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [ganho por area funcional] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts por área funcional</h2>
+          <p class="mt-2 text-sm text-slate-600">Use os prompts abaixo adaptados para RH, Marketing, Financeiro e Operações.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Mapear oportunidades de IA por área (RH, Marketing, Financeiro, Operações)</p>
+                <button data-copy-target="prompt-mod3-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod3-01" class="text-xs text-slate-700">Para cada área abaixo, liste 3 oportunidades de IA baseadas em desafios REAIS que você enfrenta:
+
+  RECURSOS HUMANOS:
+  - Maior desafio hoje: [descrever]
+  - Métrica mais crítica: [o que mais importa?]
+  - Oportunidade 1: [solução com IA]
+  - Oportunidade 2: [solução com IA]
+  - Oportunidade 3: [solução com IA]
+
+  MARKETING:
+  - Maior desafio hoje: [descrever]
+  - Métrica mais crítica: [o que mais importa?]
+  - Oportunidade 1: [solução com IA]
+  - Oportunidade 2: [solução com IA]
+  - Oportunidade 3: [solução com IA]
+
+  FINANCEIRO:
+  - Maior desafio hoje: [descrever]
+  - Métrica mais crítica: [o que mais importa?]
+  - Oportunidade 1: [solução com IA]
+  - Oportunidade 2: [solução com IA]
+  - Oportunidade 3: [solução com IA]
+
+  OPERAÇÕES:
+  - Maior desafio hoje: [descrever]
+  - Métrica mais crítica: [o que mais importa?]
+  - Oportunidade 1: [solução com IA]
+  - Oportunidade 2: [solução com IA]
+  - Oportunidade 3: [solução com IA]
+
+  Para cada um, recomende: tipo de IA, tempo de implementação, risco principal.</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Qual área começar primeiro (RH, Marketing, Financeiro ou Operações)</p>
+                <button data-copy-target="prompt-mod3-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod3-02" class="text-xs text-slate-700">Tenho aprovação para começar em 1 área apenas. Qual deveria escolher PRIMEIRA para máximo sucesso?
+
+  Considere:
+  1. Qual tem maior ganho potencial (horas/R$)?
+  2. Qual tem processo mais estruturado?
+  3. Qual tem dados melhores organizados?
+  4. Qual área seria mais receptiva?
+  5. Qual sucesso abre porta para outras?
+
+  Recomendação: qual é a 2ª área após sucesso? Por quê?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Estruturar piloto multi-área em paralelo</p>
+                <button data-copy-target="prompt-mod3-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod3-03" class="text-xs text-slate-700">Vou testar IA em 2 áreas em paralelo. Monte um plano para 60 dias:
+
+  PARA CADA ÁREA:
+  1. Qual processo específico será piloto?
+  2. Qual métrica semanal vou monitorar?
+  3. Quem é o patrocinador/dono?
+  4. Qual é a "regra de parada" (quando cancelo)?
+  5. Como comunicar para equipe (minimizar resistência)?
+
+  GOVERNANÇA:
+  - Como sincronizar aprendizado entre áreas?
+  - Se 1 falhar, qual é plano B?
+  - Qual sera o ponto de decisão (semana 4, 8 ou 12)?</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
+
+
+

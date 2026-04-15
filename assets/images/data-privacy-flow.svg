@@ -1,0 +1,166 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .step-box { fill: #f0f9ff; stroke: #0284c7; stroke-width: 2; }
+      .step-title { fill: #0c4a6e; font-weight: bold; font-size: 13px; }
+      .step-text { fill: #0f172a; font-size: 11px; }
+      .control-box { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; }
+      .control-title { fill: #166534; font-weight: bold; font-size: 11px; }
+      .risk-box { fill: #fef2f2; stroke: #dc2626; stroke-width: 2; }
+      .risk-title { fill: #7f1d1d; font-weight: bold; font-size: 11px; }
+      .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .title { fill: #0f172a; font-size: 18px; font-weight: bold; }
+      .subtitle { fill: #475569; font-size: 12px; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Fluxo de Privacidade de Dados em IA</text>
+  <text x="450" y="50" text-anchor="middle" class="subtitle">Ciclo completo de coleta, processamento, armazenamento e uso responsável</text>
+
+  <!-- Stage 1: Collection -->
+  <g id="stage1">
+    <rect x="30" y="80" width="140" height="100" rx="5" class="step-box"/>
+    <text x="100" y="100" text-anchor="middle" class="step-title">1. Coleta</text>
+    <text x="100" y="120" text-anchor="middle" class="step-text">Declaração de</text>
+    <text x="100" y="132" text-anchor="middle" class="step-text">consentimento</text>
+    <text x="100" y="144" text-anchor="middle" class="step-text">Identificar dados</text>
+    <text x="100" y="156" text-anchor="middle" class="step-text">sensíveis</text>
+
+    <rect x="30" y="200" width="140" height="70" rx="5" class="control-box"/>
+    <text x="100" y="217" text-anchor="middle" class="control-title">Controles:</text>
+    <text x="100" y="230" text-anchor="middle" class="step-text">Minimum data</text>
+    <text x="100" y="242" text-anchor="middle" class="step-text">Base legal clara</text>
+    <text x="100" y="254" text-anchor="middle" class="step-text">Registro de coleta</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 170 130 L 230 130" class="arrow"/>
+
+  <!-- Stage 2: Classification -->
+  <g id="stage2">
+    <rect x="230" y="80" width="140" height="100" rx="5" class="step-box"/>
+    <text x="300" y="100" text-anchor="middle" class="step-title">2. Classificação</text>
+    <text x="300" y="120" text-anchor="middle" class="step-text">Dados públicos</text>
+    <text x="300" y="132" text-anchor="middle" class="step-text">Dados internos</text>
+    <text x="300" y="144" text-anchor="middle" class="step-text">Dados sensíveis</text>
+    <text x="300" y="156" text-anchor="middle" class="step-text">PII, LGPD</text>
+
+    <rect x="230" y="200" width="140" height="70" rx="5" class="control-box"/>
+    <text x="300" y="217" text-anchor="middle" class="control-title">Controles:</text>
+    <text x="300" y="230" text-anchor="middle" class="step-text">Matriz de dados</text>
+    <text x="300" y="242" text-anchor="middle" class="step-text">Proprietário definido</text>
+    <text x="300" y="254" text-anchor="middle" class="step-text">Política de retenção</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 370 130 L 430 130" class="arrow"/>
+
+  <!-- Stage 3: Processing -->
+  <g id="stage3">
+    <rect x="430" y="80" width="140" height="100" rx="5" class="step-box"/>
+    <text x="500" y="100" text-anchor="middle" class="step-title">3. Processamento</text>
+    <text x="500" y="120" text-anchor="middle" class="step-text">Anonimização</text>
+    <text x="500" y="132" text-anchor="middle" class="step-text">Mascaramento</text>
+    <text x="500" y="144" text-anchor="middle" class="step-text">Transformação</text>
+    <text x="500" y="156" text-anchor="middle" class="step-text">Agregação</text>
+
+    <rect x="430" y="200" width="140" height="70" rx="5" class="control-box"/>
+    <text x="500" y="217" text-anchor="middle" class="control-title">Controles:</text>
+    <text x="500" y="230" text-anchor="middle" class="step-text">Privacy by design</text>
+    <text x="500" y="242" text-anchor="middle" class="step-text">Logs de acesso</text>
+    <text x="500" y="254" text-anchor="middle" class="step-text">Criptografia</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 570 130 L 630 130" class="arrow"/>
+
+  <!-- Stage 4: Storage -->
+  <g id="stage4">
+    <rect x="630" y="80" width="140" height="100" rx="5" class="step-box"/>
+    <text x="700" y="100" text-anchor="middle" class="step-title">4. Armazenamento</text>
+    <text x="700" y="120" text-anchor="middle" class="step-text">Isolamento seguro</text>
+    <text x="700" y="132" text-anchor="middle" class="step-text">Acesso restrito</text>
+    <text x="700" y="144" text-anchor="middle" class="step-text">Backup seguro</text>
+    <text x="700" y="156" text-anchor="middle" class="step-text">Conformidade</text>
+
+    <rect x="630" y="200" width="140" height="70" rx="5" class="control-box"/>
+    <text x="700" y="217" text-anchor="middle" class="control-title">Controles:</text>
+    <text x="700" y="230" text-anchor="middle" class="step-text">Controle de acesso</text>
+    <text x="700" y="242" text-anchor="middle" class="step-text">Auditoria de acesso</text>
+    <text x="700" y="254" text-anchor="middle" class="step-text">Data residency</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M 770 130 L 830 130" class="arrow"/>
+
+  <!-- Stage 5: Usage -->
+  <g id="stage5">
+    <rect x="730" y="310" width="140" height="100" rx="5" class="step-box"/>
+    <text x="800" y="330" text-anchor="middle" class="step-title">5. Uso Responsável</text>
+    <text x="800" y="350" text-anchor="middle" class="step-text">Autorização clara</text>
+    <text x="800" y="362" text-anchor="middle" class="step-text">Propósito legítimo</text>
+    <text x="800" y="374" text-anchor="middle" class="step-text">Validação humana</text>
+    <text x="800" y="386" text-anchor="middle" class="step-text">Monitoramento</text>
+
+    <rect x="730" y="430" width="140" height="70" rx="5" class="control-box"/>
+    <text x="800" y="447" text-anchor="middle" class="control-title">Controles:</text>
+    <text x="800" y="460" text-anchor="middle" class="step-text">Governança de IA</text>
+    <text x="800" y="472" text-anchor="middle" class="step-text">Triagem de risco</text>
+    <text x="800" y="484" text-anchor="middle" class="step-text">Direito ao esquecimento</text>
+  </g>
+
+  <!-- Arrow down from storage -->
+  <path d="M 700 315 Q 750 310 800 310" class="arrow"/>
+
+  <!-- Risk Lane -->
+  <text x="30" y="340" class="subtitle" style="fill: #dc2626; font-weight: bold;">RISCOS POTENCIAIS:</text>
+
+  <g id="risk1">
+    <rect x="30" y="360" width="130" height="80" rx="5" class="risk-box"/>
+    <text x="95" y="377" text-anchor="middle" class="risk-title">Vazamento</text>
+    <text x="95" y="390" text-anchor="middle" class="step-text">Acesso não</text>
+    <text x="95" y="402" text-anchor="middle" class="step-text">autorizado a</text>
+    <text x="95" y="414" text-anchor="middle" class="step-text">dados sensíveis</text>
+    <text x="95" y="428" text-anchor="middle" class="step-text">Mitigação: MFA</text>
+    <text x="95" y="440" text-anchor="middle" class="step-text">Criptografia</text>
+  </g>
+
+  <g id="risk2">
+    <rect x="190" y="360" width="130" height="80" rx="5" class="risk-box"/>
+    <text x="255" y="377" text-anchor="middle" class="risk-title">Uso Indevido</text>
+    <text x="255" y="390" text-anchor="middle" class="step-text">Desvio de</text>
+    <text x="255" y="402" text-anchor="middle" class="step-text">propósito ou</text>
+    <text x="255" y="414" text-anchor="middle" class="step-text">consentimento</text>
+    <text x="255" y="428" text-anchor="middle" class="step-text">Mitigação:</text>
+    <text x="255" y="440" text-anchor="middle" class="step-text">Auditoria</text>
+  </g>
+
+  <g id="risk3">
+    <rect x="350" y="360" width="130" height="80" rx="5" class="risk-box"/>
+    <text x="415" y="377" text-anchor="middle" class="risk-title">Viés</text>
+    <text x="415" y="390" text-anchor="middle" class="step-text">Discriminação</text>
+    <text x="415" y="402" text-anchor="middle" class="step-text">em decisões</text>
+    <text x="415" y="414" text-anchor="middle" class="step-text">automatizadas</text>
+    <text x="415" y="428" text-anchor="middle" class="step-text">Mitigação:</text>
+    <text x="415" y="440" text-anchor="middle" class="step-text">Teste + Review</text>
+  </g>
+
+  <g id="risk4">
+    <rect x="510" y="360" width="130" height="80" rx="5" class="risk-box"/>
+    <text x="575" y="377" text-anchor="middle" class="risk-title">Retenção Excessiva</text>
+    <text x="575" y="390" text-anchor="middle" class="step-text">Guardar dados</text>
+    <text x="575" y="402" text-anchor="middle" class="step-text">além do</text>
+    <text x="575" y="414" text-anchor="middle" class="step-text">necessário</text>
+    <text x="575" y="428" text-anchor="middle" class="step-text">Mitigação:</text>
+    <text x="575" y="440" text-anchor="middle" class="step-text">Política clara</text>
+  </g>
+
+  <!-- Bottom message -->
+  <rect x="30" y="500" width="840" height="70" rx="5" fill="#eff6ff" stroke="#0284c7" stroke-width="1"/>
+  <text x="450" y="525" text-anchor="middle" class="step-title" style="fill: #0c4a6e;">Responsabilidade pelo Ciclo Completo</text>
+  <text x="450" y="545" text-anchor="middle" class="step-text" style="fill: #0f172a;">Cada estágio exige controles específicos + Auditoria contínua + Documentação + Comunicação transparente com stakeholders</text>
+</svg>

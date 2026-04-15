@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 5 | Ética em IA</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="modulo5" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Módulo 5</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Ética, Privacidade e Limitações da IA</h1>
+        <p class="mt-4 text-slate-600">Adotar IA sem governança pode gerar riscos legais, operacionais e reputacionais. Este módulo mostra como implementar IA com responsabilidade e segurança.</p>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--m5 print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/modulo5-800.webp" />
+            <img src="assets/images/heroes/modulo5-1600.webp" alt="Imagem real representando privacidade e segurança de dados" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Privacidade e responsabilidade: segurança da informação como base para adoção ética de IA.
+        </figcaption>
+        <div class="module-hero__context">
+          <p class="module-hero__why"><strong>Por que esta imagem?</strong> A abertura reforça o tema central do módulo: governança, proteção de dados e decisões responsáveis em IA.</p>
+          <div class="module-hero__actions">
+            <a href="#objetivos-modulo5">Ver objetivo do módulo</a>
+            <a href="#pratica-modulo5">Ir para atividade prática</a>
+          </div>
+        </div>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7l8-4z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Conformidade</h3><p>Classifique dados e reduza exposição legal.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 8h10M7 12h8M7 16h6" stroke-linecap="round"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg></span>
+          <div><h3>Governança viva</h3><p>Política, comitê e auditoria recorrente.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v5m0 3h.01" stroke-linecap="round"/><path d="M10.3 3.8L2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/></svg></span>
+          <div><h3>Prevenção de incidentes</h3><p>Planos para viés, vazamento e alucinação.</p></div>
+        </article>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/ethics-map.svg" alt="Mapa de governança ética em IA" loading="lazy" />
+        <figcaption>
+          Quatro pilares da IA responsável: transparência, privacidade, equidade e accountability com papéis claros na empresa.
+        </figcaption>
+      </figure>
+      <section class="grid gap-5 md:grid-cols-2" data-illustration-expansion="v1">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/research-framework.svg" alt="Framework visual de governanca e auditoria no modulo 5" loading="lazy" />
+          <figcaption>Estrutura de governanca: politica, papeis, controles e evidencias.</figcaption>
+        </figure>
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/advanced-assessment.svg" alt="Matriz didatica de risco e conformidade para IA" loading="lazy" />
+          <figcaption>Matriz de risco para classificar uso permitido, restrito e proibido.</figcaption>
+        </figure>
+      </section>
+
+      <section id="objetivos-modulo5" class="grid gap-5 md:grid-cols-3">
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">Privacidade e dados</h2>
+          <p class="mt-3 text-sm">Dados pessoais e sensíveis exigem classificação, controle de acesso e base legal de uso. O princípio mínimo é: usar apenas o dado necessário.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Mapeie fontes de dados.</li>
+            <li>Anonimize quando possível.</li>
+            <li>Registre consentimento e finalidade.</li>
+          </ul>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">Viés algorítmico</h2>
+          <p class="mt-3 text-sm">Modelos podem reproduzir injustiças presentes em dados históricos. É necessário revisar amostras, critérios e impactos por grupo.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Teste em perfis diversos.</li>
+            <li>Evite variáveis discriminatórias.</li>
+            <li>Monitore decisões em produção.</li>
+          </ul>
+        </article>
+
+        <article class="surface-card p-6 print-break-avoid">
+          <h2 class="text-lg font-semibold">Limitações práticas</h2>
+          <p class="mt-3 text-sm">IA pode errar, inventar fatos e interpretar contexto de forma incompleta. Por isso, decisões críticas devem ter validação humana obrigatória.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600">
+            <li>Defina níveis de revisão por risco.</li>
+            <li>Documente exceções e falhas.</li>
+            <li>Treine equipe para uso consciente.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do módulo</p>
+        <h2 class="mt-2 text-2xl font-bold">Como implantar IA com segurança jurídica e operacional</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Governança primeiro</h3>
+            <p>IA responsável exige política clara, classificação de dados e definição objetiva de responsabilidade por decisão.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Risco evitável</h3>
+            <p>Grande parte dos incidentes ocorre por uso indevido de dados em prompts sem revisão e sem trilha de auditoria.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Política em produção</h3>
+            <p>Use os prompts para gerar minuta de política, matriz de risco e ritual do comitê de IA em formato executável.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Confiar sem verificar</h3>
+            <p>Resultado aparentemente correto pode ocultar viés ou alucinação; casos críticos devem manter revisão humana mandatória.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Matriz de risco ético</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Risco</th>
+              <th>Exemplo</th>
+              <th>Impacto</th>
+              <th>Mitigação recomendada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vazamento de dados</td>
+              <td>Envio de base com dados sensíveis para ferramenta externa</td>
+              <td>Alto</td>
+              <td>Anonimização, política de uso e bloqueio de campos críticos</td>
+            </tr>
+            <tr>
+              <td>Decisão enviesada</td>
+              <td>Ranqueamento injusto em triagem de candidatos</td>
+              <td>Alto</td>
+              <td>Auditoria de critérios e revisão humana</td>
+            </tr>
+            <tr>
+              <td>Alucinação de conteúdo</td>
+              <td>Relatório com informação não verificada</td>
+              <td>Médio</td>
+              <td>Checagem de fontes e validação por especialista</td>
+            </tr>
+            <tr>
+              <td>Dependência excessiva</td>
+              <td>Equipe para de analisar criticamente as saídas</td>
+              <td>Médio</td>
+              <td>Treinamento contínuo e checklist de revisão</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Teoria aprofundada: framework de governança em 6 controles</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Governança não é apenas um documento. É um sistema de controles permanentes que define o que pode ser feito, por quem, com qual dado e com qual evidência de revisão.
+        </p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 1: classificação de dados</h3>
+            <p class="mt-2 text-sm text-slate-600">Separe dados públicos, internos, sensíveis e críticos. Cada categoria deve ter regra específica de uso em ferramentas de IA.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 2: catálogo de casos permitidos</h3>
+            <p class="mt-2 text-sm text-slate-600">Liste casos autorizados e proibidos por área. Isso evita uso improvisado em processos com alto risco legal ou reputacional.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 3: revisão humana por criticidade</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina níveis de revisão conforme impacto da decisão. Quanto maior o dano potencial, maior a exigência de validação formal.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 4: trilha de auditoria</h3>
+            <p class="mt-2 text-sm text-slate-600">Registre prompts usados, dados consultados, saída gerada e decisão final tomada. Sem trilha, não há governança defensável.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 5: monitoramento de viés</h3>
+            <p class="mt-2 text-sm text-slate-600">Acompanhe métricas de disparidade entre grupos e revise periodicamente critérios para impedir discriminação algorítmica.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Controle 6: resposta a incidentes</h3>
+            <p class="mt-2 text-sm text-slate-600">Estabeleça protocolo de contenção, comunicação e correção quando houver vazamento, decisão indevida ou erro crítico da IA.</p>
+          </article>
+        </div>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/governance-framework.svg" alt="Framework de governança corporativa com comitê, operações e inovação" loading="lazy" />
+        <figcaption>Estrutura de governança em três camadas: nível executivo (comitê), operações (processos) e inovação (experimentação segura).</figcaption>
+      </figure>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/data-privacy-flow.svg" alt="Fluxo de privacidade de dados com coleta, classificação, processamento, armazenamento e uso" loading="lazy" />
+        <figcaption>Ciclo de privacidade de dados: cada etapa exige controles específicos para conformidade e responsabilidade.</figcaption>
+      </figure>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/risk-assessment-matrix.svg" alt="Matriz de avaliação de risco ético em IA" loading="lazy" />
+        <figcaption>Matriz de risco ético: classifique cada novo caso de uso de acordo com probabilidade e impacto para definir nível de aprovação.</figcaption>
+      </figure>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Mini tutorial: política mínima de IA para empresa</h2>
+        <ol class="mt-4 space-y-3 text-sm text-slate-700">
+          <li><strong>1.</strong> Defina quais dados não podem ser usados em ferramentas de IA.</li>
+          <li><strong>2.</strong> Estabeleça revisão humana para decisões críticas.</li>
+          <li><strong>3.</strong> Crie trilha de auditoria para saídas sensíveis.</li>
+          <li><strong>4.</strong> Defina responsáveis por aprovação de novos fluxos.</li>
+          <li><strong>5.</strong> Treine equipes em ética e segurança operacional.</li>
+        </ol>
+
+        <div id="pratica-modulo5" class="prompt-box mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <p class="text-sm font-semibold text-slate-900">Prompt para criar política de uso responsável</p>
+            <button data-copy-target="prompt-mod5-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+          </div>
+          <pre id="prompt-mod5-01" class="text-xs text-slate-700">Atue como especialista em governança de IA. Crie uma política corporativa de uso de IA para uma empresa de [setor] com [porte].
+
+Inclua:
+- Objetivos da política
+- Regras de uso de dados
+- Casos de uso permitidos e proibidos
+- Necessidade de revisão humana
+- Procedimento para incidentes</pre>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Caso real de atenção</h2>
+        <p class="mt-3 text-sm text-slate-600">Uma empresa automatizou triagem de candidatos sem revisão de critérios e percebeu queda de diversidade nas contratações. Após auditoria, ajustou variáveis e incluiu revisão humana em etapas sensíveis.</p>
+        <div class="mt-5 rounded-2xl bg-yellow-100 p-4 text-sm text-yellow-900">
+          Lição principal: IA deve ampliar justiça e eficiência, não reforçar desigualdades históricas.
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano estendido do Módulo 5 (8h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Estrutura de governança para uso responsável de IA em ambientes corporativos.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Governança e base legal</h3>
+            <p class="mt-2 text-sm">Política de uso, classificação de dados e responsabilidades internas.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 2h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Risco e viés algorítmico</h3>
+            <p class="mt-2 text-sm">Métodos para monitorar injustiça algorítmica e reduzir danos.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 2h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Auditoria de processos com IA</h3>
+            <p class="mt-2 text-sm">Checklist de auditoria, trilhas de decisão e gestão de incidentes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 2h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Workshop de política interna</h3>
+            <p class="mt-2 text-sm">Construção colaborativa de política mínima de IA para a empresa.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 2h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-blue-100 p-4 text-sm text-blue-900">
+          Entregável obrigatório: política de IA versão 1.0 com regras de dados, revisão humana e procedimento de incidentes.
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Modulo 5 em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de controle de risco no uso de IA e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para etica, privacidade e compliance, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para incidentes evitados, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Modulo 5.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de etica, privacidade e compliance. Faça um diagnostico rapido do processo [controle de risco no uso de IA] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [controle de risco no uso de IA] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [incidentes evitados] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts para governança, risco e conformidade</h2>
+          <p class="mt-2 text-sm text-slate-600">Use estes prompts para estruturar controles, política de IA e mitigação de riscos éticos e legais.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Audit de conformidade: quais riscos de IA tem sua operação?</p>
+                <button data-copy-target="prompt-mod5-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod5-01" class="text-xs text-slate-700">Estou usando IA em [seu processo] e preciso entender riscos de conformidade. Analise:
+
+  PARA MEU CENÁRIO:
+  1. Que tipo de dados estou usando? (pessoais, financeiros, saúde, etc?)
+  2. Qual lei se aplica? (LGPD, Lei Geral de Proteção de Dados, GDPR, etc?)
+  3. Há discriminação de grupo potencial? (idade, gênero, raça, regional?)
+  4. De quem é a responsabilidade se der errado? (minha, da ferramenta, compartilhada?)
+  5. Qual é o direito do cliente/pessoa (explicação, objeção, correção)?
+
+  MATRIZ DE RISCO:
+  - Risco legal: [alto/médio/baixo] - por quê?
+  - Risco operacional: [alto/médio/baixo] - por quê?
+  - Risco reputacional: [alto/médio/baixo] - um erro pode viralizar?
+
+  AÇÕES DE MITIGAÇÃO:
+  1. [ação]
+  2. [ação]
+  3. [ação]
+
+  Próximo passo: enviar para jurídico? Documentar política?</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Estruturar Comitê de IA com responsáveis por aprovação, risco e inovação</p>
+                <button data-copy-target="prompt-mod5-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod5-02" class="text-xs text-slate-700">Preciso formalizar o "Comitê de IA" da minha empresa para decentralizar decisões e reduzir risco. Monte estrutura com:
+
+  COMPOSIÇÃO:
+  - Patrocinador (faz parte da liderança? Qual cargo mín?)
+  - Especialista em dados/IA (quem?)
+  - Representante de Risco/Compliance (quem?)
+  - Proprietário de negócio (qual área prioriza?)
+  - Stakeholder usuário (equipe que usa?)
+
+  CHARTER (O que o comitê faz?):
+  1. Aprova propostas de IA (escopo, risco, orçamento)
+  2. Monitora projetos em andamento (KPI, desvios)
+  3. Escalada de risco (quando pausar/parar?)
+  4. Aprendizado e melhoria (o que deu certo? E errado?)
+  5. Comunicação (como informar empresa sobre IA?)
+
+  CADÊNCIA:
+  - Reunião de aprovação: [quinzenal/mensal?]
+  - Reunião de monitoramento: [semanal/mensal?]
+  - Revisão de risco: [trimestral?]
+
+  DOCUMENTAÇÃO:
+  - Ata com decisões e donos
+  - Registro de riscos identificados (log vivo)
+  - Matriz de aprovação (sim/não/sim com condições)</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Política de IA corporativa (o que vale, o que não vale, o que monitora)</p>
+                <button data-copy-target="prompt-mod5-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod5-03" class="text-xs text-slate-700">Monte uma Política de IA corporativa mínima (1-2 páginas) com as regras que TODOS precisam seguir:
+
+  PROIBIÇÕES (NUNCA fazer):
+  1. Enviar dados pessoais [quais?] para ferramentas públicas (ChatGPT, etc)
+  2. Usar IA para [decisões sensíveis: demissão, crédito, contratação?]
+  3. [Outras regras específicas da sua empresa]
+
+  OBRIGAÇÕES (SEMPRE fazer):
+  1. Documentar qual IA foi usada e para qual caso
+  2. Validar output antes de usar (spot-check de qualidade)
+  3. Reportar erro imediatamente (quem avisar?)
+  4. Pedir aprovação para [quais casos?]
+
+  MONITORAMENTO (Como verificar que as regras funcionam?):
+  1. Audit mensal de ferramentas usadas
+  2. Quiz trimestral de conhecimento
+  3. Incidente/erro requerido ser escalado (log)
+
+  PENALIDADE (O que acontece se quebrar regra?):
+  - Aviso
+  - Retreinamento
+  - Ação disciplinar (em caso grave)
+
+  Distribuição: enviar por quem? Com signature de recebimento?</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
+
+
+

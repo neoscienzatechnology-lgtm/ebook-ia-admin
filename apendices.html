@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apêndices | IA Aplicada à Administração</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="apendices" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Apêndices</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Biblioteca de Referência Operacional</h1>
+        <p class="mt-4 text-slate-600">
+          Esta seção fecha a apostila com material de apoio para execução real: glossário executivo, templates de decisão,
+          catálogo de KPIs e modelos prontos para governança e escala.
+        </p>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/enterprise-ai-architecture.svg" alt="Mapa de referência operacional para implementação de IA" loading="lazy" />
+        <figcaption>
+          Use os apêndices como guia de mesa para desenhar, defender e escalar iniciativas de IA em contexto administrativo.
+        </figcaption>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12h8M8 8h8M8 16h6" stroke-linecap="round"/><rect x="5" y="4" width="14" height="16" rx="2"/></svg></span>
+          <div><h3>Guia de bolso</h3><p>Templates para decisão e execução.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 15V9m5 6V5m5 10v-3" stroke-linecap="round"/></svg></span>
+          <div><h3>KPI por área</h3><p>Medição padronizada para comparar ganhos.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Plano contínuo</h3><p>Fechamento do curso com próxima onda.</p></div>
+        </article>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Glossário essencial (negócio + IA)</h2>
+        <p class="mt-2 text-sm text-slate-600">Termos críticos para alinhar times técnicos e executivos sem ruído conceitual.</p>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Termo</th>
+              <th>Definição prática</th>
+              <th>Aplicação no dia a dia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Baseline</td><td>Métrica de referência antes da intervenção</td><td>Comparar antes/depois de um piloto</td></tr>
+            <tr><td>ROI</td><td>Retorno sobre investimento</td><td>Definir se o projeto escala</td></tr>
+            <tr><td>Payback</td><td>Tempo para recuperar o investimento</td><td>Priorizar iniciativas com retorno rápido</td></tr>
+            <tr><td>SLA</td><td>Nível de serviço acordado</td><td>Monitorar qualidade operacional</td></tr>
+            <tr><td>Drift</td><td>Mudança no padrão dos dados ao longo do tempo</td><td>Acionar recalibração do modelo</td></tr>
+            <tr><td>Prompt</td><td>Instrução textual para o modelo</td><td>Padronizar saídas administrativas</td></tr>
+            <tr><td>Guardrails</td><td>Regras de segurança e comportamento</td><td>Evitar respostas inadequadas</td></tr>
+            <tr><td>Alucinação</td><td>Resposta plausível, porém incorreta</td><td>Exigir validação em decisões críticas</td></tr>
+            <tr><td>Viés algorítmico</td><td>Distorção injusta em resultados</td><td>Revisar critérios de recrutamento/crédito</td></tr>
+            <tr><td>Explainability</td><td>Capacidade de explicar a decisão do modelo</td><td>Atender compliance e auditoria</td></tr>
+            <tr><td>Data governance</td><td>Regras para qualidade, acesso e uso de dados</td><td>Controlar risco e consistência</td></tr>
+            <tr><td>MLOps</td><td>Práticas para operar modelos em produção</td><td>Versionamento, monitoramento e rollback</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Templates executivos prontos</h2>
+        <p class="mt-2 text-sm text-slate-600">Modelos de uma página para acelerar decisões sem perder rigor.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Template 1: Business case de IA (one-page)</h3>
+            <p class="mt-2 text-sm text-slate-600">Problema, hipótese de ganho, custo estimado, KPI alvo, risco principal e decisão go/no-go.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Template 2: Matriz de priorização</h3>
+            <p class="mt-2 text-sm text-slate-600">Pontuação por impacto, esforço, risco, prontidão de dados e aderência estratégica.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Template 3: Política mínima de IA</h3>
+            <p class="mt-2 text-sm text-slate-600">Escopo permitido, dados proibidos, revisão humana, trilha de auditoria e resposta a incidentes.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Template 4: Relatório de piloto 30 dias</h3>
+            <p class="mt-2 text-sm text-slate-600">Baseline, resultados, desvio, aprendizados, riscos residuais e recomendação de escala.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Catálogo de KPIs por área</h2>
+        <p class="mt-2 text-sm text-slate-600">Indicadores sugeridos para medir valor operacional e risco de implementação.</p>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Área</th>
+              <th>KPI de produtividade</th>
+              <th>KPI de qualidade</th>
+              <th>KPI de risco/governança</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>RH</td><td>Tempo de triagem de candidatos</td><td>Taxa de aderência ao perfil</td><td>Equidade por grupo avaliado</td></tr>
+            <tr><td>Financeiro</td><td>Tempo de fechamento</td><td>Taxa de retrabalho contábil</td><td>Incidentes de conformidade</td></tr>
+            <tr><td>Marketing</td><td>Custo por lead qualificado</td><td>Taxa de conversão por segmento</td><td>Uso de dados com consentimento</td></tr>
+            <tr><td>Operações</td><td>Tempo de ciclo do processo</td><td>Taxa de erro operacional</td><td>Exceções críticas sem revisão</td></tr>
+            <tr><td>Atendimento</td><td>TMA por chamado</td><td>CSAT/NPS pós-atendimento</td><td>Escalação correta de casos sensíveis</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Prompts de fechamento do curso</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts para transformar aprendizado em plano executável imediatamente.</p>
+        <div class="mt-5 space-y-4">
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: Roadmap executivo 90 dias</p>
+              <button data-copy-target="prompt-ap-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-ap-01" class="text-xs text-slate-700">Atue como PMO de transformação com IA. Construa um roadmap de 90 dias para a empresa [nome], incluindo:
+- 3 processos prioritários
+- metas semanais
+- KPI por processo
+- riscos e plano de mitigação
+- decisão go/no-go no dia 90</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: Comitê de IA e governança</p>
+              <button data-copy-target="prompt-ap-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-ap-02" class="text-xs text-slate-700">Estruture um comitê de IA para empresa [porte/setor] com:
+- papéis e responsabilidades
+- fluxo de aprovação por criticidade
+- calendário de reuniões
+- indicadores de governança
+- protocolo de incidentes</pre>
+          </div>
+
+          <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="mb-3 flex items-center justify-between gap-3">
+              <p class="text-sm font-semibold text-slate-900">Prompt: Dossiê para diretoria</p>
+              <button data-copy-target="prompt-ap-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+            </div>
+            <pre id="prompt-ap-03" class="text-xs text-slate-700">Prepare um dossiê de decisão para diretoria sobre escala de IA contendo:
+- problema e oportunidade
+- evidência de piloto
+- impacto financeiro projetado
+- riscos residuais
+- recomendação final com critérios de decisão</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Checklist final de maturidade (autoavaliação)</h2>
+        <p class="mt-2 text-sm text-slate-600">Marque o nível atual para orientar o próximo ciclo de evolução.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Nível 1 - Iniciante</h3>
+            <p class="mt-2 text-sm text-slate-600">Há testes isolados, sem baseline formal e sem governança definida.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Nível 2 - Estruturado</h3>
+            <p class="mt-2 text-sm text-slate-600">Pilotos com KPI, responsáveis e rotina de revisão periódica.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Nível 3 - Escalando</h3>
+            <p class="mt-2 text-sm text-slate-600">Mais de uma área com IA em produção e governança operacional ativa.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Nível 4 - Competitivo</h3>
+            <p class="mt-2 text-sm text-slate-600">Portfólio institucionalizado, melhoria contínua e decisões orientadas por evidência.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>

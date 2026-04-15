@@ -1,0 +1,46 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title{font:700 34px Inter,Segoe UI,sans-serif;fill:#0f172a}
+      .h{font:700 18px Inter,Segoe UI,sans-serif;fill:#fff}
+      .p{font:500 13px Inter,Segoe UI,sans-serif;fill:#e2e8f0}
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="600" y="60" text-anchor="middle" class="title">Fluxo de automacao administrativa com IA</text>
+
+  <rect x="70" y="250" width="180" height="120" rx="18" fill="#2563eb"/>
+  <text x="160" y="302" text-anchor="middle" class="h">Entrada</text>
+  <text x="160" y="328" text-anchor="middle" class="p">Emails, formulários, planilhas</text>
+
+  <rect x="290" y="250" width="180" height="120" rx="18" fill="#7c3aed"/>
+  <text x="380" y="302" text-anchor="middle" class="h">Classificacao</text>
+  <text x="380" y="328" text-anchor="middle" class="p">Prioridade e tipo de demanda</text>
+
+  <rect x="510" y="250" width="180" height="120" rx="18" fill="#2563eb"/>
+  <text x="600" y="302" text-anchor="middle" class="h">Analise</text>
+  <text x="600" y="328" text-anchor="middle" class="p">Regras e recomendacoes</text>
+
+  <rect x="730" y="250" width="180" height="120" rx="18" fill="#7c3aed"/>
+  <text x="820" y="302" text-anchor="middle" class="h">Roteamento</text>
+  <text x="820" y="328" text-anchor="middle" class="p">Encaminhamento automatico</text>
+
+  <rect x="950" y="250" width="180" height="120" rx="18" fill="#2563eb"/>
+  <text x="1040" y="302" text-anchor="middle" class="h">Saida</text>
+  <text x="1040" y="328" text-anchor="middle" class="p">Acao, resposta e relatorio</text>
+
+  <path d="M250 310 L290 310" stroke="#64748b" stroke-width="4" marker-end="url(#a)"/>
+  <path d="M470 310 L510 310" stroke="#64748b" stroke-width="4" marker-end="url(#a)"/>
+  <path d="M690 310 L730 310" stroke="#64748b" stroke-width="4" marker-end="url(#a)"/>
+  <path d="M910 310 L950 310" stroke="#64748b" stroke-width="4" marker-end="url(#a)"/>
+
+  <rect x="160" y="460" width="880" height="140" rx="20" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="600" y="515" text-anchor="middle" style="font:700 20px Inter,Segoe UI,sans-serif;fill:#1e3a8a">KPIs de acompanhamento</text>
+  <text x="600" y="548" text-anchor="middle" style="font:500 15px Inter,Segoe UI,sans-serif;fill:#334155">Tempo medio de resposta • Taxa de retrabalho • Custo por processo • SLA</text>
+
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0,10 3,0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

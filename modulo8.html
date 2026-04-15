@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 8 | Laboratório Executivo</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#7c3aed",
+            soft: "#f9fafb"
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="modulo8" class="bg-soft text-slate-800">
+  <div id="header-slot"></div>
+
+  <div class="print-wrapper mx-auto flex max-w-[1440px] gap-6 px-4 pb-24 pt-28 sm:px-6 lg:px-8">
+    <div id="sidebar-slot" class="lg:w-72 lg:shrink-0"></div>
+
+    <main id="main-content" class="min-w-0 flex-1 space-y-8">
+      <section class="surface-card p-7 sm:p-9 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.2em] text-primary">Módulo 8 | Pós-graduação</p>
+        <h1 class="mt-2 text-3xl font-bold sm:text-4xl">Laboratório Executivo de Arquitetura e Escala</h1>
+        <p class="mt-4 text-slate-600">
+          Módulo orientado a tomada de decisão de nível diretivo: arquitetura corporativa de IA, governança em escala, finanças avançadas e defesa estratégica para comitês executivos.
+        </p>
+      </section>
+
+      <figure class="surface-card course-figure module-hero module-hero--m8 print-break-avoid">
+        <div class="module-hero__media">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/heroes/modulo8-800.webp" />
+            <img src="assets/images/heroes/modulo8-1600.webp" alt="Imagem real representando arquitetura corporativa e escala executiva" loading="lazy" />
+          </picture>
+        </div>
+        <figcaption>
+          Escala executiva: visão corporativa para consolidar arquitetura, governança e expansão da IA na organização.
+        </figcaption>
+        <div class="module-hero__context">
+          <p class="module-hero__why"><strong>Por que esta imagem?</strong> A imagem abre o módulo com uma leitura de escala corporativa, coerente com arquitetura e decisões de nível executivo.</p>
+          <div class="module-hero__actions">
+            <a href="#objetivos-modulo8">Ver objetivo do módulo</a>
+            <a href="#pratica-modulo8">Ir para atividade prática</a>
+          </div>
+        </div>
+      </figure>
+
+      <section class="icon-ribbon print-break-avoid">
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M7 16V9m5 7V6m5 10v-4" stroke-linecap="round"/></svg></span>
+          <div><h3>Visão de portfólio</h3><p>Priorize valor econômico em escala.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v10l-8 4-8-4V7l8-4z"/><path d="M8 12l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h3>Governança em produção</h3><p>Controle contínuo de risco e qualidade.</p></div>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge icon-badge--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v9l6 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h3>Rollout por ondas</h3><p>Expansão com critérios de go/no-go.</p></div>
+        </article>
+      </section>
+
+      <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+        <img src="assets/images/enterprise-ai-architecture.svg" alt="Arquitetura corporativa de IA" loading="lazy" />
+        <figcaption>
+          Arquitetura corporativa para escalar IA com segurança: dados, modelos, operação, observabilidade e gestão de valor.
+        </figcaption>
+      </figure>
+      <section class="grid gap-5 md:grid-cols-2" data-illustration-expansion="v1">
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/research-framework.svg" alt="Framework visual de orquestracao corporativa de IA" loading="lazy" />
+          <figcaption>Orquestracao corporativa: estrategia, arquitetura, governanca e operacao.</figcaption>
+        </figure>
+        <figure class="surface-card course-figure p-5 sm:p-6 print-break-avoid">
+          <img src="assets/images/case-metrics.svg" alt="Painel de metricas para escala executiva no modulo 8" loading="lazy" />
+          <figcaption>Metricas de escala para acompanhar adocao, custo e qualidade continua.</figcaption>
+        </figure>
+      </section>
+
+      <section id="objetivos-modulo8" class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Arquitetura de referência para empresas de médio e grande porte</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Escalar IA não é repetir pilotos isolados. É desenhar uma arquitetura institucional com interoperabilidade, trilha de auditoria e governança transversal entre áreas técnicas e áreas de negócio.
+        </p>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Camada de dados corporativos</h3>
+            <p class="mt-2 text-sm text-slate-600">Estruture contratos de dados, qualidade, catalogação semântica e política de acesso por criticidade.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Camada de inteligência híbrida</h3>
+            <p class="mt-2 text-sm text-slate-600">Combine modelos preditivos tradicionais com LLMs e regras de negócio para aumentar robustez e interpretabilidade.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Camada de operação e orquestração</h3>
+            <p class="mt-2 text-sm text-slate-600">Automação de fluxo, controle de exceções, fallback operacional e SLAs por processo crítico.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Camada de observabilidade e risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Monitoramento de drift, fairness, custo de inferência e qualidade de resposta com alertas executivos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <p class="text-xs uppercase tracking-[0.18em] text-primary">Sistema didático do módulo</p>
+        <h2 class="mt-2 text-2xl font-bold">Como levar IA para escala corporativa com segurança de execução</h2>
+        <div class="mt-5 didactic-grid">
+          <article class="didactic-card">
+            <p class="tag">Resumo</p>
+            <h3>Escala institucional</h3>
+            <p>Escalar IA requer arquitetura, governança e finanças integradas, não apenas replicação mecânica de pilotos.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Exemplo real</p>
+            <h3>Decisão de board</h3>
+            <p>Comitês aprovam projetos quando há tese estratégica, evidência empírica e critérios claros de go/no-go.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Prompt pronto</p>
+            <h3>Memorandum executivo</h3>
+            <p>Use os prompts para converter diagnóstico técnico em documento de decisão com impacto financeiro e governança.</p>
+          </article>
+          <article class="didactic-card">
+            <p class="tag">Atenção</p>
+            <h3>Risco de escala prematura</h3>
+            <p>Sem observabilidade e gestão de risco, a escala amplia falhas de forma silenciosa e onerosa.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card overflow-x-auto p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Modelos de governança para escala</h2>
+        <table class="table-clean mt-5 min-w-full text-sm">
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Descrição</th>
+              <th>Vantagem</th>
+              <th>Risco</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Centralizado</td>
+              <td>Centro de excelência controla padrões, ferramentas e aprovações</td>
+              <td>Alta consistência e compliance</td>
+              <td>Menor velocidade de resposta local</td>
+            </tr>
+            <tr>
+              <td>Federado</td>
+              <td>Áreas possuem autonomia com guardrails corporativos</td>
+              <td>Escala com adaptação contextual</td>
+              <td>Risco de fragmentação técnica</td>
+            </tr>
+            <tr>
+              <td>Híbrido por criticidade</td>
+              <td>Processos críticos centralizados; processos táticos descentralizados</td>
+              <td>Equilíbrio entre velocidade e controle</td>
+              <td>Exige matriz clara de decisão</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Finanças avançadas para portfólio de IA</h2>
+        <p class="mt-3 text-sm text-slate-600">
+          Em nível executivo, projetos de IA competem com outros investimentos estratégicos. A defesa de escala deve incluir linguagem financeira: valor presente líquido, payback e análise de sensibilidade.
+        </p>
+        <div class="mt-5 grid gap-4 md:grid-cols-3">
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">NPV por processo</h3>
+            <p class="mt-2 text-sm text-slate-600">Projete fluxo de caixa incremental considerando economia operacional, custo de manutenção e curva de adoção.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Real options</h3>
+            <p class="mt-2 text-sm text-slate-600">Trate pilotos como opção de crescimento: investimento inicial menor com direito de expansão condicional.</p>
+          </article>
+          <article class="theory-card">
+            <h3 class="text-sm font-semibold">Stress test</h3>
+            <p class="mt-2 text-sm text-slate-600">Simule cenários pessimista, base e otimista para evitar superestimação de ganhos e subestimação de risco.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Oficina premium: defesa executiva para comitê</h2>
+        <ol class="mt-4 space-y-3 text-sm text-slate-700">
+          <li><strong>1.</strong> Enquadre o problema em termos estratégicos (competitividade, risco e produtividade).</li>
+          <li><strong>2.</strong> Apresente evidências empíricas com baseline, método e margem de incerteza.</li>
+          <li><strong>3.</strong> Mostre arquitetura alvo, governança e dependências críticas de implementação.</li>
+          <li><strong>4.</strong> Traga análise financeira com cenário e gatilhos de decisão.</li>
+          <li><strong>5.</strong> Defina plano de rollout em ondas com critérios de go/no-go.</li>
+        </ol>
+
+        <div id="pratica-modulo8" class="prompt-box mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <p class="text-sm font-semibold text-slate-900">Prompt para memorandum executivo de escala</p>
+            <button data-copy-target="prompt-mod8-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+          </div>
+          <pre id="prompt-mod8-01" class="text-xs text-slate-700">Atue como advisor de transformação digital e finanças corporativas. Elabore um memorandum executivo para escalar IA no processo [nome do processo].
+
+Inclua:
+- Tese estratégica (problema, urgência e oportunidade)
+- Evidência empírica do piloto (método e resultados)
+- Arquitetura alvo e requisitos de governança
+- Estimativa financeira (NPV, payback e sensibilidade)
+- Roadmap em 3 ondas com marcos e riscos
+- Recomendação final com critérios de decisão</pre>
+        </div>
+      </section>
+
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Plano estendido do Módulo 8 (20h)</h2>
+        <p class="mt-2 text-sm text-slate-600">Formação executiva para arquitetar, financiar e escalar IA com robustez corporativa.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Laboratório 1: arquitetura corporativa</h3>
+            <p class="mt-2 text-sm">Desenho da arquitetura alvo com integração de dados, modelos e fluxo operacional.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Laboratório 2: governança e risco</h3>
+            <p class="mt-2 text-sm">Matriz de criticidade, controles e protocolo de incidentes para escala segura.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Laboratório 3: finanças de portfólio</h3>
+            <p class="mt-2 text-sm">Modelagem de NPV, payback e cenários de incerteza para decisão de investimento.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Laboratório 4: banca executiva</h3>
+            <p class="mt-2 text-sm">Defesa oral do roadmap de escala para simulação de comitê de investimento.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Carga: 5h</p>
+          </article>
+        </div>
+
+        <div class="mt-6 rounded-2xl bg-blue-100 p-4 text-sm text-blue-900">
+          Entregável obrigatório: dossiê executivo de escala com arquitetura, governança, modelagem financeira e plano de implementação em 12 meses.
+        </div>
+      </section>
+      <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Laboratorio aplicado do capitulo</h2>
+        <p class="mt-2 text-sm text-slate-600">Aplicacao pratica para transformar teoria de Modulo 8 em ganho operacional mensuravel.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 1: Diagnostico orientado a decisao</h3>
+            <p class="mt-2 text-sm text-slate-600">Mapeie o fluxo atual de plano executivo de expansao e identifique gargalos de tempo, custo e retrabalho.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: mapa AS-IS com 3 gargalos priorizados.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 2: Piloto de baixo risco</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenhe um piloto de 2 semanas para arquitetura corporativa e escala, com escopo controlado e checkpoints diarios.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: plano de execucao com dono, prazo e criterio de parada.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 3: Medicao e validacao</h3>
+            <p class="mt-2 text-sm text-slate-600">Defina baseline e metas para ROI de escala em 12 meses, comparando antes vs depois com o mesmo periodo.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: painel simples com 3 KPIs e tendencia semanal.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 4: Governanca aplicada</h3>
+            <p class="mt-2 text-sm text-slate-600">Implemente regras de revisao humana, classificacao de dados e trilha de auditoria das decisoes.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: checklist de risco com responsaveis e frequencia de revisao.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-semibold">Etapa 5: Escala sustentavel</h3>
+            <p class="mt-2 text-sm text-slate-600">Planeje extensao para um segundo processo mantendo qualidade, custo sob controle e aprendizagem da equipe.</p>
+            <p class="mt-2 text-xs font-medium text-primary">Evidencia: roadmap 30-60-90 dias com marco de escala.</p>
+          </article>
+        </div>
+      </section>
+
+            <section class="surface-card p-6 sm:p-8 print-break-avoid">
+        <h2 class="text-2xl font-bold">Biblioteca de prompts profissionais</h2>
+        <p class="mt-2 text-sm text-slate-600">Prompts curados para acelerar analise, decisao e implantacao com foco em Modulo 8.</p>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 1: Diagnostico executivo</p>
+            <pre class="mt-2 text-xs text-slate-700">Atue como consultor de arquitetura corporativa e escala. Faça um diagnostico rapido do processo [plano executivo de expansao] com 5 gargalos, impacto estimado e prioridade de ataque.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 2: Plano 30-60-90</p>
+            <pre class="mt-2 text-xs text-slate-700">Monte um plano 30-60-90 dias para implementar IA em [plano executivo de expansao] incluindo objetivos, entregas por fase, donos e riscos.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 3: KPIs e baseline</p>
+            <pre class="mt-2 text-xs text-slate-700">Defina um modelo de medicao para [ROI de escala em 12 meses] com baseline, meta trimestral, formula e frequencia de acompanhamento.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 4: Governanca minima</p>
+            <pre class="mt-2 text-xs text-slate-700">Crie uma politica minima de uso de IA para este contexto com regras de dados, revisao humana, aprovacao e auditoria.</pre>
+          </article>
+          <article class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-semibold text-slate-900">Prompt 5: Escala com controle</p>
+            <pre class="mt-2 text-xs text-slate-700">Proponha como escalar o piloto para outra area sem perder qualidade, informando criterios de readiness e plano de capacitacao.</pre>
+          </article>
+        </div>
+        <section class="surface-card p-6 sm:p-8 print-break-avoid">
+          <h2 class="text-2xl font-bold">Prompts para arquitetura e plan de escala em 12 meses</h2>
+          <p class="mt-2 text-sm text-slate-600">Use estes prompts para estruturar scaling corporativo de IA de forma sustentável e mensurável.</p>
+          <div class="mt-5 space-y-4">
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Arquitetura corporativa de IA (3 camadas: aplicação, orquestração, governança)</p>
+                <button data-copy-target="prompt-mod8-01" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod8-01" class="text-xs text-slate-700">Estruture uma arquitetura corporativa de IA para escalar em todas as áreas da empresa:
+
+  CAMADA 1 - APLICAÇÕES (O QUE USAR IA):
+  - RH: [listar 3-5 aplicações por ordem de ganho]
+  - Marketing: [listar 3-5 aplicações por ordem de ganho]
+  - Financeiro: [listar 3-5 aplicações por ordem de ganho]
+  - Operações: [listar 3-5 aplicações por ordem de ganho]
+  - Outras áreas: [listar conforme estratégia]
+
+  CAMADA 2 - ORQUESTRAÇÃO (COMO CONECTAR):
+  - Hub centralizado de dados: [qual ferramenta? Cloud?]
+  - APIs de integração: [como conectar sistemas?]
+  - Sequência de fluxo: [em qual ordem executar os modelos?]
+  - Tratamento de erro: [se falhar em 1, o que fazer?]
+
+  CAMADA 3 - GOVERNANÇA (COMO CONTROLAR):
+  - Centro de Excelência de IA: [estrutura, pessoas?]
+  - Comitê de aprovação: [quem aprova novos casos?]
+  - Monitoramento contínuo: [qual alertas, qual frequência?]
+  - Auditoria regular: [anual, semestral?]
+  - Conformidade: [LGPD, legislação aplicável?]
+
+  ROADMAP DE IMPLEMENTAÇÃO:
+  - Q1: [aplicações e integração]
+  - Q2: [governança + treinamento]
+  - Q3: [monitoramento + ajustes]
+  - Q4: [consolidação + plano para próximo ano]</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Plano de escala 12 meses com milestones, orçamento e KPI</p>
+                <button data-copy-target="prompt-mod8-02" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod8-02" class="text-xs text-slate-700">Monte roadmap de 12 meses para escalar IA em toda empresa:
+
+  TRIMESTRE 1 (Meses 1-3): Laboratório e primeiros 3 pilotos
+  - Objetivo: Validar 3 casos de uso com dados reais
+  - Ações: [listar 5 ações chave]
+  - Orçamento: R$ [X] (ferramentas, pessoas)
+  - Risco principal e mitigação: [descrever]
+  - KPI de sucesso: [qual métrica ao final Q1?]
+
+  TRIMESTRE 2 (Meses 4-6): Rollout em 2 áreas prioritárias
+  - Objetivo: [qual será o ganho agregado?]
+  - Ações: [listar 5 ações chave]
+  - Orçamento: R$ [X]
+  - Risco principal e mitigação: [descrever]
+  - KPI de sucesso: [qual métrica ao final Q2?]
+
+  TRIMESTRE 3 (Meses 7-9): Consolidação e aprendizado
+  - Objetivo: [qual será o ganho cumulativo?]
+  - Ações: [listar 5 ações chave]
+  - Orçamento: R$ [X]
+  - Risco principal e mitigação: [descrever]
+  - KPI de sucesso: [qual métrica ao final Q3?]
+
+  TRIMESTRE 4 (Meses 10-12): Escala total e plano pós-Q4
+  - Objetivo: [qual será o ROI final do ano?]
+  - Ações: [listar 5 ações chave]
+  - Orçamento: R$ [X]
+  - Risco principal e mitigação: [descrever]
+  - KPI de sucesso: [qual métrica ao final Q4?]
+
+  ORÇAMENTO ANUAL CONSOLIDADO:
+  - Ferramentas/subscriptions: R$ [X]
+  - Pessoas (dedicadas + consultoria): R$ [X]
+  - Treinamento: R$ [X]
+  - Infraestrutura: R$ [X]
+  - TOTAL: R$ [X] com payback estimado em [X] meses</pre>
+            </div>
+
+            <div class="prompt-box rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-sm font-semibold text-slate-900">Prompt: Defesa em banca: apresentação do plano de escala com rigor</p>
+                <button data-copy-target="prompt-mod8-03" class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-primary/40 hover:text-primary">Copiar prompt</button>
+              </div>
+              <pre id="prompt-mod8-03" class="text-xs text-slate-700">Prepare uma apresentação executiva de defesa do plano de escala em 12 meses para banca técnica:
+
+  SLIDE 1 - CONTEXTO ESTRATÉGICO:
+  - Por que IA é crítica para biz: [estratégia corporativa]
+  - Oportunidade de mercado: [tamanho, competição]
+  - Urgência: [por que agora? Risco de não fazer?]
+
+  SLIDE 2 - DIAGNÓSTICO:
+  - Situação atual: [maturidade IA hoje?]
+  - Gap a fechar: [de onde até onde?]
+  - Escolha de priorização: [qual processo muda mais?]
+
+  SLIDE 3-4 - PLANO E ROADMAP:
+  - Estrutura em 4 trimestres: [milestones por Q]
+  - Orçamento detalhado: [X por trimestre, Y anual]
+  - Equipe e responsáveis: [organograma]
+
+  SLIDE 5 - RESULTADOS ESPERADOS:
+  - ROI por aplicação: [tabela de ganhos]
+  - Payback: [X meses]
+  - Benefício qualitativo: [riscos reduzidos, velocidade aumentada, etc]
+
+  SLIDE 6 - GESTÃO DE RISCO:
+  - Riscos principais: [top 3]
+  - Mitigation por risco: [ação, responsável]
+  - Plan B: [se X falhar, então Y]
+
+  SLIDE 7 - GOVERNANÇA:
+  - Centro de Excelência: [estrutura, responsáveis]
+  - KPI de monitoramento: [o que acompanha mesalmente]
+  - Decisão de escala/parada: [quando continua quando para?]
+
+  SLIDE 8 - CALL TO ACTION:
+  - Recomendação: [aprove, implemente, monitore]
+  - Decisão pedida: [qual orçamento? Qual timeline?]
+  - Próximas ações: [qual é a primeira coisa a fazer?]</pre>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="footer-slot"></div>
+  <script src="scripts/navigation.js"></script>
+</body>
+</html>
+
+
+

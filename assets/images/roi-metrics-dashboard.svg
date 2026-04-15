@@ -1,0 +1,178 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .metric-card { fill: white; stroke: #e2e8f0; stroke-width: 1; }
+      .metric-value { fill: #0f172a; font-size: 24px; font-weight: bold; }
+      .metric-label { fill: #64748b; font-size: 12px; }
+      .metric-icon { fill: #2563eb; }
+      .positive { fill: #16a34a; }
+      .negative { fill: #dc2626; }
+      .neutral { fill: #f59e0b; }
+      .title { fill: #0f172a; font-size: 22px; font-weight: bold; }
+      .subtitle { fill: #475569; font-size: 12px; }
+      .chart-bar { fill: #3b82f6; }
+      .chart-grid { stroke: #e2e8f0; stroke-width: 1; }
+      .legend { fill: #64748b; font-size: 11px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" class="title">Dashboard de Métricas e ROI de IA</text>
+  <text x="500" y="52" text-anchor="middle" class="subtitle">Indicadores chave para acompanhar impacto e retorno sobre investimento</text>
+
+  <!-- Row 1: Key Metrics -->
+  <g id="metric1">
+    <rect x="20" y="80" width="230" height="100" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <circle cx="55" cy="105" r="18" class="metric-icon" style="fill: #2563eb;"/>
+    <text x="55" y="113" text-anchor="middle" style="fill: white; font-size: 12px; font-weight: bold;">📈</text>
+    <text x="90" y="100" class="metric-label" style="fill: #64748b; font-size: 11px;">PRODUTIVIDADE</text>
+    <text x="90" y="125" class="metric-value" style="font-size: 20px;">+28%</text>
+    <text x="90" y="145" class="metric-label">vs. baseline (30 dias)</text>
+  </g>
+
+  <g id="metric2">
+    <rect x="270" y="80" width="230" height="100" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <circle cx="305" cy="105" r="18" style="fill: #16a34a;"/>
+    <text x="305" y="113" text-anchor="middle" style="fill: white; font-size: 12px; font-weight: bold;">💰</text>
+    <text x="340" y="100" class="metric-label" style="fill: #64748b; font-size: 11px;">ECONOMIA DE CUSTO</text>
+    <text x="340" y="125" class="metric-value" style="font-size: 20px;">R$ 45k/mês</text>
+    <text x="340" y="145" class="metric-label">Redução de horas manuais</text>
+  </g>
+
+  <g id="metric3">
+    <rect x="520" y="80" width="230" height="100" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <circle cx="555" cy="105" r="18" style="fill: #06b6d4;"/>
+    <text x="555" y="113" text-anchor="middle" style="fill: white; font-size: 12px; font-weight: bold;">⏱️</text>
+    <text x="590" y="100" class="metric-label" style="fill: #64748b; font-size: 11px;">REDUÇÃO DE TEMPO</text>
+    <text x="590" y="125" class="metric-value" style="font-size: 20px;">-65%</text>
+    <text x="590" y="145" class="metric-label">Ciclo de processamento</text>
+  </g>
+
+  <g id="metric4">
+    <rect x="770" y="80" width="210" height="100" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <circle cx="800" cy="105" r="18" style="fill: #a855f7;"/>
+    <text x="800" y="113" text-anchor="middle" style="fill: white; font-size: 12px; font-weight: bold;">📊</text>
+    <text x="835" y="100" class="metric-label" style="fill: #64748b; font-size: 11px;">QUALIDADE</text>
+    <text x="835" y="125" class="metric-value" style="font-size: 20px;">96%</text>
+    <text x="835" y="145" class="metric-label">Taxa de acurácia</text>
+  </g>
+
+  <!-- Row 2: Charts -->
+  <!-- Chart 1: ROI Timeline -->
+  <g id="chart1">
+    <rect x="20" y="210" width="460" height="180" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <text x="250" y="235" text-anchor="middle" class="subtitle" style="fill: #0f172a; font-weight: bold;">ROI Timeline (12 meses)</text>
+    
+    <!-- Grid lines -->
+    <line x1="50" y1="350" x2="420" y2="350" class="chart-grid"/>
+    <line x1="50" y1="310" x2="420" y2="310" class="chart-grid"/>
+    <line x1="50" y1="270" x2="420" y2="270" class="chart-grid"/>
+    <line x1="50" y1="230" x2="420" y2="230" class="chart-grid"/>
+    
+    <!-- Axes -->
+    <line x1="45" y1="230" x2="45" y2="355" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="45" y1="355" x2="430" y2="355" stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Bars -->
+    <rect x="65" y="330" width="35" height="25" class="chart-bar"/>
+    <text x="82.5" y="368" text-anchor="middle" class="legend">M1</text>
+    
+    <rect x="115" y="310" width="35" height="45" class="chart-bar"/>
+    <text x="132.5" y="368" text-anchor="middle" class="legend">M2</text>
+    
+    <rect x="165" y="270" width="35" height="85" class="chart-bar"/>
+    <text x="182.5" y="368" text-anchor="middle" class="legend">M3</text>
+    
+    <rect x="215" y="240" width="35" height="115" class="chart-bar"/>
+    <text x="232.5" y="368" text-anchor="middle" class="legend">M6</text>
+    
+    <rect x="265" y="250" width="35" height="105" style="fill: #16a34a;"/>
+    <text x="282.5" y="368" text-anchor="middle" class="legend">M9</text>
+    
+    <rect x="315" y="235" width="35" height="120" style="fill: #16a34a;"/>
+    <text x="332.5" y="368" text-anchor="middle" class="legend">M12</text>
+    
+    <!-- Y-axis labels -->
+    <text x="35" y="358" text-anchor="end" class="legend" style="fill: #475569;">0</text>
+    <text x="35" y="318" text-anchor="end" class="legend" style="fill: #475569;">100k</text>
+    <text x="35" y="278" text-anchor="end" class="legend" style="fill: #475569;">200k</text>
+    <text x="35" y="238" text-anchor="end" class="legend" style="fill: #475569;">300k</text>
+    
+    <!-- Breakeven line -->
+    <line x1="45" y1="290" x2="430" y2="290" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="435" y="293" class="legend" style="fill: #dc2626;">Break-even (M3)</text>
+  </g>
+
+  <!-- Chart 2: Impact by Area -->
+  <g id="chart2">
+    <rect x="520" y="210" width="460" height="180" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <text x="750" y="235" text-anchor="middle" class="subtitle" style="fill: #0f172a; font-weight: bold;">Impacto por Área</text>
+    
+    <!-- Grid -->
+    <line x1="560" y1="350" x2="930" y2="350" class="chart-grid"/>
+    <line x1="560" y1="310" x2="930" y2="310" class="chart-grid"/>
+    <line x1="560" y1="270" x2="930" y2="270" class="chart-grid"/>
+    <line x1="560" y1="230" x2="930" y2="230" class="chart-grid"/>
+    
+    <!-- Axes -->
+    <line x1="560" y1="230" x2="560" y2="355" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="560" y1="355" x2="945" y2="355" stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Horizontal bars -->
+    <rect x="620" y="255" width="180" height="20" class="chart-bar"/>
+    <text x="605" y="267" text-anchor="end" class="legend">RH</text>
+    <text x="815" y="267" text-anchor="start" class="legend">+32%</text>
+    
+    <rect x="620" y="290" width="220" height="20" style="fill: #06b6d4;"/>
+    <text x="605" y="302" text-anchor="end" class="legend">Finance</text>
+    <text x="855" y="302" text-anchor="start" class="legend">+40%</text>
+    
+    <rect x="620" y="325" width="160" height="20" style="fill: #8b5cf6;"/>
+    <text x="605" y="337" text-anchor="end" class="legend">Ops</text>
+    <text x="795" y="337" text-anchor="start" class="legend">+23%</text>
+    
+    <!-- X-axis labels -->
+    <text x="560" y="375" text-anchor="middle" class="legend">0%</text>
+    <text x="680" y="375" text-anchor="middle" class="legend">10%</text>
+    <text x="800" y="375" text-anchor="middle" class="legend">20%</text>
+    <text x="920" y="375" text-anchor="middle" class="legend">40%</text>
+  </g>
+
+  <!-- Row 3: Detailed Metrics -->
+  <g id="detail1">
+    <rect x="20" y="430" width="460" height="140" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <text x="250" y="455" text-anchor="middle" class="subtitle" style="fill: #0f172a; font-weight: bold; font-size: 13px;">Indicadores Operacionais</text>
+    
+    <line x1="30" y1="465" x2="440" y2="465" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="35" y="490" class="legend" style="fill: #0f172a; font-weight: 600;">Retrabalho:</text>
+    <text x="380" y="490" text-anchor="end" class="metric-value" style="font-size: 16px;">-60%</text>
+    
+    <text x="35" y="515" class="legend" style="fill: #0f172a; font-weight: 600;">Taxa de Erro:</text>
+    <text x="380" y="515" text-anchor="end" class="metric-value" style="font-size: 16px;">-75%</text>
+    
+    <text x="35" y="540" class="legend" style="fill: #0f172a; font-weight: 600;">Satisfação do Usuário:</text>
+    <text x="380" y="540" text-anchor="end" class="metric-value" style="font-size: 16px;">+8.5/10</text>
+  </g>
+
+  <g id="detail2">
+    <rect x="520" y="430" width="460" height="140" rx="8" class="metric-card" style="box-shadow: 0 1px 3px rgba(0,0,0,0.1);"/>
+    <text x="750" y="455" text-anchor="middle" class="subtitle" style="fill: #0f172a; font-weight: bold; font-size: 13px;">Indicadores Estratégicos</text>
+    
+    <line x1="530" y1="465" x2="940" y2="465" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="535" y="490" class="legend" style="fill: #0f172a; font-weight: 600;">Adoção de Equipes:</text>
+    <text x="930" y="490" text-anchor="end" class="metric-value" style="font-size: 16px;">85%</text>
+    
+    <text x="535" y="515" class="legend" style="fill: #0f172a; font-weight: 600;">Casos de Uso em Escala:</text>
+    <text x="930" y="515" text-anchor="end" class="metric-value" style="font-size: 16px;">4/6</text>
+    
+    <text x="535" y="540" class="legend" style="fill: #0f172a; font-weight: 600;">Maturidade de Capacidade:</text>
+    <text x="930" y="540" text-anchor="end" class="metric-value" style="font-size: 16px;">Nível 2</text>
+  </g>
+
+  <!-- Row 4: Calculation Box -->
+  <rect x="20" y="610" width="960" height="70" rx="8" fill="#f0f4f8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="40" y="635" class="subtitle" style="fill: #0f172a; font-weight: bold;">Cálculo de ROI:</text>
+  <text x="40" y="658" class="legend" style="fill: #0f172a;">ROI = (Ganho Total - Investimento) / Investimento × 100  |  Ganho Total: R$ 540k (12 meses)  |  Investimento: R$ 120k  |  ROI Total: 350%  |  Payback: 3.2 meses</text>
+</svg>

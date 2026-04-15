@@ -1,0 +1,52 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <style>
+      .title{font:700 34px Inter,Segoe UI,sans-serif;fill:#0f172a}
+      .h{font:700 18px Inter,Segoe UI,sans-serif;fill:#0f172a}
+      .p{font:500 13px Inter,Segoe UI,sans-serif;fill:#334155}
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <text x="600" y="58" text-anchor="middle" class="title">Arquitetura Corporativa de IA para Administracao</text>
+
+  <rect x="90" y="120" width="1020" height="80" rx="16" fill="#1e3a8a"/>
+  <text x="600" y="168" text-anchor="middle" style="font:700 22px Inter,Segoe UI,sans-serif;fill:#ffffff">Governanca, seguranca e compliance</text>
+
+  <rect x="90" y="230" width="320" height="130" rx="16" fill="#dbeafe" stroke="#93c5fd"/>
+  <text x="250" y="280" text-anchor="middle" class="h">Camada de dados</text>
+  <text x="250" y="304" text-anchor="middle" class="p">ERP, CRM, BI, Datalake</text>
+
+  <rect x="440" y="230" width="320" height="130" rx="16" fill="#ede9fe" stroke="#c4b5fd"/>
+  <text x="600" y="280" text-anchor="middle" class="h">Camada de inteligencia</text>
+  <text x="600" y="304" text-anchor="middle" class="p">LLMs, modelos preditivos, regras</text>
+
+  <rect x="790" y="230" width="320" height="130" rx="16" fill="#dbeafe" stroke="#93c5fd"/>
+  <text x="950" y="280" text-anchor="middle" class="h">Camada de operacao</text>
+  <text x="950" y="304" text-anchor="middle" class="p">Fluxos, automacao, monitoramento</text>
+
+  <rect x="90" y="400" width="480" height="180" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="330" y="450" text-anchor="middle" class="h">MLOps e observabilidade</text>
+  <text x="330" y="480" text-anchor="middle" class="p">Versionamento de modelo e prompt</text>
+  <text x="330" y="505" text-anchor="middle" class="p">Alertas de drift e degradacao</text>
+  <text x="330" y="530" text-anchor="middle" class="p">Auditoria de decisao</text>
+
+  <rect x="630" y="400" width="480" height="180" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="870" y="450" text-anchor="middle" class="h">Valor economico e escala</text>
+  <text x="870" y="480" text-anchor="middle" class="p">ROI, NPV e payback por processo</text>
+  <text x="870" y="505" text-anchor="middle" class="p">Priorizacao de portifolio de IA</text>
+  <text x="870" y="530" text-anchor="middle" class="p">Governanca de rollout</text>
+
+  <path d="M410 295 L440 295" stroke="#64748b" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M760 295 L790 295" stroke="#64748b" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M600 360 L600 390" stroke="#64748b" stroke-width="3" marker-end="url(#arr)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0,10 3,0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
